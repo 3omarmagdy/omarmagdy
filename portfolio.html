@@ -117,7 +117,9 @@
 
   /* Case study cards (web projects) */
   .case-grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  .case-grid-3{ grid-template-columns:repeat(3, 1fr); }
   @media (max-width:760px){ .case-grid{ grid-template-columns:1fr; } }
+  @media (max-width:1000px) and (min-width:761px){ .case-grid-3{ grid-template-columns:1fr 1fr; } }
   .case-card{
     background:linear-gradient(160deg, var(--panel-2), var(--panel));
     border:1px solid var(--border); border-radius:20px; padding:32px;
@@ -217,7 +219,7 @@
       <h2>تصميم وتطوير مواقع</h2>
       <p class="section-sub">مش بس إعلانات — بابني كمان صفحات هبوط احترافية تحول الزوار لعملاء فعليين</p>
     </div>
-    <div class="case-grid">
+    <div class="case-grid case-grid-3">
       <div class="case-card">
         <span class="case-tag">LANDING PAGE · MEDICAL</span>
         <h3>د. أحمد نصار — استشاري نساء وتوليد</h3>
@@ -228,6 +230,18 @@
           <span>متجاوب بالكامل</span>
         </div>
         <a href="https://3omarmagdy.github.io/dr-ahmed-nassar-landing/" target="_blank" rel="noopener" class="case-link">شاهد الصفحة الحية ←</a>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">LANDING PAGE · MEDICAL · META ADS</span>
+        <h3>د. رضا صبحي — نساء وتوليد وحقن مجهري</h3>
+        <p>صفحة هبوط كاملة لدكتورة رضا صبحي بمستشفى البشرى بمدينة نصر، مبنية خصيصًا لحملات Meta Ads مع تتبع أحداث Pixel كامل (Lead, Schedule, WhatsAppClick)، فورم حجز يتحقق من البيانات ويفتح واتساب مباشرة، وصفحة سياسة خصوصية مطابقة لمتطلبات ميتا.</p>
+        <div class="case-meta">
+          <span>Meta Pixel</span>
+          <span>نموذج حجز ذكي</span>
+          <span>Privacy Policy</span>
+        </div>
+        <a href="dr-reda-sobhy/" target="_blank" rel="noopener" class="case-link">شاهد الصفحة الحية ←</a>
       </div>
 
       <div class="case-card">
