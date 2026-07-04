@@ -242,9 +242,6 @@ textarea{resize:none;height:85px;line-height:1.6;}
     <div class="form-sub">أماكن محدودة — <span>العرض ينتهي قريباً</span></div>
 
     <form id="regForm" name="media-buying-registration">
-      <input type="hidden" name="access_key" value="f6a673b7-47cf-43e7-8a7a-a95aac225682">
-      <input type="hidden" name="subject" value="📋 تسجيل جديد في كورس Media Buying">
-      <input type="hidden" name="from_name" value="موقع كورس Media Buying">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
       <div class="form-grid">
         <div class="form-group">
@@ -290,7 +287,7 @@ textarea{resize:none;height:85px;line-height:1.6;}
     <!-- SUCCESS -->
     <div class="success-msg" id="successMsg">
       <div class="success-icon"><i class="ti ti-circle-check"></i></div>
-      <h3>تم إرسال طلبك بنجاح! 🎉</h3>
+      <h3 id="successName">تم إرسال طلبك بنجاح! 🎉</h3>
       <p>شكراً لك على التسجيل في كورس Media Buying.<br>هيتواصل معاك عمر ماجدي على الواتساب خلال 24 ساعة.</p>
       <a href="https://wa.me/201102418143?text=مرحباً%20عمر%2C%20سجلت%20في%20كورس%20Media%20Buying" target="_blank" class="wa-contact">
         <i class="ti ti-brand-whatsapp"></i>
@@ -338,6 +335,11 @@ document.getElementById('regForm').addEventListener('submit', async function(e) 
 
   function showSuccessAndNotifyWA() {
     document.getElementById('regForm').style.display = 'none';
+    const successNameEl = document.getElementById('successName');
+    if (successNameEl) {
+      const firstName = name.trim().split(' ')[0];
+      successNameEl.textContent = `تم إرسال طلبك يا ${firstName}! 🎉`;
+    }
     document.getElementById('successMsg').style.display = 'block';
     setTimeout(() => {
       window.open('https://wa.me/201102418143?text=' + waText, '_blank');
@@ -345,14 +347,14 @@ document.getElementById('regForm').addEventListener('submit', async function(e) 
   }
 
   try {
-    // Submit to Web3Forms (sends email notification automatically)
-    const res = await fetch('https://api.web3forms.com/submit', {
+    // Submit via FormSubmit.co AJAX — same reliable method used on the main site,
+    // delivers straight to omarmarketing533@gmail.com
+    const res = await fetch('https://formsubmit.co/ajax/omarmarketing533@gmail.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
-        access_key: this.access_key.value,
-        subject: this.subject.value,
-        from_name: this.from_name.value,
+        _subject: '📋 تسجيل جديد في كورس Media Buying',
+        _url: 'https://3omarmagdy.github.io/omarmagdy/media-buying-course.html',
         'الاسم': name,
         'رقم الواتساب': phone,
         'البريد الإلكتروني': email,
@@ -364,7 +366,7 @@ document.getElementById('regForm').addEventListener('submit', async function(e) 
     const result = await res.json();
     loading.style.display = 'none';
 
-    if (result.success) {
+    if (res.ok) {
       showSuccessAndNotifyWA();
     } else {
       // Email service failed — still notify via WhatsApp so no lead is lost
