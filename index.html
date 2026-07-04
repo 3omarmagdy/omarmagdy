@@ -384,6 +384,41 @@
 
     .mobile-nav a:hover { color: var(--gold); }
 
+    .mobile-nav-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0.25rem 0;
+    }
+
+    .mobile-nav-cta {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--bg-primary) !important;
+      background: var(--gold);
+      padding: 0.9rem 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 4px;
+    }
+
+    .mobile-lang-btn {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+    }
+
     /* ─── STICKY CTA ─── */
     .sticky-cta {
       position: fixed;
@@ -2300,6 +2335,11 @@
         display: none;
       }
 
+      .lang-btn,
+      .nav-cta {
+        display: none;
+      }
+
       .hamburger {
         display: flex;
       }
@@ -3169,6 +3209,9 @@
       <a href="media-buying-course.html">Course</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="#contact">Contact</a>
+      <div class="mobile-nav-divider"></div>
+      <button class="mobile-lang-btn">AR — عربي</button>
+      <a href="#contact" class="mobile-nav-cta">Book Call</a>
     </div>
     <button class="lang-btn">AR</button>
     <a href="#contact" class="nav-cta">Book Call</a>
