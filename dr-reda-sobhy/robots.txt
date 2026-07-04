@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://3omarmagdy.github.io/omarmagdy/dr-reda-sobhy/sitemap.xml
