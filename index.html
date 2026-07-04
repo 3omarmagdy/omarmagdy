@@ -37,7 +37,7 @@
         "https://instagram.com/Omar.Growth.Hub",
         "https://facebook.com/Omar.Growth.Hub",
         "https://linkedin.com/in/omargrowthhub",
-        "https://3omar-magdy.netlify.app"
+        "https://3omarmagdy.github.io/omarmagdy/portfolio.html"
       ]
     },
     "description": "Premium Meta Ads & Performance Marketing services by Omar Magdy",
@@ -3152,8 +3152,8 @@
       <a href="#services" class="nav-link">Services</a>
       <a href="#case-studies" class="nav-link">Work</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="courses.html" class="nav-link">Courses</a>
-      <a href="https://3omar-magdy.netlify.app" target="_blank" rel="noopener" class="nav-link">Portfolio</a>
+      <a href="media-buying-course.html" class="nav-link">Course</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
     <button class="hamburger" id="hamburger">
@@ -3166,8 +3166,8 @@
       <a href="#services">Services</a>
       <a href="#case-studies">Work</a>
       <a href="#about">About</a>
-      <a href="courses.html">Courses</a>
-      <a href="https://3omar-magdy.netlify.app" target="_blank" rel="noopener">Portfolio</a>
+      <a href="media-buying-course.html">Course</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="#contact">Contact</a>
     </div>
     <button class="lang-btn">AR</button>
@@ -3217,11 +3217,11 @@
       </div>
 
       <div class="hero-btns" style="margin-top: 1rem;">
-        <a href="https://3omar-magdy.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        <a href="portfolio.html" class="btn-secondary">
           🎨 View Portfolio
         </a>
-        <a href="courses.html" class="btn-secondary">
-          🎓 Explore Courses
+        <a href="media-buying-course.html" class="btn-secondary">
+          🎓 Explore the Course
         </a>
       </div>
 
@@ -3813,6 +3813,12 @@
           </button>
         </form>
 
+        <div id="thank-you-message" style="display:none; text-align:center; padding:32px 20px; background:rgba(212,175,55,0.08); border:1px solid rgba(212,175,55,0.3); border-radius:16px; margin-top:16px;">
+          <div style="font-size:2.5rem; margin-bottom:12px;">🎉</div>
+          <h3 id="thank-you-name" style="margin-bottom:10px; color:#D4AF37;"></h3>
+          <p style="color:#ccc; line-height:1.7;">تم استلام رسالتك بنجاح! سنتواصل معاك في أقرب وقت — كمان هنفتحلك واتساب دلوقتي عشان التواصل يكون أسرع.</p>
+        </div>
+
         <div class="contact-trust">
           <strong>✓ 100% Confidential</strong>
           Your information is secure. We'll respond within 2 hours during business days.
@@ -3888,8 +3894,8 @@
           <li><a href="https://instagram.com/Omar.Growth.Hub" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://facebook.com/Omar.Growth.Hub" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://linkedin.com/in/omargrowthhub" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://3omar-magdy.netlify.app" target="_blank" rel="noopener">Portfolio</a></li>
-          <li><a href="courses.html">Courses</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="media-buying-course.html">Course</a></li>
         </ul>
       </div>
     </div>
@@ -4123,9 +4129,18 @@
         })
       }).then(response => {
         if (response.ok) {
-          // Show success
+          // Show personalized success message
           submitBtn.textContent = '✅ تم الإرسال بنجاح!';
-          alert('✅ شكراً! تم إرسال رسالتك للبريد الإلكتروني. سنرد عليك قريباً!');
+
+          const thankYouBox = document.getElementById('thank-you-message');
+          const thankYouName = document.getElementById('thank-you-name');
+          if (thankYouBox && thankYouName) {
+            const firstName = name.trim().split(' ')[0];
+            thankYouName.textContent = `شكراً يا ${firstName}!`;
+            form.style.display = 'none';
+            thankYouBox.style.display = 'block';
+            thankYouBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
           form.reset();
 
           setTimeout(() => {
