@@ -61,3 +61,23 @@ window.OMAR_ANALYTICS_CONFIG = {
     fbq('track', 'PageView');
   }
 })(window.OMAR_ANALYTICS_CONFIG);
+
+/* ==========================================================================
+   EVENT TRACKING HELPER — safe to call even when META_PIXEL_ID is empty
+   (fbq simply won't exist yet, so this becomes a harmless no-op).
+   Usage from any page: window.omarTrackPixel('Lead');
+   ========================================================================== */
+window.omarTrackPixel = function (eventName, params) {
+  if (typeof window.fbq === 'function') {
+    window.fbq('track', eventName, params || {});
+  }
+};
+
+/* Delegated click tracking: add data-track="Lead" | "Schedule" | "ViewContent"
+   to any link/button across the site and it will fire automatically, once per
+   click, with no extra wiring needed on each page. */
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('[data-track]');
+  if (!el) return;
+  window.omarTrackPixel(el.getAttribute('data-track'));
+}, { passive: true });
