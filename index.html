@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#D4AF37">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#050505">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Omar Growth Hub">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preload" as="image" href="images/photo-1.jpg" fetchpriority="high">
   <meta name="description" content="Omar Magdy (Omar Growth Hub) — Media Buyer & Performance Marketing Specialist in Egypt. Scale your business with data-driven Meta Ads strategies that generate qualified leads and maximize ROI. Trusted by 50+ businesses.">
   <meta name="keywords" content="Omar Magdy, Media Buyer, Meta Ads, Facebook Ads, Instagram Ads, Performance Marketing, Lead Generation, Marketing Agency Egypt, Omar Growth Hub, ROAS Optimization, Conversion Rate Optimization">
   <meta name="author" content="Omar Magdy">
@@ -53,13 +66,37 @@
       "https://facebook.com/Omar.Growth.Hub",
       "https://linkedin.com/in/omargrowthhub"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "47"
-    },
     "areaServed": "EG",
     "priceRange": "$$"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Omar Growth Hub",
+    "url": "https://3omarmagdy.github.io/omarmagdy/",
+    "inLanguage": "en",
+    "publisher": { "@type": "Person", "name": "Omar Magdy" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Omar Magdy",
+    "alternateName": "Omar Growth Hub",
+    "jobTitle": "Media Buyer & Performance Marketing Specialist",
+    "url": "https://3omarmagdy.github.io/omarmagdy/",
+    "image": "https://3omarmagdy.github.io/omarmagdy/images/photo-1.jpg",
+    "worksFor": { "@type": "Organization", "name": "Omar Growth Hub" },
+    "sameAs": [
+      "https://instagram.com/Omar.Growth.Hub",
+      "https://facebook.com/Omar.Growth.Hub",
+      "https://linkedin.com/in/omargrowthhub"
+    ]
   }
   </script>
 
@@ -3168,9 +3205,16 @@
         margin: 1rem;
       }
     }
-  </style>
+    .skip-link{position:absolute;left:-999px;top:0;background:#D4AF37;color:#050505;padding:12px 20px;z-index:10000;font-weight:700;border-radius:0 0 8px 0;text-decoration:none;}
+  .skip-link:focus{left:0;}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #D4AF37;outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+  }
+</style>
 </head>
 <body>
+  <a href="#hero" class="skip-link">Skip to main content</a>
   <div class="noise"></div>
 
   <!-- LOADER -->
@@ -3182,7 +3226,7 @@
   </div>
 
   <!-- NAVIGATION -->
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#" class="nav-logo">
       OMAR
       <span>GROWTH HUB</span>
@@ -3196,7 +3240,7 @@
       <a href="portfolio.html" class="nav-link">Portfolio</a>
       <a href="#contact" class="nav-link">Contact</a>
     </div>
-    <button class="hamburger" id="hamburger">
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span>
       <span></span>
       <span></span>
@@ -3213,7 +3257,7 @@
       <button class="mobile-lang-btn">AR — عربي</button>
       <a href="#contact" class="mobile-nav-cta">Book Call</a>
     </div>
-    <button class="lang-btn">AR</button>
+    <button class="lang-btn" aria-label="Switch language">AR</button>
     <a href="#contact" class="nav-cta">Book Call</a>
   </nav>
 
@@ -3226,7 +3270,7 @@
   </a>
 
   <!-- HERO SECTION -->
-  <section id="hero">
+  <section id="hero" tabindex="-1">
     <div class="hero-glow"></div>
     <div class="hero-glow-2"></div>
 
@@ -4317,6 +4361,14 @@
     window.addEventListener('load', () => {
       // Load additional tracking or non-critical features
     });
+  </script>
+  <script src="js/analytics-config.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js').catch(() => {});
+      });
+    }
   </script>
 </body>
 </html>
