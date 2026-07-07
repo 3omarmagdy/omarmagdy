@@ -3,7 +3,7 @@
    cache-first for static assets (images/icons/fonts),
    with an offline fallback page. */
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `omar-growth-hub-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -51,9 +51,12 @@ self.addEventListener('fetch', (event) => {
     (request.headers.get('accept') || '').includes('text/html');
 
   if (isHTML) {
-    // Network-first for pages so visitors always get the latest content
+    // Network-first for pages so visitors always get the latest content.
+    // cache:'no-store' bypasses the browser's own HTTP disk cache, so a
+    // stale GitHub Pages CDN/browser cache entry can never masquerade as
+    // a successful "network" fetch and get re-saved into our SW cache.
     event.respondWith(
-      fetch(request)
+      fetch(request, { cache: 'no-store' })
         .then((response) => {
           const copy = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
