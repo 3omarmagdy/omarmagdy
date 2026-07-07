@@ -84,8 +84,68 @@ inserted in place; no existing sections were removed, reordered, or rewritten.
    `CLARITY_PROJECT_ID` if you use them.
 
 ## Manual follow-ups
-- Rotate/revoke the previously-used GitHub personal access token if you
-  haven't already — a new session-scoped token is needed to push this branch
-  and open the PR.
 - Google Search Console: verify the property, submit `sitemap.xml`.
-- Review the FAQ copy claims noted above before this goes live.
+
+---
+
+## Update — merged to `main` and content/conversion audit (2026-07-07)
+
+### Merged
+PR #1 was reviewed and merged into `main` via squash merge (commit `a391b89`).
+The mobile blank-screen fix, accessibility fixes, Meta Pixel hooks, and
+Problems/FAQ sections are now **live** on the production site.
+
+### FAQ claims — confirmed accurate
+Owner confirmed both flagged claims are accurate as written:
+- Campaigns run on the client's own Business Manager (not a middleman account)
+- First performance report within the first week
+
+No copy changes were needed here.
+
+### Content/structure audit result
+Reviewed the homepage against the requested conversion sequence (hero → trust
+→ problems → services → results → how-I-work → about → testimonials → FAQ →
+contact). **The existing content already matches this structure closely** —
+this was implemented well in the previous pass, including specific CTAs
+(e.g. "اطلب مراجعة لحساب الإعلانات بتاعك" instead of generic "تواصل معي"),
+real un-inflated result numbers, and real testimonials only. No section
+reordering or copy rewrite was needed.
+
+One additional claim was checked: `portfolio.html`'s meta description states
+"أكتر من 50 مشروع ناجح." Owner confirmed this is accurate — left as-is.
+
+### New: floating WhatsApp button
+The original brief asked for a floating WhatsApp button, but none existed
+anywhere on the site (only inline links). Added one to `index.html`,
+`portfolio.html`, and `media-buying-course.html`:
+- Bottom-corner, brand-colored (#25D366), 56px (50px on ≤480px) circular
+  tap target — meets the 44px minimum touch-size requirement.
+- Respects `env(safe-area-inset-bottom)` for notched devices.
+- On the homepage only: auto-hides via `IntersectionObserver` while the
+  contact/lead form is in view, so it can never sit on top of the submit
+  button — directly satisfies the "WhatsApp button never covers form
+  controls" requirement.
+- Wired into the existing `data-track="Lead"` Meta Pixel hook — fires
+  correctly once a Pixel ID is set.
+- Committed and pushed directly to `main` (commit `ba5c357`) since this was
+  a small, low-risk, additive change with no open questions.
+
+### Files changed this pass
+- `index.html` — wa-float CSS, button markup, show/hide script
+- `portfolio.html` — wa-float CSS, button markup
+- `media-buying-course.html` — wa-float CSS, button markup
+- `PROJECT_STATUS.md` — this update
+
+### Not yet done (unchanged from previous pass)
+- Reordering/rewriting existing sections (not needed — see above)
+- Same technical/accessibility audit pass applied to the client sub-sites
+  (`dr-reda-sobhy/`, and the standalone `dr-samar-almulla-website (1).html`
+  file, which isn't linked from the main site or sitemap)
+- Full Lighthouse/PageSpeed performance pass and image compression audit
+- Google Search Console verification (requires site owner's Google account)
+
+### Security note
+This pass was executed using a **Classic** personal access token (broader
+scope than a fine-grained one restricted to this repo). Please revoke it now
+from GitHub → Settings → Developer settings → Personal access tokens, since
+its job here is done.
