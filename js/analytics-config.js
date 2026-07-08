@@ -8,7 +8,7 @@ window.OMAR_ANALYTICS_CONFIG = {
   GA4_MEASUREMENT_ID: '',      // e.g. 'G-XXXXXXXXXX'  — Google Analytics 4
   GTM_CONTAINER_ID: '',        // e.g. 'GTM-XXXXXXX'    — Google Tag Manager
   CLARITY_PROJECT_ID: '',      // e.g. 'abcd1234ef'     — Microsoft Clarity
-  META_PIXEL_ID: ''            // e.g. '1234567890123'  — Meta (Facebook) Pixel
+  META_PIXEL_ID: '909844348052988'  // e.g. '1234567890123'  — Meta (Facebook) Pixel
 };
 
 (function loadAnalytics(cfg) {
