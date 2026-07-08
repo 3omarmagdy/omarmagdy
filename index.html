@@ -109,12 +109,21 @@
   }
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    padding:14px 26px; border-radius:12px; font-weight:700; font-size:0.95rem;
-    border:1px solid transparent; cursor:pointer; min-height:48px; transition:transform .15s ease, background .2s ease;
+    padding:14px 26px; border-radius:14px; font-weight:700; font-size:0.95rem;
+    border:1px solid transparent; cursor:pointer; min-height:48px;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
   }
   .btn:active{transform:scale(0.97);}
-  .btn-primary{background:var(--gold); color:#0B0B0B;}
-  .btn-primary:hover{background:#e6c563;}
+  .btn-primary{
+    background:linear-gradient(135deg, #F4D56A 0%, #D4AF37 48%, #A87913 100%);
+    color:#080808;
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 10px 28px rgba(212,175,55,.22);
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 34px rgba(212,175,55,.32);
+  }
   .btn-outline{background:transparent; color:var(--text); border-color:var(--border);}
   .btn-outline:hover{border-color:var(--gold); color:var(--gold);}
 
@@ -286,6 +295,7 @@
     .sticky-wa{display:block;}
     body{padding-bottom:56px;}
     section{padding:48px 16px;}
+    .btn-primary{width:100%; min-height:54px; font-size:1rem;}
   }
 </style>
 </head>
@@ -303,7 +313,7 @@
     </nav>
     <div class="header-cta">
       <button class="btn-outline lang-toggle btn" id="langToggle" style="padding:8px 14px;min-height:auto;" aria-label="Switch language">EN</button>
-      <a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" data-i18n="nav_cta">اطلب تحليل مجاني</a>
+      <a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" data-i18n="nav_cta">اطلب تحليل مبدئي لحملتك</a>
     </div>
     <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobilePanel">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -323,7 +333,7 @@
   <a href="#about">عني</a>
   <a href="#contact">تواصل</a>
   <a href="portfolio.html" data-track="ViewContent">البورتفوليو الكامل</a>
-  <a href="https://wa.me/201102418143" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" style="margin-top:20px; justify-content:center;">راسلني على واتساب</a>
+  <a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" data-i18n="mobile_menu_cta" style="margin-top:20px; justify-content:center;">اطلب تحليل مبدئي لحملتك</a>
 </div>
 
 <!-- HERO -->
@@ -335,7 +345,7 @@
     <h1 data-i18n="hero_h1">إعلاناتك بتجيب رسايل ومبتبيعش؟<br><span class="accent" data-i18n="hero_h1_accent">أنا ببنيلك نظام يحوّل الإنفاق لمبيعات.</span></h1>
     <p class="hero-sub" data-i18n="hero_sub">Media Buyer متخصص في حملات Meta Ads، تحسين تكلفة العميل، وبناء Funnel واضح يساعد البراندات والعيادات تحقق نمو قابل للقياس.</p>
     <div class="hero-ctas">
-      <a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" data-i18n="hero_cta1">اطلب تحليل مجاني لحملتك</a>
+      <a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-track="Lead" data-i18n="hero_cta1">اطلب تحليل مبدئي لحملتك</a>
       <a href="#results" class="btn btn-outline" data-i18n="hero_cta2">شاهد نتائج الحملات</a>
     </div>
   </div>
@@ -593,7 +603,7 @@
         <label for="business" data-i18n="form_business">نوع النشاط</label>
         <input type="text" id="business" name="business" required>
       </div>
-      <button type="submit" class="btn btn-primary" id="submitBtn" data-i18n="form_submit">ابعت بياناتك وخد تحليل مبدئي</button>
+      <button type="submit" class="btn btn-primary" id="submitBtn" data-i18n="form_submit">اعرف ليه إعلاناتك بتصرف ومبتبيعش</button>
       <p class="privacy-note" data-i18n="form_privacy">بياناتك بتوصلنا مباشرة وميتمشاركش مع أي جهة تالتة.</p>
     </form>
     <div id="form-success">
@@ -616,7 +626,7 @@
   <p class="copyright">© 2026 Omar Growth Hub. جميع الحقوق محفوظة.</p>
 </footer>
 
-<a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="sticky-wa" data-track="Lead" data-i18n="sticky_wa">راسلني على واتساب</a>
+<a href="https://wa.me/201102418143?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%8A%D8%A7%20%D8%B9%D9%85%D8%B1%D8%8C%20%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D9%85%D8%A8%D8%AF%D8%A6%D9%8A%20%D9%84%D8%AD%D9%85%D9%84%D8%AA%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%86%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="sticky-wa" data-track="Lead" data-i18n="sticky_wa">اطلب تحليل مبدئي لحملتك</a>
 
 <script>
   // Mobile menu (with focus trap + Escape-to-close + focus return)
@@ -748,11 +758,11 @@
   // Lightweight AR/EN toggle
   const dict = {
     nav_services:{en:'Services'}, nav_results:{en:'Results'}, nav_about:{en:'About'}, nav_contact:{en:'Contact'},
-    nav_cta:{en:'Get Free Analysis'},
+    nav_cta:{en:'Request a Campaign Review'},
     hero_h1:{en:'Your ads bring messages but no sales?'},
     hero_h1_accent:{en:"I build you a system that turns spend into sales."},
     hero_sub:{en:'A Media Buyer specialized in Meta Ads, lowering cost per lead, and building a clear funnel that helps brands and clinics achieve measurable growth.'},
-    hero_cta1:{en:'Request a Free Campaign Analysis'}, hero_cta2:{en:'See the Campaign Results'},
+    hero_cta1:{en:'Request a Campaign Review'}, hero_cta2:{en:'See the Campaign Results'}, mobile_menu_cta:{en:'Request a Campaign Review'},
     trust_1:{en:'Experience running Meta Ads campaigns'}, trust_2:{en:'Worked with clinics, brands, and services'}, trust_3:{en:'Focused on qualified leads and real sales'},
     problems_eyebrow:{en:'Common Problems'}, problems_h2:{en:"Problems that come up before you find someone who does it right"}, problems_sub:{en:"If you recognize one of these, you're not alone."},
     problem1:{en:'You spend daily on ads, messages come in, but real sales are missing.'},
@@ -800,9 +810,9 @@
     faq_cta:{en:'Still have a question? Message me on WhatsApp now'},
     form_h2:{en:"Want to know why your campaign spends but doesn't sell?"}, form_sub:{en:"Send your details and we'll get back to you with a free initial analysis."},
     form_name:{en:'Name'}, form_phone:{en:'WhatsApp Number'}, form_business:{en:'Business Type'},
-    form_submit:{en:'Send & Get a Free Analysis'}, form_privacy:{en:"Your details come directly to us and are never shared with third parties."},
+    form_submit:{en:'Find Out Why Your Ads Spend Without Selling'}, form_privacy:{en:"Your details come directly to us and are never shared with third parties."},
     form_success:{en:"Sent! We'll reach out to you on WhatsApp shortly."},
-    sticky_wa:{en:'Message on WhatsApp'}
+    sticky_wa:{en:'Request a Campaign Review'}
   };
   let currentLang = 'ar';
   const originals = {};
