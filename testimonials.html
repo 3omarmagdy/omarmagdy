@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آراء العملاء | Omar Magdy - شهادات حقيقية من عملاء حقيقيين</title>
+<meta name="description" content="شهادات وآراء حقيقية من عملاء عمر مجدي - ميديا باير متخصص في Meta Ads">
+<meta name="theme-color" content="#B8860B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0B0B0B;
+  --surface: #1A1A1A;
+  --gold: #B8860B;
+  --gold-light: #D4AF37;
+  --text: #F5F5F5;
+  --text-secondary: #CACACA;
+  --border: rgba(184, 134, 11, 0.15);
+  --border-light: rgba(184, 134, 11, 0.08);
+  --radius: 12px;
+  --font: 'Cairo', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 800px 600px at 10% 5%, rgba(184, 134, 11, 0.08), transparent),
+    radial-gradient(ellipse 600px 500px at 90% 95%, rgba(184, 134, 11, 0.05), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+
+section { padding: 80px 20px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+.eyebrow { color: var(--gold); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 16px; }
+.section-sub { color: var(--text-secondary); max-width: 680px; margin: 16px 0 48px 0; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184, 134, 11, 0.4);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 5%;
+  background: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.testimonial-card {
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.testimonial-quote {
+  font-size: 2rem;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.testimonial-text {
+  color: var(--text);
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.testimonial-author {
+  color: var(--gold-light);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.testimonial-role {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.rating {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-light);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  section { padding: 50px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Omar Growth Hub</div>
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="portfolio.html">البورتفوليو</a></li>
+    <li><a href="projects.html">الـ Web Projects</a></li>
+    <li><a href="testimonials.html" style="color: var(--gold);">آراء العملاء</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section>
+  <div class="wrap">
+    <h1>آراء العملاء</h1>
+    <p class="section-sub">شهادات حقيقية من عملاء حقيقيين شافوا نتائج في حملاتهم</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">ماذا يقول العملاء؟</span>
+    <h2>شهادات من ناس فعلاً اشتغلوا معايا</h2>
+    <p class="section-sub">دي آراء من عملاء حقيقيين من قطاعات مختلفة:</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">الحمد لله 3 حجوزات من امبارح للنهارده، شكراً يا بشمهندس</div>
+        <div class="testimonial-author">د. حسين</div>
+        <div class="testimonial-role">عيادة نسائية وتوليد</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">حالة جديدة جت معايا من التمويل الأول، وحالة جديدة تانية بردو عن طريق واحدة ولدت معايا من نفس الحملة</div>
+        <div class="testimonial-author">د. رضا صبحي</div>
+        <div class="testimonial-role">استشاري أمراض نسائية</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">الحمد لله 6 حالات ولادة و2 كشف جديد من أول تمويل — النتائج فعلية وليست أرقام</div>
+        <div class="testimonial-author">د. متخصص</div>
+        <div class="testimonial-role">عيادة نسائية متخصصة</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">استشفيت بلفتنا في 3 جلسات أونلاين فقط. الحمد لله النتيجة واضحة وثابتة من أول أسبوع</div>
+        <div class="testimonial-author">دكتور</div>
+        <div class="testimonial-role">استشارات أونلاين متخصصة</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">شكراً على النصايح. 3 زيارات من الإمارات بس والنتيجة ما زالت مستمرة يا عمر</div>
+        <div class="testimonial-author">صاحب عيادة</div>
+        <div class="testimonial-role">خدمات تجميل واستشارات</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">شكرًا جدًا على المعلومات، فعلًا فرقت جداً معايا في الإعلان والنتائج اللي حصلت فعلية</div>
+        <div class="testimonial-author">صاحب براند</div>
+        <div class="testimonial-role">خدمات الاستشارات</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">تمام يا استاذ عمر هكذا صح فاضل كام — النتائج اللي انت بتقول عليها فعلاً موجودة</div>
+        <div class="testimonial-author">عميل تجارة</div>
+        <div class="testimonial-role">متجر إلكتروني</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">الشفافية في التقارير والأرقام خلتني أثق 100% — كل أسبوع أشوف الأرقام من Meta مباشرة</div>
+        <div class="testimonial-author">عميل B2C</div>
+        <div class="testimonial-role">خدمات تجارية</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">أول مرة أشتغل مع ميديا باير صادق فعلاً — بدون وعود كاذبة ولا أرقام مختلقة</div>
+        <div class="testimonial-author">مدير تسويق</div>
+        <div class="testimonial-role">شركة خدمات</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">النتيجة اللي وعدني فيها جاب أكتر من اللي توقعت — عمل احترافي وبنتايج موثقة</div>
+        <div class="testimonial-author">صاحب متجر</div>
+        <div class="testimonial-role">تجارة إلكترونية</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">الاستشارات المستمرة والدعم اليومي خلاني أفهم أكتر عن الإعلانات — مش بس نتايج</div>
+        <div class="testimonial-author">عميل جديد</div>
+        <div class="testimonial-role">خدمات استشارية</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">أحسن استثمار في الإعلانات عملته — عمر فهم السوق بتاعي وعمل strategy محترفة</div>
+        <div class="testimonial-author">رئيس تسويق</div>
+        <div class="testimonial-role">شركة B2B</div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border-radius: var(--radius); border: 1px solid var(--border-light);">
+      <h3 style="color: var(--text); margin-bottom: 12px;">كون العميل التالي</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 28px;">لو حاسس إن حملاتك محتاجة خبرة متخصصة — هنا الحل. أول استدعاء مجاني وبدون التزام.</p>
+      <a href="https://wa.me/201102418143?text=مرحبا%20عمر%20محتاج%20أتكلم%20معاك%20بخصوص%20إعلاناتي" class="btn btn-primary">ابدأ الآن عبر واتساب</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p>© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+    <p style="margin-top: 16px; font-size: 0.9rem;">
+      <a href="index.html">الرئيسية</a> | 
+      <a href="portfolio.html">البورتفوليو</a> | 
+      <a href="projects.html">الـ Web Projects</a> | 
+      <a href="https://wa.me/201102418143">تواصل</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

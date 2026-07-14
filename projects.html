@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Projects | Omar Magdy - Landing Pages والمشاريع الويب</title>
+<meta name="description" content="مشاريع ويب احترافية ولاندينج بيجز محسّنة للتحويل. عيادات، براندات، متاجر إلكترونية">
+<meta name="theme-color" content="#B8860B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0B0B0B;
+  --surface: #1A1A1A;
+  --gold: #B8860B;
+  --gold-light: #D4AF37;
+  --text: #F5F5F5;
+  --text-secondary: #CACACA;
+  --border: rgba(184, 134, 11, 0.15);
+  --border-light: rgba(184, 134, 11, 0.08);
+  --radius: 12px;
+  --font: 'Cairo', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 800px 600px at 10% 5%, rgba(184, 134, 11, 0.08), transparent),
+    radial-gradient(ellipse 600px 500px at 90% 95%, rgba(184, 134, 11, 0.05), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+
+section { padding: 80px 20px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+.eyebrow { color: var(--gold); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 16px; }
+.section-sub { color: var(--text-secondary); max-width: 680px; margin: 16px 0 48px 0; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184, 134, 11, 0.4);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 5%;
+  background: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 40px rgba(184, 134, 11, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(184, 134, 11, 0.05) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-type {
+  font-size: 0.85rem;
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.project-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-light);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  section { padding: 50px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Omar Growth Hub</div>
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="portfolio.html">البورتفوليو</a></li>
+    <li><a href="projects.html" style="color: var(--gold);">الـ Web Projects</a></li>
+    <li><a href="testimonials.html">آراء العملاء</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section>
+  <div class="wrap">
+    <h1>Web Projects والـ Landing Pages</h1>
+    <p class="section-sub">مشاريع ويب احترافية محسّنة للتحويل والأداء</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">المشاريع الويب</span>
+    <h2>عمل احترافي يحول الزوار إلى عملاء</h2>
+    <p class="section-sub">كل مشروع بُني بهدف واضح: تحويل أفضل ونتائج قابلة للقياس</p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">👨‍⚕️</div>
+        <div class="project-content">
+          <div class="project-type">لاندينج بيج</div>
+          <div class="project-title">عيادة د. أحمد نصار</div>
+          <div class="project-description">صفحة هبوط احترافية لعيادة توليد وأمراض نسائية مع نموذج حجوزات متقدم.</div>
+          <div class="project-features">
+            <div class="feature">تصميم responsive محترف</div>
+            <div class="feature">نموذج حجوزات متقدم</div>
+            <div class="feature">محسّن SEO</div>
+            <div class="feature">تقرير تحليل زيارات</div>
+          </div>
+          <a href="https://github.com/3omarmagdy/dr-ahmed-nassar" target="_blank" class="project-btn">شوف المشروع</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">💼</div>
+        <div class="project-content">
+          <div class="project-type">موقع احترافي</div>
+          <div class="project-title">Omar Growth Hub</div>
+          <div class="project-description">موقع portfolio شامل يعكس الخبرة والاحترافية مع نظام ألوان متطور.</div>
+          <div class="project-features">
+            <div class="feature">تصميم Dark Mode احترافي</div>
+            <div class="feature">نظام ألوان ذهبي أنيق</div>
+            <div class="feature">أداء سريع جداً</div>
+            <div class="feature">محسّن للمحركات</div>
+          </div>
+          <a href="https://3omarmagdy.github.io/omarmagdy/" target="_blank" class="project-btn">شوف الموقع</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">🏥</div>
+        <div class="project-content">
+          <div class="project-type">صفحة متخصصة</div>
+          <div class="project-title">عيادة اختصاصية</div>
+          <div class="project-description">صفحة متخصصة لعيادة طبية مع معلومات كاملة والتفاعل السريع.</div>
+          <div class="project-features">
+            <div class="feature">معلومات طبية دقيقة</div>
+            <div class="feature">نموذج اتصال متقدم</div>
+            <div class="feature">معرض صور احترافي</div>
+            <div class="feature">خريطة موقع تفاعلية</div>
+          </div>
+          <a href="#" class="project-btn">قريباً</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">🛒</div>
+        <div class="project-content">
+          <div class="project-type">متجر إلكتروني</div>
+          <div class="project-title">متجر منتجات</div>
+          <div class="project-description">متجر إلكتروني متكامل مع نظام دفع وإدارة مخزون احترافية.</div>
+          <div class="project-features">
+            <div class="feature">نظام دفع آمن</div>
+            <div class="feature">إدارة مخزون</div>
+            <div class="feature">سلة تسوق ذكية</div>
+            <div class="feature">تقارير مبيعات فورية</div>
+          </div>
+          <a href="#" class="project-btn">قريباً</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">📋</div>
+        <div class="project-content">
+          <div class="project-type">نموذج متقدم</div>
+          <div class="project-title">نموذج جمع البيانات</div>
+          <div class="project-description">نموذج متقدم لجمع بيانات العملاء مع validations وتقارير فورية.</div>
+          <div class="project-features">
+            <div class="feature">validations ذكية</div>
+            <div class="feature">تقارير فورية</div>
+            <div class="feature">إرسال بريد تلقائي</div>
+            <div class="feature">تكامل مع CRM</div>
+          </div>
+          <a href="#" class="project-btn">قريباً</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">🎨</div>
+        <div class="project-content">
+          <div class="project-type">تصميم مخصص</div>
+          <div class="project-title">تصميم وتطوير</div>
+          <div class="project-description">مشاريع تصميم وتطوير مخصصة حسب احتياجات كل عميل.</div>
+          <div class="project-features">
+            <div class="feature">تصميم UI/UX احترافي</div>
+            <div class="feature">تطوير Frontend متقدم</div>
+            <div class="feature">تحسينات الأداء</div>
+            <div class="feature">دعم ما بعد الإطلاق</div>
+          </div>
+          <a href="https://wa.me/201102418143" class="project-btn">طلب مشروع</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border-radius: var(--radius); border: 1px solid var(--border-light);">
+      <h3 style="color: var(--text); margin-bottom: 12px;">محتاج مشروع ويب احترافي؟</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 28px;">كل مشروع مصمم مع التركيز على الأداء والتحويل — ليس فقط المظهر.</p>
+      <a href="https://wa.me/201102418143?text=محتاج%20مشروع%20ويب" class="btn btn-primary">تواصل للاستشارة</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p>© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+    <p style="margin-top: 16px; font-size: 0.9rem;">
+      <a href="index.html">الرئيسية</a> | 
+      <a href="portfolio.html">البورتفوليو</a> | 
+      <a href="testimonials.html">آراء العملاء</a> | 
+      <a href="https://wa.me/201102418143">تواصل</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
