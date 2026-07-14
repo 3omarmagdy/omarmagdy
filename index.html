@@ -652,7 +652,7 @@ nav a:hover {
 footer {
   background: var(--surface);
   border-top: 1px solid var(--border-light);
-  padding: 40px 20px;
+  padding: 60px 20px;
   text-align: center;
   color: var(--text-secondary);
 }
@@ -660,11 +660,15 @@ footer {
 footer a {
   color: var(--gold);
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
 footer a:hover {
   color: var(--gold-light);
+  background: rgba(184, 134, 11, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -709,6 +713,7 @@ footer a:hover {
   <ul>
     <li><a href="#hero">الرئيسية</a></li>
     <li><a href="#services">الخدمات</a></li>
+    <li><a href="portfolio.html">البورتفوليو</a></li>
     <li><a href="#results">النتائج</a></li>
     <li><a href="#about">عني</a></li>
     <li><a href="#faq">الأسئلة</a></li>
@@ -724,6 +729,7 @@ footer a:hover {
       
       <div class="hero-cta">
         <a href="https://wa.me/201102418143?text=مرحبا%20عمر%20محتاج%20أتكلم%20معاك%20بخصوص%20إعلاناتي" class="btn btn-primary">ابدأ الآن</a>
+        <a href="portfolio.html" class="btn btn-secondary">شوف البورتفوليو</a>
         <a href="#about" class="btn btn-secondary">اعرف أكتر</a>
       </div>
 
@@ -884,9 +890,10 @@ footer a:hover {
       </div>
     </div>
 
-    <div style="text-align: center; margin-top: 48px;">
-      <p style="color: var(--text-secondary); margin-bottom: 20px;">شايف أكتر؟ البورتفوليو الكامل موجود هنا:</p>
-      <a href="portfolio.html" class="btn btn-secondary">شوف كل النتائج</a>
+    <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border-radius: var(--radius); border: 1px solid var(--border-light);">
+      <h3 style="color: var(--text); margin-bottom: 12px;">محتاج تشوف أكتر من كده؟</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 28px;">البورتفوليو الكامل فيه +50 حملة موثقة من مختلف القطاعات</p>
+      <a href="portfolio.html" class="btn btn-primary" style="font-size: 1.15rem; padding: 16px 40px;">🎯 شوف البورتفوليو الكامل</a>
     </div>
   </div>
 </section>
@@ -1084,13 +1091,34 @@ footer a:hover {
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
-    <p>© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
-    <p style="margin-top: 16px; font-size: 0.95rem;">
-      <a href="https://instagram.com/Omar.Growth.Hub" style="margin: 0 12px;">Instagram</a> •
-      <a href="https://facebook.com/Omar.Growth.Hub" style="margin: 0 12px;">Facebook</a> •
-      <a href="https://linkedin.com/in/omargrowthhub" style="margin: 0 12px;">LinkedIn</a> •
-      <a href="mailto:omarmarketing533@gmail.com" style="margin: 0 12px;">Email</a>
-    </p>
+    <div style="margin-bottom: 32px;">
+      <h3 style="color: var(--text); margin-bottom: 16px;">تابعني على السوشيال ميديا</h3>
+      <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://instagram.com/Omar.Growth.Hub" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='var(--gold)'">
+          📸 Instagram
+        </a>
+        <a href="https://facebook.com/Omar.Growth.Hub" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='var(--gold)'">
+          👨‍💼 Facebook
+        </a>
+        <a href="https://linkedin.com/in/omargrowthhub" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='var(--gold)'">
+          💼 LinkedIn
+        </a>
+        <a href="mailto:omarmarketing533@gmail.com" style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold-light)'" onmouseout="this.style.color='var(--gold)'">
+          ✉️ Email
+        </a>
+      </div>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 32px 0;">
+
+    <div style="text-align: center;">
+      <p style="color: var(--text-secondary); margin-bottom: 12px;">© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+      <p style="color: var(--muted); font-size: 0.9rem;">
+        <a href="portfolio.html" style="color: var(--gold); font-weight: 600; transition: color 0.3s ease;">شوف البورتفوليو الكامل</a> | 
+        <a href="#faq" style="color: var(--gold); font-weight: 600; transition: color 0.3s ease;">الأسئلة الشائعة</a> | 
+        <a href="https://wa.me/201102418143" style="color: var(--gold); font-weight: 600; transition: color 0.3s ease;">تواصل واتساب</a>
+      </p>
+    </div>
   </div>
 </footer>
 
