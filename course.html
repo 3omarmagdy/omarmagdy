@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Buyer from Scratch to Professional | كورس احترافي مع Omar Magdy</title>
+<meta name="description" content="كورس Media Buying احترافي من الصفر للاحتراف - 4 جلسات تدريبية مباشرة - تعلم Meta Ads من متخصص بـ 5 سنوات خبرة">
+<meta name="theme-color" content="#B8860B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0B0B0B;
+  --dark: #111111;
+  --surface: #1A1A1A;
+  --gold: #B8860B;
+  --gold-light: #D4AF37;
+  --gold-bright: #E8C547;
+  --text: #F5F5F5;
+  --text-secondary: #CACACA;
+  --muted: #8B8B8B;
+  --border: rgba(184, 134, 11, 0.15);
+  --border-light: rgba(184, 134, 11, 0.08);
+  --radius: 12px;
+  --font: 'Cairo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.8;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 800px 600px at 10% 5%, rgba(184, 134, 11, 0.08), transparent),
+    radial-gradient(ellipse 600px 500px at 90% 95%, rgba(184, 134, 11, 0.05), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.2; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; line-height: 1.3; }
+p { font-size: 1.05rem; line-height: 1.8; }
+
+section { padding: 80px 20px; scroll-margin-top: 80px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+.eyebrow { display: block; font-size: 0.95rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.section-sub { color: var(--text-secondary); max-width: 680px; margin: 16px 0 48px 0; font-size: 1.1rem; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184, 134, 11, 0.4);
+}
+
+.btn-secondary {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: rgba(184, 134, 11, 0.1);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 5%;
+  background: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  padding: 120px 20px 80px;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  color: var(--text);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.hero h1 .gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.card {
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.course-sessions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.session {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gold);
+  transition: all 0.3s ease;
+}
+
+.session:hover {
+  border-left-color: var(--gold-bright);
+  transform: translateX(8px);
+}
+
+.session-number {
+  color: var(--gold-light);
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.session-title {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.session-topics {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.course-price {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(184, 134, 11, 0.05) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+}
+
+.course-price h3 {
+  margin-bottom: 16px;
+  color: var(--gold-light);
+}
+
+.price-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.price-sub {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+}
+
+.benefits-list {
+  text-align: right;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefit {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  padding-right: 24px;
+  position: relative;
+}
+
+.benefit::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-light);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+  background: rgba(184, 134, 11, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  section { padding: 50px 16px; }
+  .course-content { grid-template-columns: 1fr; }
+  .course-price { position: static; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Omar Growth Hub</div>
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="portfolio.html">البورتفوليو</a></li>
+    <li><a href="projects.html">الـ Web Projects</a></li>
+    <li><a href="course.html" style="color: var(--gold);">الكورس</a></li>
+    <li><a href="testimonials.html">آراء العملاء</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <h1>Media Buyer <span class="gold">from Scratch</span> to <span class="gold">Professional</span></h1>
+      <p>كورس شامل يأخذك من الصفر للاحتراف في مجال Media Buying. 4 جلسات تدريبية مباشرة مع متخصص بـ 5 سنوات خبرة حقيقية — تعلم Meta Ads، Targeting، Creative، وأداء الحملات من الأساس.</p>
+      
+      <div class="hero-cta">
+        <a href="https://wa.me/201102418143?text=محتاج%20أسجل%20في%20كورس%20Media%20Buying" class="btn btn-primary">سجل الآن</a>
+        <a href="#course" class="btn btn-secondary">اعرف أكتر</a>
+      </div>
+
+      <div class="hero-badge">🎓 4 جلسات بـ 2 ساعة لكل جلسة</div>
+      <div class="hero-badge">👨‍🏫 تدريب مباشر مع محترف</div>
+      <div class="hero-badge">📊 تطبيق عملي على حملات حقيقية</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS COURSE -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">لماذا هذا الكورس؟</span>
+    <h2>ما الذي ستتعلمه؟</h2>
+    <p class="section-sub">كورس مصمم ليعطيك المهارات العملية والحقيقية اللي تحتاجها عشان تشتغل ميديا باير محترف:</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Ads Manager من الصفر</h3>
+        <p>تعلم واجهة Meta Ads Manager بكل تفاصيلها — من الحساب للتقارير المتقدمة</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Targeting والجمهور</h3>
+        <p>كيفية اختيار الجمهور الصح، الـ interests، السلوك، والـ demographics</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📸</div>
+        <h3>Creative والمحتوى</h3>
+        <p>ما الذي يجعل الإعلان جاذب — صور، فيديو، نص، والـ CTA الصحيح</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>القراءة والتحليل</h3>
+        <p>فهم الـ metrics، ROI، CPC، CPM، وكيفية قراءة التقارير</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>التحسينات والتعديلات</h3>
+        <p>كيفية تحسين الحملات — Scaling، Budget، Bidding strategies</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>العميل والاحترافية</h3>
+        <p>التعامل مع العميل، التقارير، الشفافية، والمتابعة المستمرة</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE DETAILS -->
+<section id="course">
+  <div class="wrap">
+    <span class="eyebrow">تفاصيل الكورس</span>
+    <h2>محتوى 4 جلسات مكثفة</h2>
+    <p class="section-sub">كل جلسة مصممة لتعطيك مهارة محددة — نظري وعملي معاً:</p>
+
+    <div class="course-content">
+      <div class="course-sessions">
+        <div class="session">
+          <div class="session-number">الجلسة 01</div>
+          <div class="session-title">أساسيات Meta Ads</div>
+          <div class="session-topics">
+            • إنشاء حساب وتوصيل الدومين<br>
+            • فهم Ads Manager<br>
+            • إعداد Pixel والـ Events<br>
+            • الفرق بين Facebook و Instagram Ads
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session-number">الجلسة 02</div>
+          <div class="session-title">إنشاء حملة ناجحة</div>
+          <div class="session-topics">
+            • Targeting والجمهور المناسب<br>
+            • Budget وBidding strategies<br>
+            • Placement والـ Placements<br>
+            • Testing والـ A/B Testing
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session-number">الجلسة 03</div>
+          <div class="session-title">Creative والمحتوى</div>
+          <div class="session-topics">
+            • ما الذي يجعل الإعلان ناجح<br>
+            • Copy Writing وكتابة الـ CTA<br>
+            • الصور والفيديو الفعّال<br>
+            • Testing والـ optimization
+          </div>
+        </div>
+
+        <div class="session">
+          <div class="session-number">الجلسة 04</div>
+          <div class="session-title">التحليل والتحسين</div>
+          <div class="session-topics">
+            • قراءة الـ Reports والـ Metrics<br>
+            • ROI و CPC وـ CPM<br>
+            • Scaling والـ growth<br>
+            • الـ Case studies الحقيقية
+          </div>
+        </div>
+      </div>
+
+      <div class="course-price">
+        <h3>السعر والمزايا</h3>
+        <div class="price-text">500 EGP</div>
+        <div class="price-sub">الكورس الكامل - 4 جلسات</div>
+        
+        <div class="benefits-list">
+          <div class="benefit">تسجيل جميع الجلسات</div>
+          <div class="benefit">Materials وملاحظات كاملة</div>
+          <div class="benefit">دعم بعد الكورس</div>
+          <div class="benefit">نموذج عملي من حملة حقيقية</div>
+          <div class="benefit">شهادة إنهاء الكورس</div>
+          <div class="benefit">دردشة لسؤال الأسئلة</div>
+        </div>
+
+        <a href="https://wa.me/201102418143?text=محتاج%20أسجل%20في%20كورس%20Media%20Buying" class="btn btn-primary" style="width: 100%; display: block;">ابدأ الكورس الآن</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">متخرجو الكورس</span>
+    <h2>هل الكورس فعلاً يستحق؟</h2>
+    <p class="section-sub">آراء من ناس فعلاً أخذوا الكورس وبدأوا يشتغلوا:</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3>⭐ أيمن محمد</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 12px; font-style: italic;">"الكورس غيّر فهمي للإعلانات بشكل كامل — بدأت أشتغل مع عملاء وبقول الحمد لله على النتايج"</p>
+        <p style="color: var(--muted); font-size: 0.85rem;">متخرج - يعمل بشكل مستقل</p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ سارة علي</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 12px; font-style: italic;">"شرح عمر واضح جداً والتطبيق العملي خلاني أفهم كل جزء — محتاج بإذن الله أشتغل مع عملاء"</p>
+        <p style="color: var(--muted); font-size: 0.85rem;">متخرجة - في الطريق</p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ محمود حسن</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 12px; font-style: italic;">"من أول جلسة لآخر جلسة اتعلمت حاجات ما كنت أعرفها — الكورس ممتاز وفعال"</p>
+        <p style="color: var(--muted); font-size: 0.85rem;">متخرج - بدأ يشتغل</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div style="background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border: 1px solid var(--border-light); border-radius: var(--radius); padding: 64px 40px; text-align: center; margin: 60px 20px 0;">
+  <div class="wrap">
+    <h2 style="margin-bottom: 20px;">جاهز تبدأ رحلتك في Media Buying؟</h2>
+    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px;">الكورس مخصص للناس اللي جادة وفعلاً تحب تتعلم — مش معاك وقت = حاجة غير الكورس.</p>
+    <a href="https://wa.me/201102418143?text=محتاج%20أسجل%20في%20كورس%20Media%20Buying" class="btn btn-primary">سجل الآن - 500 EGP فقط</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p>© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+    <p style="margin-top: 16px; font-size: 0.9rem;">
+      <a href="index.html">الرئيسية</a> | 
+      <a href="portfolio.html">البورتفوليو</a> | 
+      <a href="projects.html">الـ Web Projects</a> | 
+      <a href="testimonials.html">آراء العملاء</a> | 
+      <a href="https://wa.me/201102418143">تواصل</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
