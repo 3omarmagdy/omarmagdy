@@ -150,6 +150,25 @@ nav a:hover {
   font-size: 0.85rem;
 }
 
+.testimonial-image-card {
+  grid-column: 1 / -1;
+  position: relative;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.testimonial-image-card img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+}
+
 footer {
   background: var(--surface);
   border-top: 1px solid var(--border-light);
@@ -195,7 +214,7 @@ footer a:hover {
 <section>
   <div class="wrap">
     <h1>آراء العملاء</h1>
-    <p class="section-sub">شهادات حقيقية من عملاء حقيقيين شافوا نتائج في حملاتهم</p>
+    <p class="section-sub">شهادات حقيقية من عملاء حقيقيين — رسائل WhatsApp مباشرة من العملاء</p>
   </div>
 </section>
 
@@ -203,81 +222,84 @@ footer a:hover {
 <section>
   <div class="wrap">
     <div class="testimonials-grid">
-      <div class="testimonial-card" style="grid-column: 1 / -1; position: relative; padding: 0; border: none; background: transparent; overflow: hidden; border-radius: var(--radius);">
-        <div style="position: relative; width: 100%; height: 400px; background: var(--surface); border: 1px solid var(--border-light); border-radius: var(--radius); overflow: hidden;">
-          <img src="images/testimonial-elite-residence.jpg" alt="شهادة عميل - زيادة الربح 30%" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-          <div style="position: absolute; top: 16px; right: 16px; background: rgba(11, 11, 11, 0.9); backdrop-filter: blur(10px); padding: 8px 14px; border-radius: 6px; border: 1px solid var(--gold); color: var(--gold); font-size: 0.85rem; font-weight: 700;">
-            ✅ شهادة من العميل
-          </div>
-        </div>
-        <div style="padding: 16px 0; text-align: center;">
-          <div class="testimonial-role" style="margin-top: 12px;">زيادة صافي الربح بنسبة 30%</div>
-        </div>
-      </div>
-
+      
+      <!-- د. رضا صبحي -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الحمد لله 3 حجوزات من امبارح للنهارده — شكراً يا بشمهندس على الاهتمام</div>
-        <div class="testimonial-author">د. حسين</div>
-        <div class="testimonial-role">عيادة نسائية — الإسكندرية</div>
+        <div class="testimonial-text">الحمد لله 3 حجوزات من أمبارح للنهاره شكراً يا بشمهندس على الاهتمام</div>
+        <div class="testimonial-author">د. رضا صبحي</div>
+        <div class="testimonial-role">استشاري نساء وتوليد</div>
       </div>
 
+      <!-- Mory من الإمارات -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">حالة جديدة جت معايا من التمويل الأول وحالة تانية من نفس الحملة — النتائج حقيقية 100%</div>
+        <div class="testimonial-text">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</div>
+        <div class="testimonial-author">Mory</div>
+        <div class="testimonial-role">صاحبة براند أونلاين</div>
+      </div>
+
+      <!-- د. رضا - حالات ولادة -->
+      <div class="testimonial-card">
+        <div class="rating">★★★★★</div>
+        <div class="testimonial-quote">"</div>
+        <div class="testimonial-text">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</div>
         <div class="testimonial-author">د. رضا صبحي</div>
         <div class="testimonial-role">استشاري توليد — مصر الجديدة</div>
       </div>
 
+      <!-- عميلة Clinic -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الحمد لله 6 حالات ولادة و2 كشف جديد من أول ميزانية — شاطر جداً يا عمر</div>
-        <div class="testimonial-author">د. متخصص</div>
-        <div class="testimonial-role">عيادة نسائية — القاهرة</div>
+        <div class="testimonial-text">الحمد لله الاستشيشنت بلفتني ب 3 سيشن بس اونلاين — تمام يا دكتور</div>
+        <div class="testimonial-author">عميلة Clinic</div>
+        <div class="testimonial-role">خدمات طبية</div>
       </div>
 
+      <!-- النتيجة الكبيرة -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">شكراً جداً لحضرتك على المعلومات القيمة — فعلاً فرقت معايا في الإعلان والنتائج</div>
-        <div class="testimonial-author">صاحب براند</div>
-        <div class="testimonial-role">استشارات عامة</div>
+        <div class="testimonial-text">Thank you, Mr. Omar, for your hard work and dedication. Your professionalism and expertise have played a significant role in delivering promising campaign results.</div>
+        <div class="testimonial-author">عميل إنجليزي</div>
+        <div class="testimonial-role">شركة عالمية</div>
       </div>
 
-      <div class="testimonial-card">
-        <div class="rating">★★★★★</div>
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">أول مرة أشتغل مع ميديا باير صادق — بدون وعود كاذبة ولا أرقام مختلقة، كل حاجة موثقة</div>
-        <div class="testimonial-author">مدير تسويق</div>
-        <div class="testimonial-role">شركة خدمات</div>
+      <!-- صورة الواتساب الأولى -->
+      <div class="testimonial-image-card">
+        <img src="images/testimonial-elite-residence.jpg" alt="شهادة من عميل Elite Residence - زيادة الربح 30%" loading="lazy">
       </div>
 
+      <!-- الرسالة الطويلة من د. رضا -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">النتيجة اللي وعدني فيها جابت أكتر — عمل احترافي جداً وأرقام موثقة 100%</div>
-        <div class="testimonial-author">صاحب متجر إلكتروني</div>
-        <div class="testimonial-role">تجارة — أونلاين</div>
+        <div class="testimonial-text">صباح الخير يا هندسه شكراً جداً لحضرتك الحجات اللي حضرتك قولتي عليها فعلاً فرقت جداً في الإعلان لك جزيل الشكر عارفه والله انني تعبيك معايا الفترة اللي فاتت وبصراحة كنت قلقان لأن فعلاً حصلت معايا عمليات نصب كتير قبل ما أوصل لحضرتك فعلاً حصل معايا عمليات نصب كتير ما أوصل لحضرتك</div>
+        <div class="testimonial-author">د. رضا صبحي</div>
+        <div class="testimonial-role">استشاري توليد</div>
       </div>
 
+      <!-- الرسالة من عميل ASC -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الاستشارات المستمرة والدعم اليومي خلاني أفهم أكتر عن الإعلانات والتقارير</div>
-        <div class="testimonial-author">عميل جديد</div>
-        <div class="testimonial-role">خدمات استشارية</div>
+        <div class="testimonial-text">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</div>
+        <div class="testimonial-author">صاحب متجر ASC</div>
+        <div class="testimonial-role">تجارة إلكترونية</div>
       </div>
 
+      <!-- حالات جديدة -->
       <div class="testimonial-card">
         <div class="rating">★★★★★</div>
         <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الشفافية الكاملة في التقارير والأرقام — أشوف الأرقام مباشرة كل أسبوع</div>
-        <div class="testimonial-author">عميل B2C</div>
-        <div class="testimonial-role">خدمات تجارية</div>
+        <div class="testimonial-text">في حالة جديدة و2 برده من طوارئ نبض الجنين وحش وداخله في تسمم حمل من أول تمويل انت عملته</div>
+        <div class="testimonial-author">د. رضا صبحي</div>
+        <div class="testimonial-role">استشاري توليد</div>
       </div>
+
     </div>
   </div>
 </section>
