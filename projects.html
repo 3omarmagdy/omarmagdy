@@ -121,12 +121,12 @@ nav a:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 40px;
   margin-top: 48px;
 }
 
-.project-card {
+.case-card {
   background: var(--surface);
   border: 1px solid var(--border-light);
   border-radius: var(--radius);
@@ -134,85 +134,93 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
+.case-card:hover {
   border-color: var(--gold);
-  box-shadow: 0 16px 40px rgba(184, 134, 11, 0.2);
+  box-shadow: 0 16px 48px rgba(184, 134, 11, 0.15);
 }
 
-.project-image {
+.case-thumb {
   width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1) 0%, rgba(184, 134, 11, 0.05) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(184, 134, 11, 0.05));
+  overflow: hidden;
+  position: relative;
 }
 
-.project-content {
-  padding: 24px;
+.case-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.project-type {
-  font-size: 0.85rem;
+.case-card:hover .case-thumb img {
+  transform: scale(1.05);
+}
+
+.case-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(184, 134, 11, 0.2);
+  border: 1px solid var(--gold);
   color: var(--gold);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  backdrop-filter: blur(10px);
 }
 
-.project-title {
-  font-size: 1.2rem;
+.case-content {
+  padding: 32px;
+}
+
+.case-card h3 {
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 12px;
 }
 
-.project-description {
+.case-card > p {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  margin-bottom: 20px;
-  line-height: 1.7;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
 
-.project-features {
+.case-meta {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
-.feature {
+.case-meta span {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  padding-left: 20px;
-  position: relative;
 }
 
-.feature::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--gold);
-  font-weight: 700;
-}
-
-.project-btn {
+.case-link {
   display: inline-block;
-  padding: 10px 20px;
-  background: rgba(184, 134, 11, 0.1);
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
   font-weight: 700;
   border-radius: 6px;
-  font-size: 0.95rem;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.project-btn:hover {
-  background: var(--gold);
-  color: var(--black);
+.case-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.4);
 }
 
 footer {
@@ -248,7 +256,8 @@ footer a:hover {
   <ul>
     <li><a href="index.html">الرئيسية</a></li>
     <li><a href="portfolio.html">البورتفوليو</a></li>
-    <li><a href="projects.html" style="color: var(--gold);">الـ Web Projects</a></li>
+    <li><a href="projects.html" style="color: var(--gold);">Web Projects</a></li>
+    <li><a href="services.html">الخدمات</a></li>
     <li><a href="course.html">الكورس</a></li>
     <li><a href="testimonials.html">آراء العملاء</a></li>
   </ul>
@@ -270,56 +279,59 @@ footer a:hover {
     <p class="section-sub">كل مشروع بُني بهدف واضح: تحويل أفضل ونتائج قابلة للقياس</p>
 
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-image">👨‍⚕️</div>
-        <div class="project-content">
-          <div class="project-type">لاندينج بيج</div>
-          <div class="project-title">عيادة د. أحمد نصار</div>
-          <div class="project-description">صفحة هبوط احترافية لعيادة توليد وأمراض نسائية مع نموذج حجوزات متقدم.</div>
-          <div class="project-features">
-            <div class="feature">تصميم responsive محترف</div>
-            <div class="feature">نموذج حجوزات متقدم</div>
-            <div class="feature">محسّن SEO</div>
-            <div class="feature">تقرير تحليل زيارات</div>
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="images/ahmed-thumb.jpg" alt="د. أحمد نصار - عيادة توليد" loading="lazy" width="900" height="300">
+          <span class="case-tag">LANDING PAGE · MEDICAL</span>
+        </div>
+        <div class="case-content">
+          <h3>د. أحمد نصار — استشاري نساء وتوليد</h3>
+          <p>صفحة هبوط احترافية لعيادة دكتور أحمد نصار بمدينة نصر والمعادي، مصممة خصيصاً لتحويل الزوار لحجوزات فعلية. الصفحة تتضمن معلومات كاملة عن الخدمات، نموذج حجز ذكي، وتقارير أداء مفصلة.</p>
+          <div class="case-meta">
+            <span>HTML/CSS</span>
+            <span>نموذج حجز متقدم</span>
+            <span>SEO محسّن</span>
+            <span>Fully Responsive</span>
           </div>
-          <a href="https://github.com/3omarmagdy/dr-ahmed-nassar-landing" target="_blank" class="project-btn">شوف على GitHub</a>
+          <a href="https://3omarmagdy.github.io/dr-ahmed-nassar-landing/" target="_blank" class="case-link">شاهد الصفحة الحية ←</a>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-image">👩‍⚕️</div>
-
-        <div class="project-content">
-          <div class="project-type">موقع احترافي</div>
-          <div class="project-title">د. رضا صبحي</div>
-          <div class="project-description">موقع احترافي متكامل لاستشاري أمراض نساء وتوليد مع نظام حجوزات ومعرض صور احترافي.</div>
-          <div class="project-features">
-            <div class="feature">تصميم احترافي وفخم</div>
-            <div class="feature">نظام حجوزات متقدم</div>
-            <div class="feature">معرض صور وفيديو</div>
-            <div class="feature">تحسينات SEO كاملة</div>
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="images/reda-thumb.jpg" alt="د. رضا صبحي - عيادة نساء وتوليد" loading="lazy" width="900" height="300">
+          <span class="case-tag">LANDING PAGE · MEDICAL · META ADS</span>
+        </div>
+        <div class="case-content">
+          <h3>د. رضا صبحي — نساء وتوليد وحقن مجهري</h3>
+          <p>صفحة هبوط كاملة لدكتورة رضا صبحي بمستشفى البشرى بمدينة نصر، مبنية خصيصاً لحملات Meta Ads مع تتبع Pixel كامل (Lead, Schedule, WhatsAppClick)، فورم حجز ذكي يفتح واتساب مباشرة، وسياسة خصوصية مطابقة لمتطلبات Meta.</p>
+          <div class="case-meta">
+            <span>Meta Pixel</span>
+            <span>نموذج حجز ذكي</span>
+            <span>WhatsApp Integration</span>
+            <span>Privacy Policy</span>
           </div>
-          <a href="https://dr-reda-sobhy.pages.dev" target="_blank" class="project-btn">زور الموقع</a>
+          <a href="https://dr-reda-sobhy.pages.dev/" target="_blank" class="case-link">شاهد الصفحة الحية ←</a>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-image">👩‍⚕️</div>
-        <div class="project-content">
-          <div class="project-type">موقع متخصص</div>
-          <div class="project-title">د. سمر الملا</div>
-          <div class="project-description">موقع متخصص لعيادة نفسية مع محتوى مميز وتصميم يعكس احترافية وثقة العميل.</div>
-          <div class="project-features">
-            <div class="feature">تصميم نفسي احترافي</div>
-            <div class="feature">محتوى متخصص وشامل</div>
-            <div class="feature">واجهة سهلة الاستخدام</div>
-            <div class="feature">نموذج تواصل متقدم</div>
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="images/dr-samar-almulla-thumb.jpg" alt="د. سمر الملا - عيادة نفسية" loading="lazy" width="900" height="300">
+          <span class="case-tag">WEBSITE · MENTAL HEALTH · UI/UX</span>
+        </div>
+        <div class="case-content">
+          <h3>د. سمر الملا — أخصائية نفسية إكلينيكية</h3>
+          <p>موقع تعريفي كامل بالعربي (RTL) لعميلة في مجال الصحة النفسية، بهوية بصرية هادية (Sage Green، Terracotta، Beige) تعكس طبيعة التخصص. الموقع مبني بنموذج حجز جلسات مربوط مباشرة بالإيميل والواتساب، مع تتبع كامل للتحويلات عبر Meta Pixel.</p>
+          <div class="case-meta">
+            <span>UI/UX + Copywriting</span>
+            <span>Meta Pixel</span>
+            <span>نموذج حجز جلسات</span>
+            <span>Vercel Deployment</span>
           </div>
-          <a href="https://dr-sammar-almulla-website-1.vercel.app/" target="_blank" class="project-btn">زور الموقع</a>
+          <a href="https://dr-sammar-almulla-website-1.vercel.app/" target="_blank" class="case-link">شاهد الصفحة الحية ←</a>
         </div>
       </div>
-
-
     </div>
 
     <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border-radius: var(--radius); border: 1px solid var(--border-light);">
