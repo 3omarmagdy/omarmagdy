@@ -3,16 +3,22 @@
    cache-first for static assets (images/icons/fonts),
    with an offline fallback page. */
 
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v10';
 const CACHE_NAME = `omar-growth-hub-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
   './',
   './index.html',
   './portfolio.html',
+  './case-study.html',
+  './data/campaign-inventory.json',
+  './js/case-study.js',
+  './js/campaign-portfolio.js?v=10',
+  './js/selected-campaign.js',
   './media-buying-course.html',
   './offline.html',
   './manifest.json',
+  './css/design-system.css',
   './images/photo-1.jpg',
   './images/photo-2.jpg',
   './icons/icon-192x192.png',
@@ -66,6 +72,15 @@ self.addEventListener('fetch', (event) => {
           caches.match(request).then((cached) => cached || caches.match('./offline.html'))
         )
     );
+    return;
+  }
+
+  // Network-first campaign inventory refresh, with offline cache fallback.
+  if (new URL(request.url).pathname.endsWith('/data/campaign-inventory.json')) {
+    event.respondWith(fetch(request, { cache: 'no-store' }).then((response) => {
+      if (response && response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(request, response.clone()));
+      return response;
+    }).catch(() => caches.match(request)));
     return;
   }
 

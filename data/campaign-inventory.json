@@ -1,0 +1,2840 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignRecords": [
+    {
+      "id": "campaign-001",
+      "title": "DR.Reda sobhy - Active Engagement",
+      "industry": "طبي · نساء وتوليد · محادثات",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "174"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 10.83"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,884.05"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-002",
+      "title": "Cosmetics & Skincare - Active Engagement",
+      "industry": "تجارة إلكترونية · تجميل ورعاية",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "611"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 18.00"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 11,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-003",
+      "title": "Active Sales - حملة مبيعات عالية الأداء",
+      "industry": "تجارة إلكترونية · مبيعات",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "4,300"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 0.70"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,020"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-004",
+      "title": "اختبارات سلامة الجنين",
+      "industry": "طبي · نساء وتوليد",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "346"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 8.67"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-005",
+      "title": "الولادة أسهل مع د. أحمد فايز نصار",
+      "industry": "طبي · نساء وتوليد",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "partial",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "263"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 12.55"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,300"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-006",
+      "title": "حملة متابعين — عيادة طبية",
+      "industry": "متابعين وتفاعل صفحة",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "متابعين جدد",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "متابعين جدد",
+          "value": "300"
+        },
+        {
+          "label": "تكلفة المتابع",
+          "value": "EGP 1.35"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 404"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-007",
+      "title": "جرح القيصرية وأسباب التهابه",
+      "industry": "طبي · نساء وتوليد",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "272"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.03"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-008",
+      "title": "حملة توعية طبية",
+      "industry": "طبي · توعية صحية",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "289"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 10.90"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,150"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-009",
+      "title": "متابعة حالات الحمل",
+      "industry": "طبي · حمل ومتابعة",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "100"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 12.38"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,238"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-010",
+      "title": "حملة توعية طبية إضافية",
+      "industry": "طبي",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "47"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 15.63"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 734"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-011",
+      "title": "حملة عيادة — دفعة ثانية",
+      "industry": "طبي",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "176"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 10.88"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,915"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-012",
+      "title": "حملة متابعة عيادة طبية",
+      "industry": "طبي",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "140"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 8.02"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,122"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-013",
+      "title": "نزيف ما بعد الولادة — توعية طبية",
+      "industry": "طبي · نساء وتوليد",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "255"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 12.57"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,204"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-014",
+      "title": "حملة توعية طبية — عيادة أخرى",
+      "industry": "طبي",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "52"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 13.14"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 683"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-015",
+      "title": "متابعة حملة طبية شهرية",
+      "industry": "طبي · حملة مستمرة",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "175"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 10.83"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,894"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-016",
+      "title": "الولادة بدون ألم — منشور توعوي",
+      "industry": "طبي · توعية طبية",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "305"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 9.84"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-017",
+      "title": "حملة تفاعل — عيادة نساء وتوليد",
+      "industry": "طبي · د. رضا صبحي",
+      "category": "🩺 القطاع الطبي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "138"
+        },
+        {
+          "label": "تكلفة النتيجة",
+          "value": "EGP 8.07"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,110"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-018",
+      "title": "ASC - UGC2 - 5 Dec Campaign",
+      "industry": "تجارة إلكترونية · مشتريات موقع",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "partial",
+      "featured": true,
+      "primaryMetric": "مشتريات من الموقع",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": "Website purchases",
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "مشتريات من الموقع",
+          "value": "1.3K"
+        },
+        {
+          "label": "تكلفة المشتراة",
+          "value": "EGP 86.90"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 110.88K"
+        }
+      ],
+      "relatedTestimonials": [
+        {
+          "quote": "ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة",
+          "author": "صاحب متجر ASC",
+          "role": "تجارة إلكترونية"
+        }
+      ]
+    },
+    {
+      "id": "campaign-019",
+      "title": "25 JUNE | ABO | Testing Pans",
+      "industry": "تجارة إلكترونية · منتجات اختبار",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "مشتريات من الموقع",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "مشتريات من الموقع",
+          "value": "42"
+        },
+        {
+          "label": "تكلفة المشتراة",
+          "value": "EGP 47.61"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,999.78"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-020",
+      "title": "Campaign - ABO - Testing",
+      "industry": "تجارة إلكترونية · اختبار منتجات",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "مشتريات من الموقع",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "مشتريات من الموقع",
+          "value": "34"
+        },
+        {
+          "label": "تكلفة المشتراة",
+          "value": "EGP 56.71"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,928.05"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-021",
+      "title": "حملة تقسيط موبايلات",
+      "industry": "تجارة إلكترونية · تقسيط",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "partial",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "7,639"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 0.43"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,317"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-022",
+      "title": "تقسيط الموبيلات — عروض المواسم",
+      "industry": "تجارة إلكترونية · حملة موسمية",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,391"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 1.29"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,795"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-023",
+      "title": "باكدج 1700 — عرض منتج",
+      "industry": "تجارة إلكترونية",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "124"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 5.36"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 665"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-024",
+      "title": "حملة تحويل عملاء",
+      "industry": "تجارة إلكترونية · تحويل مبيعات",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "118"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.14"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,315"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-025",
+      "title": "حملة تقسيط موبايلات 2",
+      "industry": "تجارة إلكترونية · تقسيط",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,078"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 0.49"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 523"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-026",
+      "title": "حملة تفاعل — متجر أزياء",
+      "industry": "أزياء · موضة",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "93"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 7.53"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 700"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-027",
+      "title": "حملة تفاعل — متجر أزياء (دفعة ثانية)",
+      "industry": "أزياء · موضة",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "92"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 6.46"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 594"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-028",
+      "title": "حملة تفاعل — متجر أزياء (دفعة ثالثة)",
+      "industry": "أزياء · موضة",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "62"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.56"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 717"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-029",
+      "title": "حملة تفاعل — متجر أزياء (دفعة رابعة)",
+      "industry": "أزياء · موضة",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "101"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 7.78"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 786"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-030",
+      "title": "نمو صفحة براند عطور",
+      "industry": "عطور · نمو الصفحة",
+      "category": "🛍️ التجارة الإلكترونية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "مشاهدات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "مشاهدات",
+          "value": "16.9M"
+        },
+        {
+          "label": "تفاعلات على المحتوى",
+          "value": "139.5K"
+        },
+        {
+          "label": "متابعين جدد",
+          "value": "48.3K"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-031",
+      "title": "حملة تفاعل — مطعم بالجيزة",
+      "industry": "مطاعم وأطعمة",
+      "category": "🍽️ المطاعم والأطعمة",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "576"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 5.94"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,421"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-032",
+      "title": "حملة تفاعل — منتجات تجميل",
+      "industry": "تجميل · منتجات عناية",
+      "category": "💄 التجميل والعناية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,382"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 7.03"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 9,717"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-033",
+      "title": "حملة تفاعل — إطلاق منتج جديد",
+      "industry": "تجميل · منتجات عناية",
+      "category": "💄 التجميل والعناية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "111"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 3.06"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 340"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-034",
+      "title": "حملة تفاعل — تجديد مستمر",
+      "industry": "تجميل · منتجات عناية",
+      "category": "💄 التجميل والعناية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "663"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 15.13"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 10,029"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-035",
+      "title": "حملة تفاعل — موسم جديد",
+      "industry": "تجميل · منتجات عناية",
+      "category": "💄 التجميل والعناية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "147"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 21.98"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,231"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-036",
+      "title": "حملة تفاعل — حجم كبير",
+      "industry": "تجميل · عناية بالأظافر",
+      "category": "💄 التجميل والعناية",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "963"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.44"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 11,019"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-037",
+      "title": "حملة بوكس ليلة الوقفة",
+      "industry": "مناسبات · هدايا",
+      "category": "💍 المناسبات والأفراح",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "394"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 2.83"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,115"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-038",
+      "title": "مجموعة العناية الكاملة للعرايس",
+      "industry": "مستلزمات عرايس",
+      "category": "💍 المناسبات والأفراح",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "303"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 3.27"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 990"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-039",
+      "title": "باكدج العروسة",
+      "industry": "مناسبات · مستلزمات عروسة",
+      "category": "💍 المناسبات والأفراح",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "521"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 3.73"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,943"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-040",
+      "title": "حملة رسائل — خدمات أفراح",
+      "industry": "مناسبات · أفراح",
+      "category": "💍 المناسبات والأفراح",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "118"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 14.16"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,671"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-041",
+      "title": "حملة رسائل — منتجات عناية",
+      "industry": "مستلزمات عناية",
+      "category": "💍 المناسبات والأفراح",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "635"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 6.30"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 4,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-042",
+      "title": "مدينة Elm Tree — مرحلة جديدة",
+      "industry": "عقارات · السعودية",
+      "category": "🏡 العقارات — السوق السعودي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "عملاء محتملين (Leads)",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": "عقارات · السعودية",
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "عملاء محتملين (Leads)",
+          "value": "100"
+        },
+        {
+          "label": "تكلفة العميل المحتمل",
+          "value": "EGP 129.97"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 12,997"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-043",
+      "title": "حملة عملاء محتملين عقارية",
+      "industry": "عقارات · السعودية",
+      "category": "🏡 العقارات — السوق السعودي",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "عملاء محتملين (Leads)",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": "عقارات · السعودية",
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "عملاء محتملين (Leads)",
+          "value": "27"
+        },
+        {
+          "label": "تكلفة العميل المحتمل",
+          "value": "EGP 299.99"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 8,100"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-044",
+      "title": "Elite Residence Compound — تحويلات مبيعات",
+      "industry": "عقارات · مصر · توليد عملاء",
+      "category": "🏘️ العقارات — السوق المصري",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "عملاء محتملين (Leads)",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": "عقارات · مصر · توليد عملاء",
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "عملاء محتملين (Leads)",
+          "value": "87"
+        },
+        {
+          "label": "تكلفة العميل المحتمل",
+          "value": "EGP 287.36"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 25,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-045",
+      "title": "KIMY Residence | New Cairo — توليد محادثات",
+      "industry": "عقارات · مصر · محادثات",
+      "category": "🏘️ العقارات — السوق المصري",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت (Messaging)",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": "عقارات · مصر · محادثات",
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت (Messaging)",
+          "value": "91"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 287.36"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 25,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-046",
+      "title": "حملة رحلات وكامبينج",
+      "industry": "سفر وسياحة",
+      "category": "✈️ السفر والسياحة",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "336"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 2.99"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,003"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-047",
+      "title": "اختيار الأمهات الصح",
+      "industry": "أطفال وأمومة",
+      "category": "👶 الأطفال والأمومة",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "44"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 22.73"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-048",
+      "title": "15 MAY | Profile Visit",
+      "industry": "حملة زيارات Instagram · ملف شخصي",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "زيارات ملف الصفحة",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "زيارات ملف الصفحة",
+          "value": "1.734K"
+        },
+        {
+          "label": "تكلفة الزيارة",
+          "value": "EGP 0.96"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,672.22"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-049",
+      "title": "New Traffic Campaign",
+      "industry": "حملة زيارات",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "نقرات على الرابط",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "نقرات على الرابط",
+          "value": "8,985"
+        },
+        {
+          "label": "تكلفة النقرة",
+          "value": "EGP 0.31"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 2,756"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-050",
+      "title": "حملة تفاعل — صفحة عملاء",
+      "industry": "تفاعل على المنشورات",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "تفاعلات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "تفاعلات",
+          "value": "14,944"
+        },
+        {
+          "label": "تكلفة التفاعل",
+          "value": "EGP 0.012"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 184"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-051",
+      "title": "Draw on Canvas | 6D | 4K",
+      "industry": "فنون · تجارة",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,100"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 1.92"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 2,109"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-052",
+      "title": "حملة شتاء — يناير",
+      "industry": "حملة موسمية بميزانية كبيرة",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,893"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 2.11"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 4,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-053",
+      "title": "حملة موسعة — ميزانية مرتفعة",
+      "industry": "حملة كبيرة الحجم",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "1,080"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.39"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 12,302"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-054",
+      "title": "الحملة الأولى — انطلاقة ناجحة",
+      "industry": "حملة إطلاق أولى لعميل جديد",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "239"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 12.55"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,000"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-055",
+      "title": "حملة تفاعل جديدة",
+      "industry": "عام · تفاعل",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "160"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 21.23"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 3,397"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-056",
+      "title": "حملة إعلانية جديدة بهدف التفاعل",
+      "industry": "عام · تفاعل",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "111"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 3.06"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 340"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-057",
+      "title": "حملة تفاعل — صفحة عميل",
+      "industry": "عام · تفاعل",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "153"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 11.24"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 1,720"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-058",
+      "title": "إدارة حملة شهر كامل",
+      "industry": "حملة شهرية كبيرة الحجم",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "partial",
+      "featured": false,
+      "primaryMetric": "محادثات بدأت",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "محادثات بدأت",
+          "value": "8,148"
+        },
+        {
+          "label": "تكلفة المحادثة",
+          "value": "EGP 2.07"
+        },
+        {
+          "label": "إجمالي الإنفاق",
+          "value": "EGP 16,878"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-059",
+      "title": "حملة تحويل متقدمة",
+      "industry": "🩺 عيادة نسائية",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "تكلفة التحويل",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "تكلفة التحويل",
+          "value": "12.55 EGP"
+        },
+        {
+          "label": "حالات جديدة",
+          "value": "79"
+        },
+        {
+          "label": "الميزانية",
+          "value": "991 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-060",
+      "title": "دفع بالتقسيط",
+      "industry": "📱 تطبيق موبايل",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "تكلفة المحادثة",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "تكلفة المحادثة",
+          "value": "0.43 EGP"
+        },
+        {
+          "label": "محادثات بدأت",
+          "value": "2,340"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,006 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-062",
+      "title": "حملة تفاعل",
+      "industry": "🚚 خدمات شحن",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "النقرات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "النقرات",
+          "value": "8,985"
+        },
+        {
+          "label": "تكلفة النقرة",
+          "value": "0.31 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "2,756 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-063",
+      "title": "حملة موسمية",
+      "industry": "👗 ملابس وأزياء",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "الإضافات للعربة",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "الإضافات للعربة",
+          "value": "156"
+        },
+        {
+          "label": "تكلفة الإضافة",
+          "value": "6.41 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-064",
+      "title": "حملة إطلاق منتج",
+      "industry": "💄 تجميل وعطور",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "الإضافات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "الإضافات",
+          "value": "128"
+        },
+        {
+          "label": "التكلفة",
+          "value": "7.81 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-065",
+      "title": "حملة حجوزات",
+      "industry": "🏥 عيادة أسنان",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "الحجوزات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "الحجوزات",
+          "value": "23"
+        },
+        {
+          "label": "تكلفة الحجز",
+          "value": "43.48 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-066",
+      "title": "حملة عملاء مؤهلين",
+      "industry": "🏢 عقارات",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "العملاء المؤهلين",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "العملاء المؤهلين",
+          "value": "18"
+        },
+        {
+          "label": "التكلفة",
+          "value": "55.56 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-067",
+      "title": "حملة تفاعل وزيارات",
+      "industry": "🍽️ مطعم",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "الزيارات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "الزيارات",
+          "value": "567"
+        },
+        {
+          "label": "تكلفة الزيارة",
+          "value": "1.76 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-068",
+      "title": "حملة مبيعات",
+      "industry": "💊 صيدلية أونلاين",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "الطلبات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "الطلبات",
+          "value": "89"
+        },
+        {
+          "label": "تكلفة الطلب",
+          "value": "11.24 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-069",
+      "title": "حملة تسجيلات",
+      "industry": "📚 معهد تعليمي",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "التسجيلات",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "التسجيلات",
+          "value": "34"
+        },
+        {
+          "label": "تكلفة التسجيل",
+          "value": "29.41 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    },
+    {
+      "id": "campaign-070",
+      "title": "حملة عملاء متوقعين",
+      "industry": "💻 خدمات تصميم",
+      "category": "📈 حملات عامة وحجم كبير",
+      "caseStudyStatus": "showcase",
+      "featured": false,
+      "primaryMetric": "العملاء المتوقعين",
+      "shortDescription": null,
+      "strategySummary": null,
+      "objective": null,
+      "platform": null,
+      "market": null,
+      "dateRange": null,
+      "metricContext": null,
+      "businessContext": null,
+      "challenge": null,
+      "diagnosis": null,
+      "audienceStrategy": null,
+      "creativeStrategy": null,
+      "funnelStrategy": null,
+      "campaignStructure": null,
+      "execution": null,
+      "optimization": null,
+      "learnings": null,
+      "metrics": [
+        {
+          "label": "العملاء المتوقعين",
+          "value": "26"
+        },
+        {
+          "label": "التكلفة",
+          "value": "38.46 EGP"
+        },
+        {
+          "label": "الميزانية",
+          "value": "1,000 EGP"
+        }
+      ],
+      "relatedTestimonials": []
+    }
+  ]
+}

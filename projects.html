@@ -3,8 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Projects | Omar Magdy - Landing Pages والمشاريع الويب</title>
-<meta name="description" content="مشاريع ويب احترافية ولاندينج بيجز محسّنة للتحويل. عيادات، براندات، متاجر إلكترونية">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<title>مشاريع الويب وصفحات الهبوط | Omar Magdy</title>
+<meta name="description" content="نماذج من مشاريع الويب وصفحات الهبوط التي أنشأها عمر مجدي لقطاعات تشمل العيادات والعلامات التجارية والمتاجر.">
+<link rel="canonical" href="https://3omarmagdy.github.io/omarmagdy/projects.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مشاريع الويب وصفحات الهبوط | Omar Magdy">
+<meta property="og:description" content="تصفّح نماذج من مشاريع الويب وصفحات الهبوط في قطاعات مختلفة.">
+<meta property="og:url" content="https://3omarmagdy.github.io/omarmagdy/projects.html">
+<meta property="og:image" content="https://3omarmagdy.github.io/omarmagdy/images/photo-1.jpg">
+<meta property="og:locale" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="مشاريع الويب | Omar Magdy">
+<meta name="twitter:description" content="نماذج من صفحات الهبوط ومشاريع الويب لقطاعات مختلفة.">
+<meta name="twitter:image" content="https://3omarmagdy.github.io/omarmagdy/images/photo-1.jpg">
 <meta name="theme-color" content="#B8860B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -246,21 +259,16 @@ footer a:hover {
   section { padding: 50px 16px; }
 }
 </style>
+<link rel="stylesheet" href="css/design-system.css">
 </head>
 
 <body>
 
 <!-- Navigation -->
-<nav>
-  <div class="logo">Omar Growth Hub</div>
-  <ul>
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="portfolio.html">البورتفوليو</a></li>
-    <li><a href="projects.html" style="color: var(--gold);">Web Projects</a></li>
-    <li><a href="services.html">الخدمات</a></li>
-    <li><a href="course.html">الكورس</a></li>
-    <li><a href="testimonials.html">آراء العملاء</a></li>
-  </ul>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a class="logo" href="index.html">Omar Magdy</a>
+  <ul><li><a href="index.html#selected-work">Work</a></li><li><a href="index.html#how-i-think">How I Work</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+  <a class="nav-cta" href="index.html#contact">Let's Talk</a>
 </nav>
 
 <!-- HERO -->
@@ -279,7 +287,7 @@ footer a:hover {
     <p class="section-sub">كل مشروع بُني بهدف واضح: تحويل أفضل ونتائج قابلة للقياس</p>
 
     <div class="projects-grid">
-      <div class="case-card">
+      <div class="case-card" id="project-ahmed">
         <div class="case-thumb">
           <img src="images/ahmed-thumb.jpg" alt="د. أحمد نصار - عيادة توليد" loading="lazy" width="900" height="300">
           <span class="case-tag">LANDING PAGE · MEDICAL</span>
@@ -297,7 +305,7 @@ footer a:hover {
         </div>
       </div>
 
-      <div class="case-card">
+      <div class="case-card" id="project-reda">
         <div class="case-thumb">
           <img src="images/reda-thumb.jpg" alt="د. رضا صبحي - عيادة نساء وتوليد" loading="lazy" width="900" height="300">
           <span class="case-tag">LANDING PAGE · MEDICAL · META ADS</span>
@@ -315,7 +323,7 @@ footer a:hover {
         </div>
       </div>
 
-      <div class="case-card">
+      <div class="case-card" id="project-samar">
         <div class="case-thumb">
           <img src="images/dr-samar-almulla-thumb.jpg" alt="د. سمر الملا - عيادة نفسية" loading="lazy" width="900" height="300">
           <span class="case-tag">WEBSITE · MENTAL HEALTH · UI/UX</span>

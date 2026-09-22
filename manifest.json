@@ -2,9 +2,9 @@
   "name": "Omar Magdy — Media Buyer & Performance Marketing",
   "short_name": "Omar Growth Hub",
   "description": "Omar Magdy — Media Buyer specializing in Meta Ads, lead generation, and performance marketing for businesses in Egypt.",
-  "start_url": "/omarmagdy/index.html",
-  "scope": "/omarmagdy/",
-  "id": "/omarmagdy/",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#050505",
@@ -28,7 +28,7 @@
   "shortcuts": [
     {
       "name": "البورتفوليو",
-      "url": "/omarmagdy/portfolio.html",
+      "url": "portfolio.html",
       "description": "نتائج حقيقية لحملات Meta Ads"
     },
     {
