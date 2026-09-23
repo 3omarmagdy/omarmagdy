@@ -3,7 +3,7 @@
    cache-first for static assets (images/icons/fonts),
    with an offline fallback page. */
 
-const CACHE_VERSION = 'v12';
+const CACHE_VERSION = 'v13';
 const CACHE_NAME = `omar-growth-hub-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -21,6 +21,7 @@ const PRECACHE_URLS = [
   './css/design-system.css',
   './images/omar-profile.png',
   './images/offerhub-preview.png',
+  './images/clinicos-preview.png',
   './images/photo-2.jpg',
   './icons/icon-192x192.png',
   './icons/icon-512x512.png'
