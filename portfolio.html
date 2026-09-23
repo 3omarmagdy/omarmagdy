@@ -146,6 +146,22 @@
   h2{ font-family:'Playfair Display', serif; font-weight:900; font-size:clamp(1.8rem,3.5vw,2.6rem); margin-bottom:14px; }
   .section-sub{ color:var(--muted); max-width:600px; margin:0 auto; }
 
+  .strategy-showcase{ padding-top:10px; }
+  .strategy-panel{
+    max-width:980px; margin:0 auto; padding:clamp(24px,4vw,42px);
+    background:linear-gradient(145deg, rgba(212,175,55,0.09), var(--panel) 58%);
+    border:1px solid rgba(212,175,55,0.32); border-radius:22px;
+  }
+  .strategy-panel h3{ font-family:'Playfair Display',serif; font-size:clamp(1.35rem,2.5vw,1.8rem); margin:0 0 12px; }
+  .strategy-panel > p{ color:var(--muted); line-height:1.8; max-width:760px; }
+  .strategy-steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:26px 0 20px; }
+  .strategy-step{ padding:16px; border:1px solid var(--border); border-radius:14px; background:rgba(5,5,5,0.28); }
+  .strategy-step strong{ display:block; color:var(--gold-light); margin-bottom:7px; }
+  .strategy-step span{ display:block; color:var(--muted); font-size:.9rem; line-height:1.6; }
+  .strategy-note{ border-top:1px solid var(--border); padding-top:16px; font-size:.88rem; }
+  @media (max-width:760px){ .strategy-steps{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:480px){ .strategy-steps{ grid-template-columns:1fr; } }
+
   /* Case study cards (web projects) */
   .case-grid{ display:grid; grid-template-columns:1fr 1fr; gap:26px; }
   .case-grid-3{ grid-template-columns:repeat(3, 1fr); }
@@ -313,6 +329,22 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
     <span class="eyebrow">البورتفوليو</span>
     <h1>Campaign Work &amp; Documented Results</h1>
     <p class="lead">A curated selection of campaign records across industries and objectives, with the available metrics and context for each entry.</p>
+  </section>
+
+  <section class="strategy-showcase" aria-labelledby="gulf-strategy-title">
+    <div class="strategy-panel">
+      <span class="eyebrow">Strategy showcase · Healthcare</span>
+      <h2 id="gulf-strategy-title">A patient acquisition strategy for Gulf markets.</h2>
+      <p>A proposed cross-border acquisition plan built around market research, patient education, qualified conversations and a clear path from first enquiry to consultation. The client is kept anonymous, and the work is presented as strategic planning rather than a live-campaign result.</p>
+      <div class="strategy-steps" aria-label="Strategy framework">
+        <div class="strategy-step"><strong>Research</strong><span>Review market context, patient intent and service readiness.</span></div>
+        <div class="strategy-step"><strong>Shape the journey</strong><span>Connect educational creative with a consultation and qualification path.</span></div>
+        <div class="strategy-step"><strong>Plan acquisition</strong><span>Map search and paid social into a staged, measurable funnel.</span></div>
+        <div class="strategy-step"><strong>Measure &amp; refine</strong><span>Define tracking, response operations and decision points before scaling.</span></div>
+      </div>
+      <p class="strategy-note">Planning work only · Forecasts and targets in the source plan are assumptions, not verified campaign outcomes. No performance results are claimed here.</p>
+      <a class="case-link" href="gulf-patient-acquisition-strategy.html">Read the strategy case study →</a>
+    </div>
   </section>
 
   <section id="results">
