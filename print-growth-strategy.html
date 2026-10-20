@@ -37,7 +37,21 @@
 .print-case-wide{grid-column:1/-1}
 .print-case-outcome{padding:clamp(1.25rem,3vw,2rem);margin-block:2rem 4rem;border-inline-start:3px solid var(--color-accent);background:var(--color-bg-soft);border-radius:var(--radius)}
 .print-case-outcome p{color:var(--color-text-muted);line-height:1.9}
+.presentation-library{margin-block:4rem}
+.presentation-library-head{max-width:46rem;margin-bottom:1.5rem}
+.presentation-library-head h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-block:.6rem}
+.presentation-library-head p{color:var(--color-text-muted);line-height:1.9}
+.presentation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.presentation-card{display:flex;flex-direction:column;min-width:0;padding:clamp(1.25rem,3vw,2rem);background:var(--color-bg-soft);border:1px solid var(--color-border);border-radius:var(--radius-md)}
+.presentation-card-top{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.presentation-icon{display:grid;place-items:center;flex:0 0 3.25rem;width:3.25rem;height:3.25rem;border:1px solid var(--color-border-accent);border-radius:var(--radius-sm);color:var(--color-accent);font-size:.78rem;font-weight:800;letter-spacing:.04em}
+.presentation-type{color:var(--color-accent-soft);font-size:.8rem;font-weight:700}
+.presentation-card h3{font-size:clamp(1.1rem,2vw,1.4rem);margin:0 0 .65rem}
+.presentation-card p{color:var(--color-text-muted);line-height:1.85;margin:0 0 1.5rem}
+.presentation-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:auto}
+.presentation-actions .btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.9rem;padding:.7rem 1rem;text-decoration:none}
 @media(max-width:650px){.print-case-grid{grid-template-columns:1fr}.print-case-wide{grid-column:auto}}
+@media(max-width:650px){.presentation-grid{grid-template-columns:1fr}.presentation-actions .btn{flex:1 1 100%}}
 </style>
 </head>
 <body>
@@ -85,20 +99,40 @@
         <h2 id="print-deliverables">إزاي اتجمع العرضان؟</h2>
         <p>خطة النمو حددت الأولويات ومراحل الاختبار، وتحليل SWOT وأفكار الكرييتيف وصّلت كل فرصة برسالة ومحتوى وطريقة قياس. عرضت الاثنين هنا كقصة واحدة لأن الاستراتيجية والكرييتيف لازم يخدموا نفس هدف العمل.</p>
       </section>
-      <section class="print-case-card print-case-wide" aria-labelledby="print-original-files">
-        <h2 id="print-original-files">العرضان الأصليان</h2>
-        <p>تقدر تراجع الملفات الأصلية التي بُني عليها هذا التصور الاستراتيجي:</p>
-        <ul>
-          <li><a href="presentations/print-growth-plan-ar.pdf" download>تحميل خطة نمو مطبعة شعاع (PDF)</a></li>
-          <li><a href="presentations/print-creative-swot-ar.pdf" download>تحميل أفكار الكرييتيف وتحليل SWOT (PDF)</a></li>
-        </ul>
-      </section>
     </div>
 
     <aside class="print-case-outcome" aria-labelledby="print-results">
       <h2 id="print-results">حالة التنفيذ والنتائج</h2>
       <p>المعروض هنا خطة استراتيجية وأفكار مقترحة، وليس إثباتًا إن الحملات اتنفذت أو حققت مبيعات. لذلك لم أنشر ميزانية أو أرقام توقعات أو أسماء منافسين أو بيانات تعريفية عن المشروع.</p>
     </aside>
+
+    <section class="presentation-library" aria-labelledby="presentation-library-title">
+      <header class="presentation-library-head">
+        <span class="eyebrow">المواد الأصلية للمشروع</span>
+        <h2 id="presentation-library-title">من التشخيص إلى خطة العمل</h2>
+        <p>العرضان اللذان استندت إليهما هذه الدراسة، متاحان للمعاينة والتحميل بصيغتهما الأصلية.</p>
+      </header>
+      <div class="presentation-grid">
+        <article class="presentation-card">
+          <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">PDF</span><span class="presentation-type">خطة نمو · ملف PDF</span></div>
+          <h3>خطة نمو مطبعة شعاع</h3>
+          <p>الخطة المقترحة لتحديد الأولويات، وترتيب مراحل الاختبار، وربط التسويق بالطلبات والقدرة التشغيلية.</p>
+          <div class="presentation-actions">
+            <a class="btn btn-primary" href="presentations/print-growth-plan-ar.pdf" target="_blank" rel="noopener">معاينة العرض</a>
+            <a class="btn btn-secondary" href="presentations/print-growth-plan-ar.pdf" download>تحميل PDF · 925 KB</a>
+          </div>
+        </article>
+        <article class="presentation-card">
+          <div class="presentation-card-top"><span class="presentation-icon" aria-hidden="true">PDF</span><span class="presentation-type">تحليل وأفكار إبداعية · ملف PDF</span></div>
+          <h3>أفكار الكرييتيف وتحليل SWOT</h3>
+          <p>قراءة للفرص ونقاط التحقق، مع اتجاهات محتوى إبداعي تساعد على توضيح المنتج وإثبات الجودة.</p>
+          <div class="presentation-actions">
+            <a class="btn btn-primary" href="presentations/print-creative-swot-ar.pdf" target="_blank" rel="noopener">معاينة العرض</a>
+            <a class="btn btn-secondary" href="presentations/print-creative-swot-ar.pdf" download>تحميل PDF · 228 KB</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <section class="case-contact">
       <h2>عندك شغل كويس، بس محتاج يتحول لخطة تسويق أوضح؟</h2>
