@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar Magdy | Performance Marketer &amp; Media Buyer</title>
+<meta name="description" content="Omar Magdy is a Performance Marketer and Media Buyer working across strategy, creative, funnels, media buying and optimization.">
+
+<meta name="author" content="Omar Magdy">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://3omarmagdy.github.io/omarmagdy/">
+<meta property="og:title" content="Omar Magdy — Performance Marketer &amp; Media Buyer">
+<meta property="og:description" content="The strategy behind the numbers: performance marketing, media buying, creative and funnel strategy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://3omarmagdy.github.io/omarmagdy/">
+<meta property="og:image" content="https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png">
+<meta property="og:locale" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Omar Magdy — Performance Marketer &amp; Media Buyer">
+<meta name="twitter:description" content="The strategy behind the numbers: performance marketing, media buying, creative and funnel strategy.">
+<meta name="twitter:image" content="https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png">
+<meta name="theme-color" content="#080808">
+
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/omar-profile.png" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0B0B0B;
+  --dark: #111111;
+  --surface: #1A1A1A;
+  --gold: #B8860B;
+  --gold-light: #D4AF37;
+  --gold-bright: #E8C547;
+  --text: #F5F5F5;
+  --text-secondary: #CACACA;
+  --muted: #8B8B8B;
+  --border: rgba(184, 134, 11, 0.15);
+  --border-light: rgba(184, 134, 11, 0.08);
+  --radius: 12px;
+  --font: 'Cairo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.8;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 800px 600px at 10% 5%, rgba(184, 134, 11, 0.08), transparent),
+    radial-gradient(ellipse 600px 500px at 90% 95%, rgba(184, 134, 11, 0.05), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.2; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; line-height: 1.2; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; line-height: 1.3; }
+p { font-size: 1.05rem; line-height: 1.8; }
+
+section { padding: 80px 20px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+.eyebrow { display: block; font-size: 0.95rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.section-sub { color: var(--text-secondary); max-width: 680px; margin: 16px 0 48px 0; font-size: 1.1rem; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184, 134, 11, 0.4);
+}
+
+.btn-secondary {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: rgba(184, 134, 11, 0.1);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 5%;
+  background: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  padding: 120px 20px 80px;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  color: var(--text);
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.hero h1 .gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.card {
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 48px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-light);
+  padding: 28px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.faq-icon {
+  color: var(--gold);
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  color: var(--text-secondary);
+  margin-top: 16px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.step {
+  position: relative;
+  padding-top: 60px;
+}
+
+.step-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: rgba(184, 134, 11, 0.15);
+}
+
+.step h3 {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.step p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.about-text h3 {
+  color: var(--gold);
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 64px 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-box h2 {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.cta-box p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-light);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+  background: rgba(184, 134, 11, 0.1);
+  transform: translateY(-2px);
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: rgba(184, 134, 11, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  .about-content { grid-template-columns: 1fr; gap: 40px; }
+  .about-stats { justify-content: space-around; }
+  section { padding: 50px 16px; }
+}
+</style>
+<link rel="stylesheet" href="css/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Omar Magdy","jobTitle":"Performance Marketer & Media Buyer","url":"https://3omarmagdy.github.io/omarmagdy/","image":"https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png","sameAs":["https://instagram.com/Omar.Growth.Hub","https://facebook.com/Omar.Growth.Hub","https://linkedin.com/in/omargrowthhub"]}</script>
+<style>
+/* ===== Premium layer ===== */
+:root{
+  --p-gold:#C9A227;
+  --p-gold-2:#E8CE86;
+  --p-ivory:#F7F3EA;
+  --p-mute:#A7A39B;
+  --p-line:rgba(201,162,39,.20);
+  --p-line-2:rgba(247,243,234,.075);
+  --p-panel:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --p-radius:18px;
+  --p-shadow:0 26px 60px -32px rgba(0,0,0,.95);
+}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;letter-spacing:.16em;font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--p-gold-2);}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--p-gold),transparent);}
+.section-sub{max-width:64ch;}
+
+/* stat band */
+.band{border-block:1px solid var(--p-line-2);background:radial-gradient(120% 180% at 50% -60%,rgba(201,162,39,.12),transparent 62%);}
+.band .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:clamp(2rem,4.5vw,3.25rem);}
+.band-stat{padding-inline:clamp(1rem,2.2vw,2rem);border-inline-start:1px solid var(--p-line-2);}
+.band-stat:first-child{border-inline-start:0;padding-inline-start:0;}
+.band-num{font-family:var(--font-latin,"Manrope",sans-serif);font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;background:linear-gradient(118deg,#F6E7BC,#C9A227 58%,#8F7016);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.band-label{color:var(--p-ivory);font-size:.95rem;font-weight:600;margin-top:.45rem;}
+.band-note{color:var(--p-mute);font-size:.8rem;margin-top:.2rem;line-height:1.5;}
+.band-foot{grid-column:1/-1;margin-top:clamp(1.5rem,3vw,2.25rem);padding-top:1.1rem;border-top:1px solid var(--p-line-2);color:var(--p-mute);font-size:.85rem;}
+.band-foot a{color:var(--p-gold-2);border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.band-foot a:hover{border-color:var(--p-gold-2);}
+@media(max-width:860px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.9rem}.band-stat:nth-child(3){border-inline-start:0;padding-inline-start:0}}
+
+/* record cards */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.rec-card{position:relative;padding:1.6rem 1.6rem 1.4rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.rec-card::before{content:"";position:absolute;inset-inline:1.6rem;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.55),transparent);}
+.rec-card:hover{transform:translateY(-4px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.rec-tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--p-gold-2);border:1px solid var(--p-line);border-radius:999px;padding:.28rem .68rem;margin-bottom:.95rem;}
+.rec-card h3{font-size:1.12rem;line-height:1.4;color:var(--p-ivory);margin-bottom:.55rem;}
+.rec-big{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.95rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);line-height:1.15;}
+.rec-big small{font-size:.8rem;font-weight:500;color:var(--p-mute);margin-inline-start:.4rem;letter-spacing:0;}
+.rec-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--p-line-2);}
+.rec-meta div{font-size:.78rem;color:var(--p-mute);}
+.rec-meta b{display:block;color:var(--p-ivory);font-size:.95rem;font-weight:700;margin-top:.15rem;}
+.rec-card p{color:var(--p-mute);font-size:.88rem;line-height:1.7;margin-top:.85rem;}
+
+/* quote cards */
+.pq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.pq-card{position:relative;padding:1.9rem 1.6rem 1.5rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);}
+.pq-mark{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:.55;color:rgba(201,162,39,.5);margin-bottom:1.1rem;}
+.pq-card p{color:#EDE9DF;font-size:.99rem;line-height:1.9;}
+.pq-foot{display:flex;align-items:center;gap:.75rem;margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--p-line-2);}
+.pq-avatar{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(201,162,39,.28),rgba(201,162,39,.06));border:1px solid var(--p-line);color:var(--p-gold-2);font-weight:700;font-size:.9rem;}
+.pq-foot strong{display:block;color:var(--p-ivory);font-size:.94rem;line-height:1.35;}
+.pq-foot span{color:var(--p-mute);font-size:.79rem;}
+
+/* screenshot gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:2.25rem;}
+.gal figure{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:#0c0c0c;}
+.gal img{width:100%;display:block;}
+.gal figcaption{padding:.7rem .9rem;font-size:.79rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);}
+.frame-shot{max-width:620px;margin-inline:auto;border:1px solid var(--p-line);border-radius:16px;overflow:hidden;background:#0c0c0c;}
+.frame-shot img{width:100%;display:block;}
+.frame-shot figcaption{padding:.85rem 1rem;font-size:.82rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);text-align:center;}
+
+/* direction + normalisation fixes */
+.eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
+.lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
+
+
+/* results gallery: grouped by sector, screenshots straight from the ad accounts */
+.res-groups{display:grid;gap:clamp(2.1rem,4vw,3.2rem);margin-top:2.6rem;}
+.res-group{display:grid;gap:1.1rem;}
+.res-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;padding-bottom:.85rem;border-bottom:1px solid var(--p-line-2);}
+.res-group-head h3{margin:0;font-size:1.16rem;line-height:1.4;color:var(--p-ivory);letter-spacing:.01em;}
+.res-idx{font-family:var(--font-latin,"Manrope",sans-serif);font-size:.74rem;font-weight:800;letter-spacing:.16em;color:var(--p-gold);}
+.res-stat{margin:0;color:var(--p-mute);font-size:.85rem;line-height:1.55;unicode-bidi:plaintext;}
+.res-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start;}
+.res-card{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.res-card:hover{transform:translateY(-3px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.res-shot{display:block;background:#08080a;line-height:0;}
+.res-shot img{display:block;width:100%;height:auto;}
+.res-card figcaption{display:grid;gap:.28rem;padding:.8rem .95rem 1rem;}
+.res-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-gold-2);}
+.res-metric{display:flex;align-items:baseline;gap:.4rem;color:var(--p-mute);font-size:.82rem;}
+.res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
+.res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
+@media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" aria-label="Primary navigation"><a class="logo brand-lockup" href="#hero"><span class="brand-mark" aria-hidden="true">OM</span><span>Omar Magdy</span></a><ul><li><a href="#hero">Home</a></li><li><a href="#selected-work">Work</a></li><li><a href="services.html">Services</a></li><li><a href="#about">About</a></li></ul><a class="nav-cta" href="#contact">Contact</a></nav>
+
+<main>
+<section class="hero hero-premium" id="hero">
+  <div class="wrap hero-layout">
+    <div class="hero-content">
+      <span class="eyebrow">Performance Marketing · Media Buying</span>
+      <h1>Omar Magdy<br><span class="gold">Performance Marketer &amp; Media Buyer</span></h1>
+      <p>My work starts with the business, not the ad account. We get clear on the offer and the customer journey, choose what to test, then use real signals to decide what to change next.</p>
+      <div class="hero-cta">
+        <a href="#selected-work" class="btn btn-primary">See campaign work</a>
+        <a href="#contact" class="btn btn-secondary">Talk through a goal</a>
+      </div>
+      <p class="hero-note">The strategy behind the numbers.</p>
+    </div>
+    <div class="hero-portrait">
+      <img src="images/omar-profile.png" alt="Omar Magdy, Performance Marketer and Media Buyer" fetchpriority="high">
+      <div class="hero-process" aria-label="Research, strategy, creative, funnel, media buying, optimization and scaling">
+        <span>Research</span><i aria-hidden="true">→</i><span>Strategy</span><i aria-hidden="true">→</i><span>Creative</span>
+        <span>Funnel</span><i aria-hidden="true">→</i><span>Media</span><i aria-hidden="true">→</i><span>Optimize</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Results read from live ad accounts">
+  <div class="wrap">
+    <div class="band-stat"><div class="band-num">8,148</div><div class="band-label">Conversations started</div><div class="band-note">One monthly campaign · EGP 2.07 each</div></div>
+    <div class="band-stat"><div class="band-num">EGP 0.43</div><div class="band-label">Cost per conversation</div><div class="band-note">Installments campaign · EGP 3,317 spend</div></div>
+    <div class="band-stat"><div class="band-num">1.3K</div><div class="band-label">Purchases from the site</div><div class="band-note">ASC campaign · EGP 86.90 per purchase</div></div>
+    <div class="band-stat"><div class="band-num">16.9M</div><div class="band-label">Views on one brand page</div><div class="band-note">Perfume brand · 48.3K new followers</div></div>
+    <p class="band-foot">Read from live Meta Ads Manager screenshots. <a href="portfolio.html">See the campaign records</a>.</p>
+  </div>
+</section>
+
+<section class="capabilities" id="capabilities">
+  <div class="wrap"><span class="eyebrow">Where I can help</span><h2>One campaign, looked at from every angle.</h2><p class="section-sub">The right mix depends on the business problem. Sometimes the first step is better tracking or follow-up—not more spend.</p>
+    <div class="capability-grid">
+      <article><span>01</span><h3>Strategy</h3><p>Audience research, offer context, funnel planning and campaign architecture.</p></article>
+      <article><span>02</span><h3>Creative</h3><p>Creative direction, messaging angles, hooks and structured testing.</p></article>
+      <article><span>03</span><h3>Media</h3><p>Media buying, campaign setup, audience approach and budget allocation.</p></article>
+      <article><span>04</span><h3>Optimization</h3><p>Measurement, retargeting, learning, optimization and considered scaling.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="wrap">
+    <span class="eyebrow">Results</span>
+    <h2>Read straight from the ad accounts.</h2>
+    <p class="section-sub">Ten campaigns across four sectors, cropped straight out of Ads Manager. Spend and cost per result sit next to every number, so the number means something. Client and brand names are hidden; the figures are untouched.</p>
+    <div class="res-groups">
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">01</span>
+        <h3>Real estate</h3>
+        <p class="res-stat">EGP 32,643 spent across two campaigns · 342 leads at EGP 22.37 each</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-e97f657e.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-e97f657e.jpg" alt="Ads Manager screenshot: 342 leads, egp 22.37 per lead, egp 7,643 spent" loading="lazy" width="749" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Lead generation</span>
+            <span class="res-metric"><b>342</b> leads</span>
+            <span class="res-detail">EGP 22.37 per lead · EGP 7,643 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-eb84f3e1.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-eb84f3e1.jpg" alt="Ads Manager screenshot: 91 conversations, egp 287.36 per conversation, egp 25,000 spent" loading="lazy" width="713" height="394">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Lead generation</span>
+            <span class="res-metric"><b>91</b> conversations</span>
+            <span class="res-detail">EGP 287.36 per conversation · EGP 25,000 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">02</span>
+        <h3>Medical & clinics</h3>
+        <p class="res-stat">466 conversations · EGP 8,460 spent across two campaigns</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f5cc3ba2.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f5cc3ba2.jpg" alt="Ads Manager screenshot: 346 conversations, egp 8.67 per conversation, egp 3,000 spent" loading="lazy" width="675" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · women's health</span>
+            <span class="res-metric"><b>346</b> conversations</span>
+            <span class="res-detail">EGP 8.67 per conversation · EGP 3,000 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-53de4058.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-53de4058.jpg" alt="Ads Manager screenshot: 120 conversations, egp 45.50 per conversation, egp 5,460 spent" loading="lazy" width="752" height="402">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · dental clinic</span>
+            <span class="res-metric"><b>120</b> conversations</span>
+            <span class="res-detail">EGP 45.50 per conversation · EGP 5,460 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">03</span>
+        <h3>Cosmetics & e-commerce</h3>
+        <p class="res-stat">EGP 0.31 per link click · EGP 0.70 per conversation at 4.3K volume</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60d80199.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60d80199.jpg" alt="Ads Manager screenshot: 4.3K conversations, egp 0.70 per conversation, egp 3.02k spent" loading="lazy" width="733" height="555">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Sales</span>
+            <span class="res-metric"><b>4.3K</b> conversations</span>
+            <span class="res-detail">EGP 0.70 per conversation · EGP 3.02K spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-2fadbcf4.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-2fadbcf4.jpg" alt="Ads Manager screenshot: 522 conversations, egp 3.73 per conversation, egp 1,945.81 spent" loading="lazy" width="760" height="417">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Engagement · bridal package</span>
+            <span class="res-metric"><b>522</b> conversations</span>
+            <span class="res-detail">EGP 3.73 per conversation · EGP 1,945.81 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-477e2cdf.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-477e2cdf.jpg" alt="Ads Manager screenshot: 635 conversations, egp 6.30 per conversation, egp 4,000 spent" loading="lazy" width="679" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · seasonal offer</span>
+            <span class="res-metric"><b>635</b> conversations</span>
+            <span class="res-detail">EGP 6.30 per conversation · EGP 4,000 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60225853.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60225853.jpg" alt="Ads Manager screenshot: 8,985 link clicks, egp 0.31 per link click, egp 2,755.60 spent" loading="lazy" width="683" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Traffic</span>
+            <span class="res-metric"><b>8,985</b> link clicks</span>
+            <span class="res-detail">EGP 0.31 per link click · EGP 2,755.60 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">04</span>
+        <h3>Installments & electronics</h3>
+        <p class="res-stat">9,030 conversations · EGP 5,113 spent across two campaigns</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f6e25c2c.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f6e25c2c.jpg" alt="Ads Manager screenshot: 7,639 conversations, egp 0.43 per conversation, egp 3,317.17 spent" loading="lazy" width="711" height="471">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · mobile installments</span>
+            <span class="res-metric"><b>7,639</b> conversations</span>
+            <span class="res-detail">EGP 0.43 per conversation · EGP 3,317.17 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-c0e3265f.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-c0e3265f.jpg" alt="Ads Manager screenshot: 1,391 conversations, egp 1.29 per conversation, egp 1,795.40 spent" loading="lazy" width="714" height="500">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Engagement · mobile installments</span>
+            <span class="res-metric"><b>1,391</b> conversations</span>
+            <span class="res-detail">EGP 1.29 per conversation · EGP 1,795.40 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
+    <p class="band-foot" style="border:0;padding:0;margin-top:2rem"><a href="portfolio.html">See all campaign records →</a></p>
+  </div>
+</section>
+
+<section class="work-intro selected-work" id="selected-work"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Selected campaign work</span><h2>Here’s the work—and what the record can tell you.</h2></div><p class="section-sub">I show the available context and evidence for each campaign, and make it clear when a record is only a showcase.</p></div><div id="featured-campaign" class="campaign-feature" aria-live="polite" aria-busy="true"><p>Loading selected work…</p></div><div class="section-action"><a href="portfolio.html" class="btn btn-secondary">Browse campaigns and strategy case studies</a></div></div></section>
+
+<section class="web-work-preview" id="web-projects"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Additional work</span><h2>Selected web projects.</h2><p class="section-sub">A separate look at landing pages and web experiences that support campaign journeys.</p></div><a href="projects.html" class="text-link">View web projects →</a></div><div class="case-grid"><article class="case-card"><a class="case-image" href="projects.html#project-jannah" aria-label="JANNAH storefront screenshot and project details"><img src="images/jannah-preview.jpg" alt="JANNAH Arabic fashion storefront homepage screenshot" loading="lazy" width="1200" height="750"></a><div class="case-copy"><span class="case-kicker">E-commerce · Fashion storefront</span><h3>JANNAH</h3><p>A full Arabic-first storefront: two collections, product pages with sizes, cart and cash on delivery, live on its own domain.</p><a href="projects.html#project-jannah" class="text-link">View project →</a> <a href="https://www.jannaheg.com/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-ahmed"><img src="images/ahmed-thumb.jpg" alt="Ahmed Nassar medical landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Landing page</span><h3>Ahmed Nassar</h3><p>A medical landing page organized around service information and an appointment path.</p><a href="projects.html#project-ahmed" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-reda"><img src="images/reda-thumb.jpg" alt="Reda Sobhy Meta Ads landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Meta Ads</span><h3>Reda Sobhy</h3><p>A lead-focused page with booking options and documented Meta Pixel events.</p><a href="projects.html#project-reda" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-samar"><img src="images/dr-samar-almulla-thumb.jpg" alt="Samar Almulla Arabic right-to-left website" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Wellbeing · Arabic website</span><h3>Samar Almulla</h3><p>An Arabic right-to-left experience with service information and booking options.</p><a href="projects.html#project-samar" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image project-preview clinicos-preview" href="projects.html#project-clinicos" aria-label="ClinicOS screenshot and project details"><img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Clinic operations platform</span><h3>ClinicOS</h3><p>A clinic operations platform designed for specialty-agnostic, multi-tenant and multi-location use.</p><a href="projects.html#project-clinicos" class="text-link">View project →</a> <a href="https://clinicos-crm.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image offerhub-preview" href="projects.html#project-offerhub" aria-label="OfferHub site screenshot and project details"><img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Web platform</span><h3>OfferHub</h3><p>A web platform project included among my selected web work.</p><a href="projects.html#project-offerhub" class="text-link">View project →</a> <a href="https://offerhub1.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article></div></div></section>
+
+<section class="about" id="about">
+  <div class="wrap about-editorial">
+    <div><span class="eyebrow">About Omar</span><h2>Ads are a channel.<br><span class="gold">The business is the context.</span></h2></div>
+    <div class="about-text"><p>I’m Omar Magdy, a Performance Marketer and Media Buyer. Before I recommend a campaign, I want to understand what you sell, who it is for and what happens after someone responds.</p><p>That conversation shapes the strategy, creative direction, funnel and media plan. If the offer or follow-up needs attention first, I’ll say so. The aim is to make the next decision clearer—not to spend for the sake of spending.</p><a href="services.html" class="text-link">See how I can help <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<section class="thinking" id="how-i-think">
+  <div class="wrap"><span class="eyebrow">How I work</span><h2>What happens after the first conversation.</h2><p class="section-sub">We agree on the question first. Then each stage gives us something useful to learn and act on.</p>
+    <ol class="thinking-loop">
+      <li><span>01</span><h3>Research</h3><p>Understand the business, audience and offer.</p></li><li><span>02</span><h3>Strategy</h3><p>Choose the objective, journey and measurement.</p></li><li><span>03</span><h3>Creative</h3><p>Translate the strategy into messages to test.</p></li><li><span>04</span><h3>Launch</h3><p>Build the campaign and verify the path.</p></li><li><span>05</span><h3>Analyze</h3><p>Read results in their business context.</p></li><li><span>06</span><h3>Optimize</h3><p>Use evidence to adjust the next test.</p></li><li><span>07</span><h3>Scale</h3><p>Expand when the offer and signals support it.</p></li>
+    </ol>
+    <p class="loop-note">Test <span>→</span> Measure <span>→</span> Learn <span>→</span> Optimize <span>→</span> Test again</p>
+  </div>
+</section>
+
+<section class="expectations" id="expectations">
+ <div class="wrap"><span class="eyebrow">Working together</span><h2>A clear plan, with both sides involved.</h2>
+   <div class="expectation-grid"><article><h3>From Omar</h3><ul><li>Strategy and campaign setup</li><li>Testing and optimization</li><li>Analysis and retargeting</li><li>Scaling recommendations grounded in performance</li></ul></article><article><h3>From the client</h3><ul><li>Business and offer information</li><li>Product or service availability</li><li>Creative assets when needed</li><li>Timely communication and accurate business data</li></ul></article></div>
+ </div>
+</section>
+
+<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div><div class="pq-grid">
+<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري توليد — مصر الجديدة</span></div></div></article>
+<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</p><div class="pq-foot"><span class="pq-avatar">A</span><div><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></div></div></article>
+<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</p><div class="pq-foot"><span class="pq-avatar">M</span><div><strong>Mory</strong><span>صاحبة براند أونلاين — الإمارات</span></div></div></article>
+</div></div></section>
+
+<section class="faq" id="faq">
+ <div class="wrap"><span class="eyebrow">Before you hire a media buyer</span><h2>Know what the work involves.</h2><p class="section-sub">Straight answers about preparation, testing and how decisions are made.</p>
+  <div class="faq-list">
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-1">What do you need from me before launching?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-1" hidden><p>Business context, a clear offer, access to the relevant ad account and tracking, and an understanding of what happens after a lead or sale. We identify any gaps before launch.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-2">What budget should I start with?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-2" hidden><p>It depends on the market, objective, offer and the signal volume needed to learn. We discuss a test budget against those factors instead of using one figure for every business.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-3">Do I need creatives before we begin?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-3" hidden><p>We need suitable creative inputs for the offer and audience. The plan can include direction on messages and formats to prepare before campaigns go live.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-4">How do you test campaigns?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-4" hidden><p>Testing starts with a clear question, such as which audience or message better supports the objective. We review the resulting signals in context and use them to choose the next step.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-5">What happens if a campaign underperforms?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-5" hidden><p>We inspect the objective, tracking, audience, creative and destination experience to find where the journey may be breaking down. Then we agree on the next test or adjustment.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-6">Do you handle retargeting?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-6" hidden><p>Retargeting can be part of the strategy when the available audience, tracking and customer journey make it useful.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-7">What metrics matter?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-7" hidden><p>The objective and business model determine the useful measures. Platform metrics need to be considered alongside lead quality, sales process and the outcome the business cares about.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-8">Do you guarantee results?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-8" hidden><p>Advertising results depend on the offer, market, creative, budget and customer experience. I can explain the plan, measurement and decisions; a specific outcome cannot be guaranteed in advance.</p></div></div>
+   <div class="faq-item"><h3><button class="faq-question" aria-expanded="false" aria-controls="answer-9">How do we know when to scale?<span class="faq-icon" aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-9" hidden><p>Scaling is considered when results are sufficiently consistent, tracking is dependable, and the business can handle additional demand. The decision follows the evidence, not a preset promise.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact-section" id="contact">
+ <div class="wrap contact-layout"><div><span class="eyebrow">Start a conversation</span><h2>What are you trying to improve?</h2><p>Tell me what you sell, what you’ve tried and where things feel stuck. We’ll start there and see what kind of help makes sense.</p><div class="contact-links"><a href="https://wa.me/201102418143?text=Hello%20Omar%2C%20I%27d%20like%20to%20discuss%20my%20business" class="btn btn-primary" data-track="Lead">Message me on WhatsApp</a><a href="mailto:omarmarketing533@gmail.com" class="text-link" data-track="Lead">omarmarketing533@gmail.com</a></div></div>
+ <ol class="contact-steps"><li><span>01</span>We discuss the business.</li><li><span>02</span>We understand the current situation.</li><li><span>03</span>We identify the main performance bottleneck.</li><li><span>04</span>We decide whether working together makes sense.</li></ol></div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer lang="ar" dir="rtl">
+  <div class="wrap">
+    <h3 style="color: var(--text); margin-bottom: 24px;">تابعني على السوشيال ميديا</h3>
+    <div class="social-links">
+      <a href="https://instagram.com/Omar.Growth.Hub" class="social-link" title="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.322a1.44 1.44 0 110-2.881 1.44 1.44 0 010 2.881z"/>
+        </svg>
+        Instagram
+      </a>
+      <a href="https://facebook.com/Omar.Growth.Hub" class="social-link" title="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+        Facebook
+      </a>
+      <a href="https://linkedin.com/in/omargrowthhub" class="social-link" title="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.25-.129.599-.129.948v5.439h-3.554s.047-8.821 0-9.745h3.554v1.381c.43-.664 1.202-1.609 2.923-1.609 2.135 0 3.737 1.39 3.737 4.38v5.593zM5.337 8.855c-1.144 0-1.915-.761-1.915-1.715 0-.956.77-1.715 1.914-1.715.145 0 .735.009 1.915 1.715 0 .954-.771 1.715-1.914 1.715zm1.946 11.597H3.392V9.167h3.891v11.285zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+        </svg>
+        LinkedIn
+      </a>
+      <a href="mailto:omarmarketing533@gmail.com" class="social-link" title="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Email
+      </a>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 32px 0;">
+
+    <div>
+      <p style="color: var(--text-secondary); margin-bottom: 12px;">© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+      <p style="color: var(--muted); font-size: 0.9rem;">
+        <a href="index.html">الرئيسية</a> | 
+        <a href="portfolio.html">البورتفوليو</a> | 
+        <a href="projects.html">Web Projects</a> | 
+        <a href="services.html">الخدمات</a> | 
+        <a href="course.html">الكورس</a> | 
+        <a href="testimonials.html">آراء العملاء</a> | 
+        <a href="https://wa.me/201102418143">تواصل</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// FAQ Toggle
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+    const answer = document.getElementById(button.getAttribute('aria-controls'));
+    if (answer) answer.hidden = expanded;
+  });
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+<script src="js/selected-campaign.js" defer></script>
+<script src="js/analytics-config.js" defer></script>
+</body>
+</html>
