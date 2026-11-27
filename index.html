@@ -445,6 +445,167 @@ footer a:hover {
 </style>
 <link rel="stylesheet" href="css/design-system.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Omar Magdy","jobTitle":"Performance Marketer & Media Buyer","url":"https://3omarmagdy.github.io/omarmagdy/","image":"https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png","sameAs":["https://instagram.com/Omar.Growth.Hub","https://facebook.com/Omar.Growth.Hub","https://linkedin.com/in/omargrowthhub"]}</script>
+<style>
+/* ===== Premium layer ===== */
+:root{
+  --p-gold:#C9A227;
+  --p-gold-2:#E8CE86;
+  --p-ivory:#F7F3EA;
+  --p-mute:#A7A39B;
+  --p-line:rgba(201,162,39,.20);
+  --p-line-2:rgba(247,243,234,.075);
+  --p-panel:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --p-radius:18px;
+  --p-shadow:0 26px 60px -32px rgba(0,0,0,.95);
+}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;letter-spacing:.16em;font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--p-gold-2);}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--p-gold),transparent);}
+.section-sub{max-width:64ch;}
+
+/* stat band */
+.band{border-block:1px solid var(--p-line-2);background:radial-gradient(120% 180% at 50% -60%,rgba(201,162,39,.12),transparent 62%);}
+.band .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:clamp(2rem,4.5vw,3.25rem);}
+.band-stat{padding-inline:clamp(1rem,2.2vw,2rem);border-inline-start:1px solid var(--p-line-2);}
+.band-stat:first-child{border-inline-start:0;padding-inline-start:0;}
+.band-num{font-family:var(--font-latin,"Manrope",sans-serif);font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;background:linear-gradient(118deg,#F6E7BC,#C9A227 58%,#8F7016);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.band-label{color:var(--p-ivory);font-size:.95rem;font-weight:600;margin-top:.45rem;}
+.band-note{color:var(--p-mute);font-size:.8rem;margin-top:.2rem;line-height:1.5;}
+.band-foot{grid-column:1/-1;margin-top:clamp(1.5rem,3vw,2.25rem);padding-top:1.1rem;border-top:1px solid var(--p-line-2);color:var(--p-mute);font-size:.85rem;}
+.band-foot a{color:var(--p-gold-2);border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.band-foot a:hover{border-color:var(--p-gold-2);}
+@media(max-width:860px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.9rem}.band-stat:nth-child(3){border-inline-start:0;padding-inline-start:0}}
+
+/* record cards */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.rec-card{position:relative;padding:1.6rem 1.6rem 1.4rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.rec-card::before{content:"";position:absolute;inset-inline:1.6rem;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.55),transparent);}
+.rec-card:hover{transform:translateY(-4px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.rec-tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--p-gold-2);border:1px solid var(--p-line);border-radius:999px;padding:.28rem .68rem;margin-bottom:.95rem;}
+.rec-card h3{font-size:1.12rem;line-height:1.4;color:var(--p-ivory);margin-bottom:.55rem;}
+.rec-big{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.95rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);line-height:1.15;}
+.rec-big small{font-size:.8rem;font-weight:500;color:var(--p-mute);margin-inline-start:.4rem;letter-spacing:0;}
+.rec-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--p-line-2);}
+.rec-meta div{font-size:.78rem;color:var(--p-mute);}
+.rec-meta b{display:block;color:var(--p-ivory);font-size:.95rem;font-weight:700;margin-top:.15rem;}
+.rec-card p{color:var(--p-mute);font-size:.88rem;line-height:1.7;margin-top:.85rem;}
+
+/* quote cards */
+.pq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.pq-card{position:relative;padding:1.9rem 1.6rem 1.5rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);}
+.pq-mark{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:.55;color:rgba(201,162,39,.5);margin-bottom:1.1rem;}
+.pq-card p{color:#EDE9DF;font-size:.99rem;line-height:1.9;}
+.pq-foot{display:flex;align-items:center;gap:.75rem;margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--p-line-2);}
+.pq-avatar{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(201,162,39,.28),rgba(201,162,39,.06));border:1px solid var(--p-line);color:var(--p-gold-2);font-weight:700;font-size:.9rem;}
+.pq-foot strong{display:block;color:var(--p-ivory);font-size:.94rem;line-height:1.35;}
+.pq-foot span{color:var(--p-mute);font-size:.79rem;}
+
+/* screenshot gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:2.25rem;}
+.gal figure{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:#0c0c0c;}
+.gal img{width:100%;display:block;}
+.gal figcaption{padding:.7rem .9rem;font-size:.79rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);}
+.frame-shot{max-width:620px;margin-inline:auto;border:1px solid var(--p-line);border-radius:16px;overflow:hidden;background:#0c0c0c;}
+.frame-shot img{width:100%;display:block;}
+.frame-shot figcaption{padding:.85rem 1rem;font-size:.82rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);text-align:center;}
+
+/* direction + normalisation fixes */
+.eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
+.lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
+
+
+/* results gallery: grouped by sector, screenshots straight from the ad accounts */
+.res-groups{display:grid;gap:clamp(2.1rem,4vw,3.2rem);margin-top:2.6rem;}
+.res-group{display:grid;gap:1.1rem;}
+.res-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;padding-bottom:.85rem;border-bottom:1px solid var(--p-line-2);}
+.res-group-head h3{margin:0;font-size:1.16rem;line-height:1.4;color:var(--p-ivory);letter-spacing:.01em;}
+.res-idx{font-family:var(--font-latin,"Manrope",sans-serif);font-size:.74rem;font-weight:800;letter-spacing:.16em;color:var(--p-gold);}
+.res-stat{margin:0;color:var(--p-mute);font-size:.85rem;line-height:1.55;unicode-bidi:plaintext;}
+.res-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start;}
+.res-card{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.res-card:hover{transform:translateY(-3px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.res-shot{display:block;background:#08080a;line-height:0;}
+.res-shot img{display:block;width:100%;height:auto;}
+.res-card figcaption{display:grid;gap:.28rem;padding:.8rem .95rem 1rem;}
+.res-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-gold-2);}
+.res-metric{display:flex;align-items:baseline;gap:.4rem;color:var(--p-mute);font-size:.82rem;}
+.res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
+.res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
+@media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:3;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:1100px){.rev-gallery{column-count:2}}
+@media(max-width:460px){.rev-gallery{column-count:1}}
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
+
+/* premium portfolio grids: uniform tiles, nothing cropped, click to enlarge */
+.pf-lead{margin:2.4rem 0 .9rem;font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--p-gold);}
+.pf-grid{display:grid;gap:1rem;}
+.pf-grid.c3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.pf-grid.c2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.pf-tile{position:relative;display:block;border:1px solid var(--p-line-2);border-radius:16px;background:linear-gradient(180deg,#0e0e11,#09090b);overflow:hidden;text-decoration:none;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.pf-tile:hover{transform:translateY(-3px);border-color:rgba(201,162,39,.55);box-shadow:0 26px 60px -30px #000;}
+.pf-frame{display:flex;align-items:center;justify-content:center;padding:.6rem;}
+.pf-frame.r169{aspect-ratio:16/9}
+.pf-frame.r1610{aspect-ratio:16/10}
+.pf-frame.r916{aspect-ratio:9/16}
+.pf-frame img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;border-radius:8px;}
+.pf-chip{position:absolute;top:.65rem;inset-inline-start:.7rem;z-index:2;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-gold);background:rgba(8,8,10,.75);border:1px solid var(--p-line-2);padding:.22rem .5rem;border-radius:999px;}
+@media(max-width:1100px){.pf-grid.c3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.pf-grid.c3,.pf-grid.c2{grid-template-columns:1fr}}
+.res-lb{display:none;position:fixed;inset:0;z-index:9000;background:rgba(6,6,8,.96);padding:clamp(1rem,4vw,3rem);align-items:center;justify-content:center;}
+.res-lb:target{display:flex;}
+.res-lb img{max-width:94vw;max-height:92vh;width:auto;height:auto;border-radius:10px;box-shadow:0 30px 80px -30px #000;}
+.res-lb-x{position:absolute;top:.6rem;inset-inline-end:1.2rem;font-size:2.2rem;line-height:1;color:var(--p-ivory);text-decoration:none;opacity:.85;z-index:2;}
+.res-lb-x:hover{opacity:1;}
+</style>
+<style id="design-tune">
+/* --- design tune: card framing, label hierarchy, Arabic type, mobile --- */
+.pf-tile{background:linear-gradient(180deg,#131317,#0a0a0c);border-color:rgba(255,255,255,.09);box-shadow:0 20px 44px -30px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.05);}
+.pf-tile:hover{border-color:rgba(201,162,39,.5);box-shadow:0 28px 60px -32px #000,inset 0 1px 0 rgba(255,255,255,.07);}
+.pf-frame{padding:.72rem}
+.pf-frame img{outline:1px solid rgba(255,255,255,.08);background:#0d0d10}
+.pf-chip{font-size:.62rem;letter-spacing:.12em;color:var(--p-gold-2);background:rgba(6,6,8,.9);border-color:rgba(201,162,39,.42);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+.pf-lead{margin:3rem 0 1.1rem;display:flex;align-items:center;gap:1rem;font-size:.72rem;color:var(--p-gold-2);}
+.pf-lead::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--p-line),transparent);}
+.pf-grid+.pf-lead{margin-top:3.4rem}
+html[lang="ar"] .eyebrow,html[lang="ar"] .pf-lead,html[lang="ar"] .pf-chip,html[lang="ar"] .band-num{letter-spacing:0;text-transform:none;}
+html[lang="ar"] .eyebrow{font-size:.8rem;font-weight:600}
+html[lang="ar"] .pf-lead{font-size:.8rem;font-weight:700}
+html[lang="ar"] .pf-lead::after{background:linear-gradient(270deg,var(--p-line),transparent);}
+html[lang="ar"] .pf-chip{font-size:.68rem}
+html[lang="ar"] .band-num{font-family:var(--font-arabic,inherit)}
+@media(max-width:640px){
+  .hero .eyebrow,.hero-premium .eyebrow{font-size:.6rem;letter-spacing:.1em;line-height:1.6}
+  .hero-process{flex-wrap:wrap;gap:.45rem;justify-content:center}
+  .hero-process i{display:none}
+  .hero-process span{border:1px solid rgba(201,162,39,.28);border-radius:999px;padding:.3rem .62rem;font-size:.72rem;color:var(--p-ivory)}
+  .pf-frame{padding:.55rem}
+  .pf-lead{margin:2.4rem 0 .9rem}
+}
+</style>
 </head>
 
 <body>
@@ -475,7 +636,15 @@ footer a:hover {
   </div>
 </section>
 
-<section class="proof-rail" aria-label="How I approach campaign work"><div class="wrap"><span>Understand the business</span><i></i><span>Test with a clear reason</span><i></i><span>Decide from evidence</span></div></section>
+<section class="band" aria-label="Results read from live ad accounts">
+  <div class="wrap">
+    <div class="band-stat"><div class="band-num">8,148</div><div class="band-label">Conversations started</div><div class="band-note">One monthly campaign · EGP 2.07 each</div></div>
+    <div class="band-stat"><div class="band-num">EGP 0.43</div><div class="band-label">Cost per conversation</div><div class="band-note">Installments campaign · EGP 3,317 spend</div></div>
+    <div class="band-stat"><div class="band-num">1.3K</div><div class="band-label">Purchases from the site</div><div class="band-note">ASC campaign · EGP 86.90 per purchase</div></div>
+    <div class="band-stat"><div class="band-num">16.9M</div><div class="band-label">Views on one brand page</div><div class="band-note">Perfume brand · 48.3K new followers</div></div>
+    <p class="band-foot">Read from live Meta Ads Manager screenshots. <a href="portfolio.html">See the campaign records</a>.</p>
+  </div>
+</section>
 
 <section class="capabilities" id="capabilities">
   <div class="wrap"><span class="eyebrow">Where I can help</span><h2>One campaign, looked at from every angle.</h2><p class="section-sub">The right mix depends on the business problem. Sometimes the first step is better tracking or follow-up—not more spend.</p>
@@ -488,9 +657,64 @@ footer a:hover {
   </div>
 </section>
 
+<section class="results" id="results">
+  <div class="wrap">
+    <span class="eyebrow">Results</span>
+    <h2>Read straight from the ad accounts.</h2>
+    <p class="section-sub">Twenty campaigns with the strongest records, cropped straight out of the ad accounts. Nothing retyped, nothing restyled. Client and brand names are hidden; the figures are untouched. Tap any card to enlarge it.</p>
+    <p class="pf-lead">Top performers</p>
+    <div class="pf-grid c3">
+      <a class="pf-tile" href="#lb-60d80199"><div class="pf-frame r169"><img src="images/result-60d80199.jpg" alt="Result card" loading="lazy" width="733" height="555"></div></a>
+      <a class="pf-tile" href="#lb-f6e25c2c"><div class="pf-frame r169"><img src="images/result-f6e25c2c.jpg" alt="Result card" loading="lazy" width="711" height="471"></div></a>
+      <a class="pf-tile" href="#lb-e97f657e"><div class="pf-frame r169"><img src="images/result-e97f657e.jpg" alt="Result card" loading="lazy" width="749" height="396"></div></a>
+    </div>
+    <p class="pf-lead">All campaigns</p>
+    <div class="pf-grid c3">
+      <a class="pf-tile" href="#lb-f5cc3ba2"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/result-f5cc3ba2.jpg" alt="Result card" loading="lazy" width="675" height="396"></div></a>
+      <a class="pf-tile" href="#lb-35957da7"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/15-result-35957da7.jpg" alt="Result card" loading="lazy" width="675" height="403"></div></a>
+      <a class="pf-tile" href="#lb-af7cea85"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/16-result-af7cea85.jpg" alt="Result card" loading="lazy" width="735" height="383"></div></a>
+      <a class="pf-tile" href="#lb-ee0b8311"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/17-result-ee0b8311.jpg" alt="Result card" loading="lazy" width="719" height="425"></div></a>
+      <a class="pf-tile" href="#lb-e5b6bb54"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/18-result-e5b6bb54.jpg" alt="Result card" loading="lazy" width="691" height="387"></div></a>
+      <a class="pf-tile" href="#lb-7d0037df"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/19-result-7d0037df.jpg" alt="Result card" loading="lazy" width="675" height="378"></div></a>
+      <a class="pf-tile" href="#lb-ac3d7109"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/20-result-ac3d7109.jpg" alt="Result card" loading="lazy" width="675" height="344"></div></a>
+      <a class="pf-tile" href="#lb-593d971e"><span class="pf-chip">Medical</span><div class="pf-frame r1610"><img src="images/22-result-593d971e.jpg" alt="Result card" loading="lazy" width="737" height="414"></div></a>
+      <a class="pf-tile" href="#lb-2f7007df"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/23-result-2f7007df.jpg" alt="Result card" loading="lazy" width="749" height="423"></div></a>
+      <a class="pf-tile" href="#lb-2fadbcf4"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/result-2fadbcf4.jpg" alt="Result card" loading="lazy" width="760" height="417"></div></a>
+      <a class="pf-tile" href="#lb-14ad5e6a"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/24-result-14ad5e6a.jpg" alt="Result card" loading="lazy" width="705" height="411"></div></a>
+      <a class="pf-tile" href="#lb-477e2cdf"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/result-477e2cdf.jpg" alt="Result card" loading="lazy" width="679" height="371"></div></a>
+      <a class="pf-tile" href="#lb-1b5eeabc"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/26-result-1b5eeabc.jpg" alt="Result card" loading="lazy" width="703" height="377"></div></a>
+      <a class="pf-tile" href="#lb-60225853"><span class="pf-chip">E-commerce</span><div class="pf-frame r1610"><img src="images/result-60225853.jpg" alt="Result card" loading="lazy" width="683" height="371"></div></a>
+      <a class="pf-tile" href="#lb-c0e3265f"><span class="pf-chip">Installments</span><div class="pf-frame r1610"><img src="images/result-c0e3265f.jpg" alt="Result card" loading="lazy" width="714" height="500"></div></a>
+      <a class="pf-tile" href="#lb-56f96758"><span class="pf-chip">Installments</span><div class="pf-frame r1610"><img src="images/27-result-56f96758.jpg" alt="Result card" loading="lazy" width="691" height="449"></div></a>
+      <a class="pf-tile" href="#lb-cbed757a"><span class="pf-chip">Engagement</span><div class="pf-frame r1610"><img src="images/28-result-cbed757a.jpg" alt="Result card" loading="lazy" width="699" height="459"></div></a>
+    </div>
+    <p class="band-foot" style="border:0;padding:0;margin-top:2rem"><a href="portfolio.html">See all campaign records →</a></p>
+  </div>
+  <div class="res-lb" id="lb-60d80199"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60d80199.jpg" alt=""></div>
+  <div class="res-lb" id="lb-f6e25c2c"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-f6e25c2c.jpg" alt=""></div>
+  <div class="res-lb" id="lb-e97f657e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-e97f657e.jpg" alt=""></div>
+  <div class="res-lb" id="lb-f5cc3ba2"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-f5cc3ba2.jpg" alt=""></div>
+  <div class="res-lb" id="lb-35957da7"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/15-result-35957da7.jpg" alt=""></div>
+  <div class="res-lb" id="lb-af7cea85"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/16-result-af7cea85.jpg" alt=""></div>
+  <div class="res-lb" id="lb-ee0b8311"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/17-result-ee0b8311.jpg" alt=""></div>
+  <div class="res-lb" id="lb-e5b6bb54"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/18-result-e5b6bb54.jpg" alt=""></div>
+  <div class="res-lb" id="lb-7d0037df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/19-result-7d0037df.jpg" alt=""></div>
+  <div class="res-lb" id="lb-ac3d7109"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/20-result-ac3d7109.jpg" alt=""></div>
+  <div class="res-lb" id="lb-593d971e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/22-result-593d971e.jpg" alt=""></div>
+  <div class="res-lb" id="lb-2f7007df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/23-result-2f7007df.jpg" alt=""></div>
+  <div class="res-lb" id="lb-2fadbcf4"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-2fadbcf4.jpg" alt=""></div>
+  <div class="res-lb" id="lb-14ad5e6a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/24-result-14ad5e6a.jpg" alt=""></div>
+  <div class="res-lb" id="lb-477e2cdf"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-477e2cdf.jpg" alt=""></div>
+  <div class="res-lb" id="lb-1b5eeabc"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/26-result-1b5eeabc.jpg" alt=""></div>
+  <div class="res-lb" id="lb-60225853"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60225853.jpg" alt=""></div>
+  <div class="res-lb" id="lb-c0e3265f"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-c0e3265f.jpg" alt=""></div>
+  <div class="res-lb" id="lb-56f96758"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/27-result-56f96758.jpg" alt=""></div>
+  <div class="res-lb" id="lb-cbed757a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/28-result-cbed757a.jpg" alt=""></div>
+</section>
+
 <section class="work-intro selected-work" id="selected-work"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Selected campaign work</span><h2>Here’s the work—and what the record can tell you.</h2></div><p class="section-sub">I show the available context and evidence for each campaign, and make it clear when a record is only a showcase.</p></div><div id="featured-campaign" class="campaign-feature" aria-live="polite" aria-busy="true"><p>Loading selected work…</p></div><div class="section-action"><a href="portfolio.html" class="btn btn-secondary">Browse campaigns and strategy case studies</a></div></div></section>
 
-<section class="web-work-preview" id="web-projects"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Additional work</span><h2>Selected web projects.</h2><p class="section-sub">A separate look at landing pages and web experiences that support campaign journeys.</p></div><a href="projects.html" class="text-link">View web projects →</a></div><div class="case-grid"><article class="case-card"><a class="case-image" href="projects.html#project-ahmed"><img src="images/ahmed-thumb.jpg" alt="Ahmed Nassar medical landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Landing page</span><h3>Ahmed Nassar</h3><p>A medical landing page organized around service information and an appointment path.</p><a href="projects.html#project-ahmed" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-reda"><img src="images/reda-thumb.jpg" alt="Reda Sobhy Meta Ads landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Meta Ads</span><h3>Reda Sobhy</h3><p>A lead-focused page with booking options and documented Meta Pixel events.</p><a href="projects.html#project-reda" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-samar"><img src="images/dr-samar-almulla-thumb.jpg" alt="Samar Almulla Arabic right-to-left website" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Wellbeing · Arabic website</span><h3>Samar Almulla</h3><p>An Arabic right-to-left experience with service information and booking options.</p><a href="projects.html#project-samar" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image project-preview clinicos-preview" href="projects.html#project-clinicos" aria-label="ClinicOS screenshot and project details"><img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Clinic operations platform</span><h3>ClinicOS</h3><p>A clinic operations platform designed for specialty-agnostic, multi-tenant and multi-location use.</p><a href="projects.html#project-clinicos" class="text-link">View project →</a> <a href="https://clinicos-crm.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image offerhub-preview" href="projects.html#project-offerhub" aria-label="OfferHub site screenshot and project details"><img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Web platform</span><h3>OfferHub</h3><p>A web platform project included among my selected web work.</p><a href="projects.html#project-offerhub" class="text-link">View project →</a> <a href="https://offerhub1.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article></div></div></section>
+<section class="web-work-preview" id="web-projects"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Additional work</span><h2>Selected web projects.</h2><p class="section-sub">A separate look at landing pages and web experiences that support campaign journeys.</p></div><a href="projects.html" class="text-link">View web projects →</a></div><div class="case-grid"><article class="case-card"><a class="case-image" href="projects.html#project-jannah" aria-label="JANNAH storefront screenshot and project details"><img src="images/jannah-preview.jpg" alt="JANNAH Arabic fashion storefront homepage screenshot" loading="lazy" width="1200" height="750"></a><div class="case-copy"><span class="case-kicker">E-commerce · Fashion storefront</span><h3>JANNAH</h3><p>A full Arabic-first storefront: two collections, product pages with sizes, cart and cash on delivery, live on its own domain.</p><a href="projects.html#project-jannah" class="text-link">View project →</a> <a href="https://www.jannaheg.com/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-ahmed"><img src="images/ahmed-thumb.jpg" alt="Ahmed Nassar medical landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Landing page</span><h3>Ahmed Nassar</h3><p>A medical landing page organized around service information and an appointment path.</p><a href="projects.html#project-ahmed" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-reda"><img src="images/reda-thumb.jpg" alt="Medical consultant Meta Ads landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Meta Ads</span><h3>Consultant</h3><p>A lead-focused page with booking options and documented Meta Pixel events.</p><a href="projects.html#project-reda" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-samar"><img src="images/dr-samar-almulla-thumb.jpg" alt="Samar Almulla Arabic right-to-left website" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Wellbeing · Arabic website</span><h3>Samar Almulla</h3><p>An Arabic right-to-left experience with service information and booking options.</p><a href="projects.html#project-samar" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image project-preview clinicos-preview" href="projects.html#project-clinicos" aria-label="ClinicOS screenshot and project details"><img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Clinic operations platform</span><h3>ClinicOS</h3><p>A clinic operations platform designed for specialty-agnostic, multi-tenant and multi-location use.</p><a href="projects.html#project-clinicos" class="text-link">View project →</a> <a href="https://clinicos-crm.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image offerhub-preview" href="projects.html#project-offerhub" aria-label="OfferHub site screenshot and project details"><img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Web platform</span><h3>OfferHub</h3><p>A web platform project included among my selected web work.</p><a href="projects.html#project-offerhub" class="text-link">View project →</a> <a href="https://offerhub1.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article></div></div></section>
 
 <section class="about" id="about">
   <div class="wrap about-editorial">
@@ -514,7 +738,31 @@ footer a:hover {
  </div>
 </section>
 
-<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div><div class="quote-grid"><blockquote><p>“الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً”</p><footer><strong>د. رضا صبحي</strong><span>استشاري توليد — مصر الجديدة</span></footer></blockquote><blockquote><p>“ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة”</p><footer><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></footer></blockquote></div></div></section>
+<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div>
+<p class="section-sub">Real WhatsApp screenshots from clients, with names and photos hidden and the figures untouched. Tap any image to enlarge it.</p>
+<p class="pf-lead">Full conversations</p>
+<div class="pf-grid c2">
+      <a class="pf-tile" href="#lbr-1"><div class="pf-frame r916"><img src="images/47-review-5091bb9d.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="1786"></div></a>
+      <a class="pf-tile" href="#lbr-2"><div class="pf-frame r916"><img src="images/49-review-ae8458e3.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="1894"></div></a>
+</div>
+<p class="pf-lead">More messages</p>
+<div class="pf-grid c3">
+      <a class="pf-tile" href="#lbr-3"><div class="pf-frame r1610"><img src="images/51-review-6aa9b289.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="338"></div></a>
+      <a class="pf-tile" href="#lbr-4"><div class="pf-frame r1610"><img src="images/45-review-50888f9b.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="311"></div></a>
+      <a class="pf-tile" href="#lbr-5"><div class="pf-frame r1610"><img src="images/50-review-639c2d18.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="421"></div></a>
+      <a class="pf-tile" href="#lbr-6"><div class="pf-frame r1610"><img src="images/52-review-753b64ce.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="804" height="560"></div></a>
+      <a class="pf-tile" href="#lbr-7"><div class="pf-frame r1610"><img src="images/46-review-655ac27c.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="804" height="750"></div></a>
+      <a class="pf-tile" href="#lbr-8"><div class="pf-frame r1610"><img src="images/53-review-8305abda.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="1080" height="1348"></div></a>
+</div>
+  <div class="res-lb" id="lbr-1"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/47-review-5091bb9d.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-2"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/49-review-ae8458e3.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-3"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/51-review-6aa9b289.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-4"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/45-review-50888f9b.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-5"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/50-review-639c2d18.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-6"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/52-review-753b64ce.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-7"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/46-review-655ac27c.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-8"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/53-review-8305abda.jpg" alt=""></div>
+</div></section>
 
 <section class="faq" id="faq">
  <div class="wrap"><span class="eyebrow">Before you hire a media buyer</span><h2>Know what the work involves.</h2><p class="section-sub">Straight answers about preparation, testing and how decisions are made.</p>

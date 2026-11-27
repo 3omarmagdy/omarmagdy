@@ -82,3 +82,8 @@ This repo is already configured for GitHub Pages at the `omarmagdy` project path
 ├── images/                 (photos used across pages)
 └── dr-reda-sobhy/           (client sub-site)
 ```
+
+
+## Preview deployments
+
+Branch `portfolio-premium` deploys to a Vercel preview URL; `main` deploys to production.

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<title>مشاريع الويب وصفحات الهبوط | Omar Magdy</title>
+<meta name="description" content="نماذج من مشاريع الويب وصفحات الهبوط التي أنشأها عمر مجدي لقطاعات تشمل العيادات والعلامات التجارية والمتاجر.">
+<link rel="canonical" href="https://3omarmagdy.github.io/omarmagdy/projects.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مشاريع الويب وصفحات الهبوط | Omar Magdy">
+<meta property="og:description" content="تصفّح نماذج من مشاريع الويب وصفحات الهبوط في قطاعات مختلفة.">
+<meta property="og:url" content="https://3omarmagdy.github.io/omarmagdy/projects.html">
+<meta property="og:image" content="https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png">
+<meta property="og:locale" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="مشاريع الويب | Omar Magdy">
+<meta name="twitter:description" content="نماذج من صفحات الهبوط ومشاريع الويب لقطاعات مختلفة.">
+<meta name="twitter:image" content="https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png">
+<meta name="theme-color" content="#B8860B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0B0B0B;
+  --surface: #1A1A1A;
+  --gold: #B8860B;
+  --gold-light: #D4AF37;
+  --text: #F5F5F5;
+  --text-secondary: #CACACA;
+  --border: rgba(184, 134, 11, 0.15);
+  --border-light: rgba(184, 134, 11, 0.08);
+  --radius: 12px;
+  --font: 'Cairo', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 800px 600px at 10% 5%, rgba(184, 134, 11, 0.08), transparent),
+    radial-gradient(ellipse 600px 500px at 90% 95%, rgba(184, 134, 11, 0.05), transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 700; }
+
+section { padding: 80px 20px; }
+.wrap { max-width: 1200px; margin: 0 auto; }
+.eyebrow { color: var(--gold); font-size: 0.95rem; font-weight: 700; text-transform: uppercase; margin-bottom: 16px; }
+.section-sub { color: var(--text-secondary); max-width: 680px; margin: 16px 0 48px 0; }
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184, 134, 11, 0.4);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 5%;
+  background: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.case-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.case-card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 16px 48px rgba(184, 134, 11, 0.15);
+}
+
+.case-thumb {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(184, 134, 11, 0.05));
+  overflow: hidden;
+  position: relative;
+}
+
+.case-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.case-card:hover .case-thumb img {
+  transform: scale(1.05);
+}
+
+.case-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(184, 134, 11, 0.2);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.case-content {
+  padding: 32px;
+}
+
+.case-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.case-card > p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.case-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.case-meta span {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  background: rgba(184, 134, 11, 0.08);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  color: var(--text-secondary);
+}
+
+.case-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: var(--black);
+  font-weight: 700;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.case-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.4);
+}
+
+footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border-light);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: var(--gold);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  section { padding: 50px 16px; }
+}
+</style>
+<link rel="stylesheet" href="css/design-system.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav" aria-label="Primary navigation"><a class="logo brand-lockup" href="index.html"><span class="brand-mark" aria-hidden="true">OM</span><span>Omar Magdy</span></a><ul><li><a href="index.html#hero">Home</a></li><li><a href="index.html#selected-work">Work</a></li><li><a href="services.html">Services</a></li><li><a href="index.html#about">About</a></li></ul><a class="nav-cta" href="index.html#contact">Contact</a></nav>
+
+<!-- HERO -->
+<section>
+  <div class="wrap">
+    <h1>Web Projects والـ Landing Pages</h1>
+    <p class="section-sub">مشاريع ويب احترافية محسّنة للتحويل والأداء</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">المشاريع الويب</span>
+    <h2>عمل احترافي يحول الزوار إلى عملاء</h2>
+    <p class="section-sub">كل مشروع بُني بهدف واضح: تحويل أفضل ونتائج قابلة للقياس</p>
+
+    <div class="projects-grid">
+      <div class="case-card" id="project-ahmed">
+        <div class="case-thumb">
+          <img src="images/ahmed-thumb.jpg" alt="د. أحمد نصار - عيادة توليد" loading="lazy" width="900" height="300">
+          <span class="case-tag">LANDING PAGE · MEDICAL</span>
+        </div>
+        <div class="case-content">
+          <h3>د. أحمد نصار — استشاري نساء وتوليد</h3>
+          <p>صفحة هبوط احترافية لعيادة دكتور أحمد نصار بمدينة نصر والمعادي، مصممة خصيصاً لتحويل الزوار لحجوزات فعلية. الصفحة تتضمن معلومات كاملة عن الخدمات، نموذج حجز ذكي، وتقارير أداء مفصلة.</p>
+          <div class="case-meta">
+            <span>HTML/CSS</span>
+            <span>نموذج حجز متقدم</span>
+            <span>SEO محسّن</span>
+            <span>Fully Responsive</span>
+          </div>
+          <a href="https://3omarmagdy.github.io/dr-ahmed-nassar-landing/" target="_blank" class="case-link">شاهد الصفحة الحية ←</a>
+        </div>
+      </div>
+
+      <div class="case-card" id="project-reda">
+        <div class="case-thumb">
+          <img src="images/reda-thumb.jpg" alt="استشاري - عيادة نساء وتوليد" loading="lazy" width="900" height="300">
+          <span class="case-tag">LANDING PAGE · MEDICAL · META ADS</span>
+        </div>
+        <div class="case-content">
+          <h3>استشاري — نساء وتوليد وحقن مجهري</h3>
+          <p>صفحة هبوط كاملة لاستشاري نساء وتوليد وحقن مجهري بمستشفى البشرى بمدينة نصر، مبنية خصيصاً لحملات Meta Ads مع تتبع Pixel كامل (Lead, Schedule, WhatsAppClick)، فورم حجز ذكي يفتح واتساب مباشرة، وسياسة خصوصية مطابقة لمتطلبات Meta.</p>
+          <div class="case-meta">
+            <span>Meta Pixel</span>
+            <span>نموذج حجز ذكي</span>
+            <span>WhatsApp Integration</span>
+            <span>Privacy Policy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card" id="project-samar">
+        <div class="case-thumb">
+          <img src="images/dr-samar-almulla-thumb.jpg" alt="د. سمر الملا - عيادة نفسية" loading="lazy" width="900" height="300">
+          <span class="case-tag">WEBSITE · MENTAL HEALTH · UI/UX</span>
+        </div>
+        <div class="case-content">
+          <h3>د. سمر الملا — أخصائية نفسية إكلينيكية</h3>
+          <p>موقع تعريفي كامل بالعربي (RTL) لعميلة في مجال الصحة النفسية، بهوية بصرية هادية (Sage Green، Terracotta، Beige) تعكس طبيعة التخصص. الموقع مبني بنموذج حجز جلسات مربوط مباشرة بالإيميل والواتساب، مع تتبع كامل للتحويلات عبر Meta Pixel.</p>
+          <div class="case-meta">
+            <span>UI/UX + Copywriting</span>
+            <span>Meta Pixel</span>
+            <span>نموذج حجز جلسات</span>
+            <span>Vercel Deployment</span>
+          </div>
+          <a href="https://dr-sammar-almulla-website-1.vercel.app/" target="_blank" class="case-link">شاهد الصفحة الحية ←</a>
+        </div>
+      </div>
+
+      <div class="case-card" id="project-clinicos">
+        <div class="case-thumb project-mark project-preview clinicos-preview">
+          <img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy">
+          <span class="case-tag">CLINIC OPERATIONS</span>
+        </div>
+        <div class="case-content">
+          <h3>ClinicOS — Clinic Operations Platform</h3>
+          <p>A clinic operations platform designed for specialty-agnostic workflows, multiple organizations and clinic locations.</p>
+          <div class="case-meta">
+            <span>Next.js</span>
+            <span>NestJS</span>
+            <span>PostgreSQL</span>
+            <span>Multi-tenant architecture</span>
+          </div>
+          <a href="https://clinicos-crm.vercel.app/" target="_blank" rel="noopener noreferrer" class="case-link">شاهد المشروع الحي ←</a>
+        </div>
+      </div>
+
+      <div class="case-card" id="project-jannah">
+        <div class="case-thumb">
+          <img src="images/jannah-preview.jpg" alt="متجر JANNAH — واجهة عربية لمتجر ملابس نسائية" loading="lazy" width="1200" height="750">
+          <span class="case-tag">E-COMMERCE · STOREFRONT · NEXT.JS</span>
+        </div>
+        <div class="case-content">
+          <h3>JANNAH — متجر ملابس نسائية</h3>
+          <p>متجر إلكتروني كامل بالعربي (RTL) على دومين خاص: مجموعتان (Classic و Casual)، صفحات منتجات بالمقاسات، سلة، دفع عند الاستلام، وصفحة «حكايتنا». مبني بـ Next.js ومستضاف على Vercel.</p>
+          <div class="case-meta">
+            <span>Next.js</span>
+            <span>Arabic RTL</span>
+            <span>Cart &amp; Checkout</span>
+            <span>Custom domain</span>
+          </div>
+          <a href="https://www.jannaheg.com/" target="_blank" rel="noopener noreferrer" class="case-link">شاهد الموقع الحي ←</a>
+        </div>
+      </div>
+
+      <div class="case-card" id="project-offerhub">
+        <div class="case-thumb project-mark offerhub-mark offerhub-preview">
+          <img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy" width="1913" height="911">
+          <span class="case-tag">WEB PLATFORM</span>
+        </div>
+        <div class="case-content">
+          <h3>OfferHub</h3>
+          <p>A web platform project included in my selected web work.</p>
+          <a href="https://offerhub1.vercel.app/" target="_blank" rel="noopener noreferrer" class="case-link">شاهد المشروع الحي ←</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, rgba(184, 134, 11, 0.08) 0%, rgba(184, 134, 11, 0.03) 100%); border-radius: var(--radius); border: 1px solid var(--border-light);">
+      <h3 style="color: var(--text); margin-bottom: 12px;">محتاج مشروع ويب احترافي؟</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 28px;">كل مشروع مصمم مع التركيز على الأداء والتحويل — ليس فقط المظهر.</p>
+      <a href="https://wa.me/201102418143?text=محتاج%20مشروع%20ويب" class="btn btn-primary" data-track="Lead">تواصل للاستشارة</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <p>© 2024 Omar Magdy. جميع الحقوق محفوظة.</p>
+    <p style="margin-top: 16px; font-size: 0.9rem;">
+      <a href="index.html">الرئيسية</a> | 
+      <a href="portfolio.html">البورتفوليو</a> | 
+      <a href="projects.html">Web Projects</a> | 
+      <a href="services.html">الخدمات</a> | 
+      <a href="course.html">الكورس</a> | 
+      <a href="testimonials.html">آراء العملاء</a> | 
+      <a href="https://wa.me/201102418143">تواصل</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/analytics-config.js" defer></script>
+</body>
+</html>
