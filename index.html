@@ -512,6 +512,25 @@ footer a:hover {
 .eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
 .lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
 
+
+/* results gallery: grouped by sector, screenshots straight from the ad accounts */
+.res-groups{display:grid;gap:clamp(2.1rem,4vw,3.2rem);margin-top:2.6rem;}
+.res-group{display:grid;gap:1.1rem;}
+.res-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;padding-bottom:.85rem;border-bottom:1px solid var(--p-line-2);}
+.res-group-head h3{margin:0;font-size:1.16rem;line-height:1.4;color:var(--p-ivory);letter-spacing:.01em;}
+.res-idx{font-family:var(--font-latin,"Manrope",sans-serif);font-size:.74rem;font-weight:800;letter-spacing:.16em;color:var(--p-gold);}
+.res-stat{margin:0;color:var(--p-mute);font-size:.85rem;line-height:1.55;unicode-bidi:plaintext;}
+.res-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start;}
+.res-card{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.res-card:hover{transform:translateY(-3px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.res-shot{display:block;background:#08080a;line-height:0;}
+.res-shot img{display:block;width:100%;height:auto;}
+.res-card figcaption{display:grid;gap:.28rem;padding:.8rem .95rem 1rem;}
+.res-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-gold-2);}
+.res-metric{display:flex;align-items:baseline;gap:.4rem;color:var(--p-mute);font-size:.82rem;}
+.res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
+.res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
+@media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
 </style>
 </head>
 
@@ -568,37 +587,152 @@ footer a:hover {
   <div class="wrap">
     <span class="eyebrow">Results</span>
     <h2>Read straight from the ad accounts.</h2>
-    <p class="section-sub">Three records, each with the spend and the cost per result next to it, so the number means something.</p>
-    <div class="rec-grid">
-      <article class="rec-card">
-        <span class="rec-tag">E-commerce · Installments</span>
-        <h3>Mobile installments — messaging campaign</h3>
-        <div class="rec-big">7,639<small>conversations</small></div>
-        <div class="rec-meta"><div>Cost per conversation<b>EGP 0.43</b></div><div>Spend<b>EGP 3,317</b></div></div>
-        <p>The lowest cost per conversation in the portfolio, at real volume.</p>
-      </article>
-      <article class="rec-card">
-        <span class="rec-tag">E-commerce · Purchases</span>
-        <h3>ASC — UGC2 purchase campaign</h3>
-        <div class="rec-big">1.3K<small>purchases from the site</small></div>
-        <div class="rec-meta"><div>Cost per purchase<b>EGP 86.90</b></div><div>Spend<b>EGP 110.88K</b></div></div>
-        <p>The client's own read on it: the numbers were climbing.</p>
-      </article>
-      <article class="rec-card">
-        <span class="rec-tag">Bridal · Occasions</span>
-        <h3>Bride package — seasonal offer</h3>
-        <div class="rec-big">521<small>conversations</small></div>
-        <div class="rec-meta"><div>Cost per conversation<b>EGP 3.73</b></div><div>Spend<b>EGP 1,943</b></div></div>
-        <p>A small budget held efficient through a short seasonal window.</p>
-      </article>
+    <p class="section-sub">Ten campaigns across four sectors, cropped straight out of Ads Manager. Spend and cost per result sit next to every number, so the number means something. Client and brand names are hidden; the figures are untouched.</p>
+    <div class="res-groups">
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">01</span>
+        <h3>Real estate</h3>
+        <p class="res-stat">EGP 32,643 spent across two campaigns · 342 leads at EGP 22.37 each</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-e97f657e.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-e97f657e.jpg" alt="Ads Manager screenshot: 342 leads, egp 22.37 per lead, egp 7,643 spent" loading="lazy" width="749" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Lead generation</span>
+            <span class="res-metric"><b>342</b> leads</span>
+            <span class="res-detail">EGP 22.37 per lead · EGP 7,643 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-eb84f3e1.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-eb84f3e1.jpg" alt="Ads Manager screenshot: 91 conversations, egp 287.36 per conversation, egp 25,000 spent" loading="lazy" width="713" height="394">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Lead generation</span>
+            <span class="res-metric"><b>91</b> conversations</span>
+            <span class="res-detail">EGP 287.36 per conversation · EGP 25,000 spent</span>
+          </figcaption>
+        </figure>
+      </div>
     </div>
-    <p class="band-foot" style="border:0;padding:0;margin-top:1.6rem"><a href="portfolio.html">See all campaign records →</a></p>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">02</span>
+        <h3>Medical & clinics</h3>
+        <p class="res-stat">466 conversations · EGP 8,460 spent across two campaigns</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f5cc3ba2.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f5cc3ba2.jpg" alt="Ads Manager screenshot: 346 conversations, egp 8.67 per conversation, egp 3,000 spent" loading="lazy" width="675" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · women's health</span>
+            <span class="res-metric"><b>346</b> conversations</span>
+            <span class="res-detail">EGP 8.67 per conversation · EGP 3,000 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-53de4058.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-53de4058.jpg" alt="Ads Manager screenshot: 120 conversations, egp 45.50 per conversation, egp 5,460 spent" loading="lazy" width="752" height="402">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · dental clinic</span>
+            <span class="res-metric"><b>120</b> conversations</span>
+            <span class="res-detail">EGP 45.50 per conversation · EGP 5,460 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">03</span>
+        <h3>Cosmetics & e-commerce</h3>
+        <p class="res-stat">EGP 0.31 per link click · EGP 0.70 per conversation at 4.3K volume</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60d80199.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60d80199.jpg" alt="Ads Manager screenshot: 4.3K conversations, egp 0.70 per conversation, egp 3.02k spent" loading="lazy" width="733" height="555">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Sales</span>
+            <span class="res-metric"><b>4.3K</b> conversations</span>
+            <span class="res-detail">EGP 0.70 per conversation · EGP 3.02K spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-2fadbcf4.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-2fadbcf4.jpg" alt="Ads Manager screenshot: 522 conversations, egp 3.73 per conversation, egp 1,945.81 spent" loading="lazy" width="760" height="417">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Engagement · bridal package</span>
+            <span class="res-metric"><b>522</b> conversations</span>
+            <span class="res-detail">EGP 3.73 per conversation · EGP 1,945.81 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-477e2cdf.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-477e2cdf.jpg" alt="Ads Manager screenshot: 635 conversations, egp 6.30 per conversation, egp 4,000 spent" loading="lazy" width="679" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · seasonal offer</span>
+            <span class="res-metric"><b>635</b> conversations</span>
+            <span class="res-detail">EGP 6.30 per conversation · EGP 4,000 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60225853.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60225853.jpg" alt="Ads Manager screenshot: 8,985 link clicks, egp 0.31 per link click, egp 2,755.60 spent" loading="lazy" width="683" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Traffic</span>
+            <span class="res-metric"><b>8,985</b> link clicks</span>
+            <span class="res-detail">EGP 0.31 per link click · EGP 2,755.60 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">04</span>
+        <h3>Installments & electronics</h3>
+        <p class="res-stat">9,030 conversations · EGP 5,113 spent across two campaigns</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f6e25c2c.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f6e25c2c.jpg" alt="Ads Manager screenshot: 7,639 conversations, egp 0.43 per conversation, egp 3,317.17 spent" loading="lazy" width="711" height="471">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Messages · mobile installments</span>
+            <span class="res-metric"><b>7,639</b> conversations</span>
+            <span class="res-detail">EGP 0.43 per conversation · EGP 3,317.17 spent</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-c0e3265f.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-c0e3265f.jpg" alt="Ads Manager screenshot: 1,391 conversations, egp 1.29 per conversation, egp 1,795.40 spent" loading="lazy" width="714" height="500">
+          </a>
+          <figcaption>
+            <span class="res-kicker">Engagement · mobile installments</span>
+            <span class="res-metric"><b>1,391</b> conversations</span>
+            <span class="res-detail">EGP 1.29 per conversation · EGP 1,795.40 spent</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
+    <p class="band-foot" style="border:0;padding:0;margin-top:2rem"><a href="portfolio.html">See all campaign records →</a></p>
   </div>
 </section>
 
 <section class="work-intro selected-work" id="selected-work"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Selected campaign work</span><h2>Here’s the work—and what the record can tell you.</h2></div><p class="section-sub">I show the available context and evidence for each campaign, and make it clear when a record is only a showcase.</p></div><div id="featured-campaign" class="campaign-feature" aria-live="polite" aria-busy="true"><p>Loading selected work…</p></div><div class="section-action"><a href="portfolio.html" class="btn btn-secondary">Browse campaigns and strategy case studies</a></div></div></section>
 
-<section class="web-work-preview" id="web-projects"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Additional work</span><h2>Selected web projects.</h2><p class="section-sub">A separate look at landing pages and web experiences that support campaign journeys.</p></div><a href="projects.html" class="text-link">View web projects →</a></div><div class="case-grid"><article class="case-card"><a class="case-image" href="projects.html#project-ahmed"><img src="images/ahmed-thumb.jpg" alt="Ahmed Nassar medical landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Landing page</span><h3>Ahmed Nassar</h3><p>A medical landing page organized around service information and an appointment path.</p><a href="projects.html#project-ahmed" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-reda"><img src="images/reda-thumb.jpg" alt="Reda Sobhy Meta Ads landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Meta Ads</span><h3>Reda Sobhy</h3><p>A lead-focused page with booking options and documented Meta Pixel events.</p><a href="projects.html#project-reda" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-samar"><img src="images/dr-samar-almulla-thumb.jpg" alt="Samar Almulla Arabic right-to-left website" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Wellbeing · Arabic website</span><h3>Samar Almulla</h3><p>An Arabic right-to-left experience with service information and booking options.</p><a href="projects.html#project-samar" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image project-preview clinicos-preview" href="projects.html#project-clinicos" aria-label="ClinicOS screenshot and project details"><img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Clinic operations platform</span><h3>ClinicOS</h3><p>A clinic operations platform designed for specialty-agnostic, multi-tenant and multi-location use.</p><a href="projects.html#project-clinicos" class="text-link">View project →</a> <a href="https://clinicos-crm.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image offerhub-preview" href="projects.html#project-offerhub" aria-label="OfferHub site screenshot and project details"><img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Web platform</span><h3>OfferHub</h3><p>A web platform project included among my selected web work.</p><a href="projects.html#project-offerhub" class="text-link">View project →</a> <a href="https://offerhub1.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article></div></div></section>
+<section class="web-work-preview" id="web-projects"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Additional work</span><h2>Selected web projects.</h2><p class="section-sub">A separate look at landing pages and web experiences that support campaign journeys.</p></div><a href="projects.html" class="text-link">View web projects →</a></div><div class="case-grid"><article class="case-card"><a class="case-image" href="projects.html#project-jannah" aria-label="JANNAH storefront screenshot and project details"><img src="images/jannah-preview.jpg" alt="JANNAH Arabic fashion storefront homepage screenshot" loading="lazy" width="1200" height="750"></a><div class="case-copy"><span class="case-kicker">E-commerce · Fashion storefront</span><h3>JANNAH</h3><p>A full Arabic-first storefront: two collections, product pages with sizes, cart and cash on delivery, live on its own domain.</p><a href="projects.html#project-jannah" class="text-link">View project →</a> <a href="https://www.jannaheg.com/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-ahmed"><img src="images/ahmed-thumb.jpg" alt="Ahmed Nassar medical landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Landing page</span><h3>Ahmed Nassar</h3><p>A medical landing page organized around service information and an appointment path.</p><a href="projects.html#project-ahmed" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-reda"><img src="images/reda-thumb.jpg" alt="Reda Sobhy Meta Ads landing page" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Healthcare · Meta Ads</span><h3>Reda Sobhy</h3><p>A lead-focused page with booking options and documented Meta Pixel events.</p><a href="projects.html#project-reda" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image" href="projects.html#project-samar"><img src="images/dr-samar-almulla-thumb.jpg" alt="Samar Almulla Arabic right-to-left website" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Wellbeing · Arabic website</span><h3>Samar Almulla</h3><p>An Arabic right-to-left experience with service information and booking options.</p><a href="projects.html#project-samar" class="text-link">View project →</a></div></article><article class="case-card"><a class="case-image project-preview clinicos-preview" href="projects.html#project-clinicos" aria-label="ClinicOS screenshot and project details"><img src="images/clinicos-preview.png" alt="ClinicOS website homepage screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Clinic operations platform</span><h3>ClinicOS</h3><p>A clinic operations platform designed for specialty-agnostic, multi-tenant and multi-location use.</p><a href="projects.html#project-clinicos" class="text-link">View project →</a> <a href="https://clinicos-crm.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article><article class="case-card"><a class="case-image offerhub-preview" href="projects.html#project-offerhub" aria-label="OfferHub site screenshot and project details"><img src="images/offerhub-preview.png" alt="OfferHub website landing page screenshot" loading="lazy"></a><div class="case-copy"><span class="case-kicker">Web platform</span><h3>OfferHub</h3><p>A web platform project included among my selected web work.</p><a href="projects.html#project-offerhub" class="text-link">View project →</a> <a href="https://offerhub1.vercel.app/" class="text-link" target="_blank" rel="noopener noreferrer">Open live site ↗</a></div></article></div></div></section>
 
 <section class="about" id="about">
   <div class="wrap about-editorial">

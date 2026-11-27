@@ -379,6 +379,25 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
 .eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
 .lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
 
+
+/* results gallery: grouped by sector, screenshots straight from the ad accounts */
+.res-groups{display:grid;gap:clamp(2.1rem,4vw,3.2rem);margin-top:2.6rem;}
+.res-group{display:grid;gap:1.1rem;}
+.res-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;padding-bottom:.85rem;border-bottom:1px solid var(--p-line-2);}
+.res-group-head h3{margin:0;font-size:1.16rem;line-height:1.4;color:var(--p-ivory);letter-spacing:.01em;}
+.res-idx{font-family:var(--font-latin,"Manrope",sans-serif);font-size:.74rem;font-weight:800;letter-spacing:.16em;color:var(--p-gold);}
+.res-stat{margin:0;color:var(--p-mute);font-size:.85rem;line-height:1.55;unicode-bidi:plaintext;}
+.res-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start;}
+.res-card{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.res-card:hover{transform:translateY(-3px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.res-shot{display:block;background:#08080a;line-height:0;}
+.res-shot img{display:block;width:100%;height:auto;}
+.res-card figcaption{display:grid;gap:.28rem;padding:.8rem .95rem 1rem;}
+.res-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--p-gold-2);}
+.res-metric{display:flex;align-items:baseline;gap:.4rem;color:var(--p-mute);font-size:.82rem;}
+.res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
+.res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
+@media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -431,37 +450,145 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
     <div class="section-head">
       <span class="eyebrow">أقوى النتائج</span>
       <h2 id="top-results-heading">Top results at a glance</h2>
-      <p class="section-sub">أربع حملات من القطاعات اللي بشتغل فيها أكتر — الأرقام والإنفاق زي ما هما في الحساب.</p>
+      <p class="section-sub">عشر حملات من أربع قطاعات، مقصوصة من مدير الإعلانات نفسه. أسماء العملاء والبراندات مخفية، والأرقام زي ما هي.</p>
     </div>
-    <div class="rec-grid">
-      <article class="rec-card">
-        <span class="rec-tag">تقسيط موبايلات</span>
-        <h3>حملة تقسيط موبايلات</h3>
-        <div class="rec-big">7,639<small>محادثة بدأت</small></div>
-        <div class="rec-meta"><div>تكلفة المحادثة<b>0.43 ج.م</b></div><div>الإنفاق<b>3,317 ج.م</b></div></div>
-        <p>أقل تكلفة محادثة في البورتفوليو كله، وعلى حجم كبير.</p>
-      </article>
-      <article class="rec-card">
-        <span class="rec-tag">تجارة إلكترونية</span>
-        <h3>ASC — UGC2</h3>
-        <div class="rec-big">1.3K<small>مشتريات من الموقع</small></div>
-        <div class="rec-meta"><div>تكلفة المشترى<b>86.90 ج.م</b></div><div>الإنفاق<b>110.88K ج.م</b></div></div>
-        <p>حملة بميزانية كبيرة، والعميل بنفسه قال إن الأرقام بتزيد.</p>
-      </article>
-      <article class="rec-card">
-        <span class="rec-tag">عقارات · السعودية</span>
-        <h3>Elm Tree — مرحلة جديدة</h3>
-        <div class="rec-big">100<small>عميل محتمل</small></div>
-        <div class="rec-meta"><div>تكلفة العميل المحتمل<b>129.97 ج.م</b></div><div>الإنفاق<b>12,997 ج.م</b></div></div>
-        <p>توليد عملاء محتملين لكمبوند في السوق السعودي.</p>
-      </article>
-      <article class="rec-card">
-        <span class="rec-tag">مناسبات · عرايس</span>
-        <h3>باكدج العروسة</h3>
-        <div class="rec-big">521<small>محادثة بدأت</small></div>
-        <div class="rec-meta"><div>تكلفة المحادثة<b>3.73 ج.م</b></div><div>الإنفاق<b>1,943 ج.م</b></div></div>
-        <p>ميزانية صغيرة محافظة على كفاءتها في موسم قصير.</p>
-      </article>
+    <div class="res-groups">
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">01</span>
+        <h3>عقارات</h3>
+        <p class="res-stat">32,643 ج.م إنفاق على حملتين · 342 عميل محتمل بتكلفة 22.37 ج.م</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-e97f657e.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-e97f657e.jpg" alt="سكرين شوت من مدير الإعلانات: 342 عميل محتمل، 22.37 ج.م للعميل، 7,643 ج.م إنفاق" loading="lazy" width="749" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">توليد عملاء محتملين</span>
+            <span class="res-metric"><b>342</b> عميل محتمل</span>
+            <span class="res-detail">22.37 ج.م للعميل · 7,643 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-eb84f3e1.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-eb84f3e1.jpg" alt="سكرين شوت من مدير الإعلانات: 91 محادثة، 287.36 ج.م للمحادثة، 25,000 ج.م إنفاق" loading="lazy" width="713" height="394">
+          </a>
+          <figcaption>
+            <span class="res-kicker">توليد عملاء محتملين</span>
+            <span class="res-metric"><b>91</b> محادثة</span>
+            <span class="res-detail">287.36 ج.م للمحادثة · 25,000 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">02</span>
+        <h3>عيادات وطب</h3>
+        <p class="res-stat">466 محادثة · 8,460 ج.م إنفاق على حملتين</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f5cc3ba2.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f5cc3ba2.jpg" alt="سكرين شوت من مدير الإعلانات: 346 محادثة، 8.67 ج.م للمحادثة، 3,000 ج.م إنفاق" loading="lazy" width="675" height="396">
+          </a>
+          <figcaption>
+            <span class="res-kicker">رسائل · صحة المرأة</span>
+            <span class="res-metric"><b>346</b> محادثة</span>
+            <span class="res-detail">8.67 ج.م للمحادثة · 3,000 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-53de4058.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-53de4058.jpg" alt="سكرين شوت من مدير الإعلانات: 120 محادثة، 45.50 ج.م للمحادثة، 5,460 ج.م إنفاق" loading="lazy" width="752" height="402">
+          </a>
+          <figcaption>
+            <span class="res-kicker">رسائل · عيادة أسنان</span>
+            <span class="res-metric"><b>120</b> محادثة</span>
+            <span class="res-detail">45.50 ج.م للمحادثة · 5,460 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">03</span>
+        <h3>كوزمتكس وتجارة إلكترونية</h3>
+        <p class="res-stat">0.31 ج.م للنقرة · 0.70 ج.م للمحادثة على 4.3K محادثة</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60d80199.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60d80199.jpg" alt="سكرين شوت من مدير الإعلانات: 4.3K محادثة، 0.70 ج.م للمحادثة، 3.02K ج.م إنفاق" loading="lazy" width="733" height="555">
+          </a>
+          <figcaption>
+            <span class="res-kicker">مبيعات</span>
+            <span class="res-metric"><b>4.3K</b> محادثة</span>
+            <span class="res-detail">0.70 ج.م للمحادثة · 3.02K ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-2fadbcf4.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-2fadbcf4.jpg" alt="سكرين شوت من مدير الإعلانات: 522 محادثة، 3.73 ج.م للمحادثة، 1,945.81 ج.م إنفاق" loading="lazy" width="760" height="417">
+          </a>
+          <figcaption>
+            <span class="res-kicker">تفاعل · باكدج عروسة</span>
+            <span class="res-metric"><b>522</b> محادثة</span>
+            <span class="res-detail">3.73 ج.م للمحادثة · 1,945.81 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-477e2cdf.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-477e2cdf.jpg" alt="سكرين شوت من مدير الإعلانات: 635 محادثة، 6.30 ج.م للمحادثة، 4,000 ج.م إنفاق" loading="lazy" width="679" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">رسائل · عرض موسمي</span>
+            <span class="res-metric"><b>635</b> محادثة</span>
+            <span class="res-detail">6.30 ج.م للمحادثة · 4,000 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-60225853.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-60225853.jpg" alt="سكرين شوت من مدير الإعلانات: 8,985 نقرة، 0.31 ج.م للنقرة، 2,755.60 ج.م إنفاق" loading="lazy" width="683" height="371">
+          </a>
+          <figcaption>
+            <span class="res-kicker">زيارات للموقع</span>
+            <span class="res-metric"><b>8,985</b> نقرة</span>
+            <span class="res-detail">0.31 ج.م للنقرة · 2,755.60 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head">
+        <span class="res-idx">04</span>
+        <h3>تقسيط وإلكترونيات</h3>
+        <p class="res-stat">9,030 محادثة · 5,113 ج.م إنفاق على حملتين</p>
+      </div>
+      <div class="res-cards">
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-f6e25c2c.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-f6e25c2c.jpg" alt="سكرين شوت من مدير الإعلانات: 7,639 محادثة، 0.43 ج.م للمحادثة، 3,317.17 ج.م إنفاق" loading="lazy" width="711" height="471">
+          </a>
+          <figcaption>
+            <span class="res-kicker">رسائل · تقسيط موبايلات</span>
+            <span class="res-metric"><b>7,639</b> محادثة</span>
+            <span class="res-detail">0.43 ج.م للمحادثة · 3,317.17 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+        <figure class="res-card">
+          <a class="res-shot" href="images/result-c0e3265f.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="images/result-c0e3265f.jpg" alt="سكرين شوت من مدير الإعلانات: 1,391 محادثة، 1.29 ج.م للمحادثة، 1,795.40 ج.م إنفاق" loading="lazy" width="714" height="500">
+          </a>
+          <figcaption>
+            <span class="res-kicker">تفاعل · تقسيط موبايلات</span>
+            <span class="res-metric"><b>1,391</b> محادثة</span>
+            <span class="res-detail">1.29 ج.م للمحادثة · 1,795.40 ج.م إنفاق</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
     </div>
   </section>
 
