@@ -445,6 +445,74 @@ footer a:hover {
 </style>
 <link rel="stylesheet" href="css/design-system.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Omar Magdy","jobTitle":"Performance Marketer & Media Buyer","url":"https://3omarmagdy.github.io/omarmagdy/","image":"https://3omarmagdy.github.io/omarmagdy/images/omar-profile.png","sameAs":["https://instagram.com/Omar.Growth.Hub","https://facebook.com/Omar.Growth.Hub","https://linkedin.com/in/omargrowthhub"]}</script>
+<style>
+/* ===== Premium layer ===== */
+:root{
+  --p-gold:#C9A227;
+  --p-gold-2:#E8CE86;
+  --p-ivory:#F7F3EA;
+  --p-mute:#A7A39B;
+  --p-line:rgba(201,162,39,.20);
+  --p-line-2:rgba(247,243,234,.075);
+  --p-panel:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --p-radius:18px;
+  --p-shadow:0 26px 60px -32px rgba(0,0,0,.95);
+}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;letter-spacing:.16em;font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--p-gold-2);}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--p-gold),transparent);}
+.section-sub{max-width:64ch;}
+
+/* stat band */
+.band{border-block:1px solid var(--p-line-2);background:radial-gradient(120% 180% at 50% -60%,rgba(201,162,39,.12),transparent 62%);}
+.band .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:clamp(2rem,4.5vw,3.25rem);}
+.band-stat{padding-inline:clamp(1rem,2.2vw,2rem);border-inline-start:1px solid var(--p-line-2);}
+.band-stat:first-child{border-inline-start:0;padding-inline-start:0;}
+.band-num{font-family:var(--font-latin,"Manrope",sans-serif);font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;background:linear-gradient(118deg,#F6E7BC,#C9A227 58%,#8F7016);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.band-label{color:var(--p-ivory);font-size:.95rem;font-weight:600;margin-top:.45rem;}
+.band-note{color:var(--p-mute);font-size:.8rem;margin-top:.2rem;line-height:1.5;}
+.band-foot{grid-column:1/-1;margin-top:clamp(1.5rem,3vw,2.25rem);padding-top:1.1rem;border-top:1px solid var(--p-line-2);color:var(--p-mute);font-size:.85rem;}
+.band-foot a{color:var(--p-gold-2);border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.band-foot a:hover{border-color:var(--p-gold-2);}
+@media(max-width:860px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.9rem}.band-stat:nth-child(3){border-inline-start:0;padding-inline-start:0}}
+
+/* record cards */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.rec-card{position:relative;padding:1.6rem 1.6rem 1.4rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.rec-card::before{content:"";position:absolute;inset-inline:1.6rem;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.55),transparent);}
+.rec-card:hover{transform:translateY(-4px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.rec-tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--p-gold-2);border:1px solid var(--p-line);border-radius:999px;padding:.28rem .68rem;margin-bottom:.95rem;}
+.rec-card h3{font-size:1.12rem;line-height:1.4;color:var(--p-ivory);margin-bottom:.55rem;}
+.rec-big{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.95rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);line-height:1.15;}
+.rec-big small{font-size:.8rem;font-weight:500;color:var(--p-mute);margin-inline-start:.4rem;letter-spacing:0;}
+.rec-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--p-line-2);}
+.rec-meta div{font-size:.78rem;color:var(--p-mute);}
+.rec-meta b{display:block;color:var(--p-ivory);font-size:.95rem;font-weight:700;margin-top:.15rem;}
+.rec-card p{color:var(--p-mute);font-size:.88rem;line-height:1.7;margin-top:.85rem;}
+
+/* quote cards */
+.pq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.pq-card{position:relative;padding:1.9rem 1.6rem 1.5rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);}
+.pq-mark{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:.55;color:rgba(201,162,39,.5);margin-bottom:1.1rem;}
+.pq-card p{color:#EDE9DF;font-size:.99rem;line-height:1.9;}
+.pq-foot{display:flex;align-items:center;gap:.75rem;margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--p-line-2);}
+.pq-avatar{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(201,162,39,.28),rgba(201,162,39,.06));border:1px solid var(--p-line);color:var(--p-gold-2);font-weight:700;font-size:.9rem;}
+.pq-foot strong{display:block;color:var(--p-ivory);font-size:.94rem;line-height:1.35;}
+.pq-foot span{color:var(--p-mute);font-size:.79rem;}
+
+/* screenshot gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:2.25rem;}
+.gal figure{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:#0c0c0c;}
+.gal img{width:100%;display:block;}
+.gal figcaption{padding:.7rem .9rem;font-size:.79rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);}
+.frame-shot{max-width:620px;margin-inline:auto;border:1px solid var(--p-line);border-radius:16px;overflow:hidden;background:#0c0c0c;}
+.frame-shot img{width:100%;display:block;}
+.frame-shot figcaption{padding:.85rem 1rem;font-size:.82rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);text-align:center;}
+
+/* direction + normalisation fixes */
+.eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
+.lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
+
+</style>
 </head>
 
 <body>
@@ -475,7 +543,15 @@ footer a:hover {
   </div>
 </section>
 
-<section class="proof-rail" aria-label="How I approach campaign work"><div class="wrap"><span>Understand the business</span><i></i><span>Test with a clear reason</span><i></i><span>Decide from evidence</span></div></section>
+<section class="band" aria-label="Results read from live ad accounts">
+  <div class="wrap">
+    <div class="band-stat"><div class="band-num">8,148</div><div class="band-label">Conversations started</div><div class="band-note">One monthly campaign · EGP 2.07 each</div></div>
+    <div class="band-stat"><div class="band-num">EGP 0.43</div><div class="band-label">Cost per conversation</div><div class="band-note">Installments campaign · EGP 3,317 spend</div></div>
+    <div class="band-stat"><div class="band-num">1.3K</div><div class="band-label">Purchases from the site</div><div class="band-note">ASC campaign · EGP 86.90 per purchase</div></div>
+    <div class="band-stat"><div class="band-num">16.9M</div><div class="band-label">Views on one brand page</div><div class="band-note">Perfume brand · 48.3K new followers</div></div>
+    <p class="band-foot">Read from live Meta Ads Manager screenshots. <a href="portfolio.html">See the campaign records</a>.</p>
+  </div>
+</section>
 
 <section class="capabilities" id="capabilities">
   <div class="wrap"><span class="eyebrow">Where I can help</span><h2>One campaign, looked at from every angle.</h2><p class="section-sub">The right mix depends on the business problem. Sometimes the first step is better tracking or follow-up—not more spend.</p>
@@ -485,6 +561,38 @@ footer a:hover {
       <article><span>03</span><h3>Media</h3><p>Media buying, campaign setup, audience approach and budget allocation.</p></article>
       <article><span>04</span><h3>Optimization</h3><p>Measurement, retargeting, learning, optimization and considered scaling.</p></article>
     </div>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="wrap">
+    <span class="eyebrow">Results</span>
+    <h2>Read straight from the ad accounts.</h2>
+    <p class="section-sub">Three records, each with the spend and the cost per result next to it, so the number means something.</p>
+    <div class="rec-grid">
+      <article class="rec-card">
+        <span class="rec-tag">E-commerce · Installments</span>
+        <h3>Mobile installments — messaging campaign</h3>
+        <div class="rec-big">7,639<small>conversations</small></div>
+        <div class="rec-meta"><div>Cost per conversation<b>EGP 0.43</b></div><div>Spend<b>EGP 3,317</b></div></div>
+        <p>The lowest cost per conversation in the portfolio, at real volume.</p>
+      </article>
+      <article class="rec-card">
+        <span class="rec-tag">E-commerce · Purchases</span>
+        <h3>ASC — UGC2 purchase campaign</h3>
+        <div class="rec-big">1.3K<small>purchases from the site</small></div>
+        <div class="rec-meta"><div>Cost per purchase<b>EGP 86.90</b></div><div>Spend<b>EGP 110.88K</b></div></div>
+        <p>The client's own read on it: the numbers were climbing.</p>
+      </article>
+      <article class="rec-card">
+        <span class="rec-tag">Bridal · Occasions</span>
+        <h3>Bride package — seasonal offer</h3>
+        <div class="rec-big">521<small>conversations</small></div>
+        <div class="rec-meta"><div>Cost per conversation<b>EGP 3.73</b></div><div>Spend<b>EGP 1,943</b></div></div>
+        <p>A small budget held efficient through a short seasonal window.</p>
+      </article>
+    </div>
+    <p class="band-foot" style="border:0;padding:0;margin-top:1.6rem"><a href="portfolio.html">See all campaign records →</a></p>
   </div>
 </section>
 
@@ -514,7 +622,11 @@ footer a:hover {
  </div>
 </section>
 
-<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div><div class="quote-grid"><blockquote><p>“الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً”</p><footer><strong>د. رضا صبحي</strong><span>استشاري توليد — مصر الجديدة</span></footer></blockquote><blockquote><p>“ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة”</p><footer><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></footer></blockquote></div></div></section>
+<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div><div class="pq-grid">
+<article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري توليد — مصر الجديدة</span></div></div></article>
+<article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</p><div class="pq-foot"><span class="pq-avatar">A</span><div><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></div></div></article>
+<article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</p><div class="pq-foot"><span class="pq-avatar">M</span><div><strong>Mory</strong><span>صاحبة براند أونلاين — الإمارات</span></div></div></article>
+</div></div></section>
 
 <section class="faq" id="faq">
  <div class="wrap"><span class="eyebrow">Before you hire a media buyer</span><h2>Know what the work involves.</h2><p class="section-sub">Straight answers about preparation, testing and how decisions are made.</p>

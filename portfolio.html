@@ -312,6 +312,74 @@
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
 /></noscript>
+<style>
+/* ===== Premium layer ===== */
+:root{
+  --p-gold:#C9A227;
+  --p-gold-2:#E8CE86;
+  --p-ivory:#F7F3EA;
+  --p-mute:#A7A39B;
+  --p-line:rgba(201,162,39,.20);
+  --p-line-2:rgba(247,243,234,.075);
+  --p-panel:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --p-radius:18px;
+  --p-shadow:0 26px 60px -32px rgba(0,0,0,.95);
+}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;letter-spacing:.16em;font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--p-gold-2);}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--p-gold),transparent);}
+.section-sub{max-width:64ch;}
+
+/* stat band */
+.band{border-block:1px solid var(--p-line-2);background:radial-gradient(120% 180% at 50% -60%,rgba(201,162,39,.12),transparent 62%);}
+.band .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:clamp(2rem,4.5vw,3.25rem);}
+.band-stat{padding-inline:clamp(1rem,2.2vw,2rem);border-inline-start:1px solid var(--p-line-2);}
+.band-stat:first-child{border-inline-start:0;padding-inline-start:0;}
+.band-num{font-family:var(--font-latin,"Manrope",sans-serif);font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;background:linear-gradient(118deg,#F6E7BC,#C9A227 58%,#8F7016);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.band-label{color:var(--p-ivory);font-size:.95rem;font-weight:600;margin-top:.45rem;}
+.band-note{color:var(--p-mute);font-size:.8rem;margin-top:.2rem;line-height:1.5;}
+.band-foot{grid-column:1/-1;margin-top:clamp(1.5rem,3vw,2.25rem);padding-top:1.1rem;border-top:1px solid var(--p-line-2);color:var(--p-mute);font-size:.85rem;}
+.band-foot a{color:var(--p-gold-2);border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.band-foot a:hover{border-color:var(--p-gold-2);}
+@media(max-width:860px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.9rem}.band-stat:nth-child(3){border-inline-start:0;padding-inline-start:0}}
+
+/* record cards */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.rec-card{position:relative;padding:1.6rem 1.6rem 1.4rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.rec-card::before{content:"";position:absolute;inset-inline:1.6rem;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.55),transparent);}
+.rec-card:hover{transform:translateY(-4px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.rec-tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--p-gold-2);border:1px solid var(--p-line);border-radius:999px;padding:.28rem .68rem;margin-bottom:.95rem;}
+.rec-card h3{font-size:1.12rem;line-height:1.4;color:var(--p-ivory);margin-bottom:.55rem;}
+.rec-big{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.95rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);line-height:1.15;}
+.rec-big small{font-size:.8rem;font-weight:500;color:var(--p-mute);margin-inline-start:.4rem;letter-spacing:0;}
+.rec-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--p-line-2);}
+.rec-meta div{font-size:.78rem;color:var(--p-mute);}
+.rec-meta b{display:block;color:var(--p-ivory);font-size:.95rem;font-weight:700;margin-top:.15rem;}
+.rec-card p{color:var(--p-mute);font-size:.88rem;line-height:1.7;margin-top:.85rem;}
+
+/* quote cards */
+.pq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.pq-card{position:relative;padding:1.9rem 1.6rem 1.5rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);}
+.pq-mark{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:.55;color:rgba(201,162,39,.5);margin-bottom:1.1rem;}
+.pq-card p{color:#EDE9DF;font-size:.99rem;line-height:1.9;}
+.pq-foot{display:flex;align-items:center;gap:.75rem;margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--p-line-2);}
+.pq-avatar{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(201,162,39,.28),rgba(201,162,39,.06));border:1px solid var(--p-line);color:var(--p-gold-2);font-weight:700;font-size:.9rem;}
+.pq-foot strong{display:block;color:var(--p-ivory);font-size:.94rem;line-height:1.35;}
+.pq-foot span{color:var(--p-mute);font-size:.79rem;}
+
+/* screenshot gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:2.25rem;}
+.gal figure{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:#0c0c0c;}
+.gal img{width:100%;display:block;}
+.gal figcaption{padding:.7rem .9rem;font-size:.79rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);}
+.frame-shot{max-width:620px;margin-inline:auto;border:1px solid var(--p-line);border-radius:16px;overflow:hidden;background:#0c0c0c;}
+.frame-shot img{width:100%;display:block;}
+.frame-shot figcaption{padding:.85rem 1rem;font-size:.82rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);text-align:center;}
+
+/* direction + normalisation fixes */
+.eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
+.lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
+
+</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">تخطي إلى المحتوى</a>
@@ -323,6 +391,16 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
     <span class="eyebrow">البورتفوليو</span>
     <h1>Campaign Work &amp; Strategy</h1>
     <p class="lead">A selection of campaign records and strategy projects. I keep proposed plans separate from campaigns with documented results, so you can see exactly what each example represents.</p>
+  </section>
+
+  <section class="band" aria-label="نتائج من حسابات الإعلانات">
+    <div class="wrap">
+      <div class="band-stat"><div class="band-num">8,148</div><div class="band-label">محادثة بدأت</div><div class="band-note">حملة شهر كامل · 2.07 ج.م للمحادثة</div></div>
+      <div class="band-stat"><div class="band-num">0.43 ج.م</div><div class="band-label">تكلفة المحادثة</div><div class="band-note">حملة تقسيط موبايلات · إنفاق 3,317 ج.م</div></div>
+      <div class="band-stat"><div class="band-num">1.3K</div><div class="band-label">مشتريات من الموقع</div><div class="band-note">حملة ASC · 86.90 ج.م للمشترى</div></div>
+      <div class="band-stat"><div class="band-num">16.9M</div><div class="band-label">مشاهدة لبراند واحد</div><div class="band-note">براند عطور · 48.3K متابع جديد</div></div>
+      <p class="band-foot">الأرقام دي مقروءة من لقطات Ads Manager حقيقية. <a href="#results">سجلات الحملات تحت</a>.</p>
+    </div>
   </section>
 
   <section class="strategy-showcase" id="strategy-cases" aria-labelledby="strategy-cases-heading">
@@ -345,6 +423,44 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
         <p>A combined growth, SWOT and creative plan: focus the first tests, show real production quality and judge progress by qualified orders and repeat demand.</p>
         <div class="case-meta"><span>Growth strategy</span><span>Creative direction</span><span>Testing plan</span></div>
         <a class="case-link" href="print-growth-strategy.html">Read case study →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="top-results" aria-labelledby="top-results-heading">
+    <div class="section-head">
+      <span class="eyebrow">أقوى النتائج</span>
+      <h2 id="top-results-heading">Top results at a glance</h2>
+      <p class="section-sub">أربع حملات من القطاعات اللي بشتغل فيها أكتر — الأرقام والإنفاق زي ما هما في الحساب.</p>
+    </div>
+    <div class="rec-grid">
+      <article class="rec-card">
+        <span class="rec-tag">تقسيط موبايلات</span>
+        <h3>حملة تقسيط موبايلات</h3>
+        <div class="rec-big">7,639<small>محادثة بدأت</small></div>
+        <div class="rec-meta"><div>تكلفة المحادثة<b>0.43 ج.م</b></div><div>الإنفاق<b>3,317 ج.م</b></div></div>
+        <p>أقل تكلفة محادثة في البورتفوليو كله، وعلى حجم كبير.</p>
+      </article>
+      <article class="rec-card">
+        <span class="rec-tag">تجارة إلكترونية</span>
+        <h3>ASC — UGC2</h3>
+        <div class="rec-big">1.3K<small>مشتريات من الموقع</small></div>
+        <div class="rec-meta"><div>تكلفة المشترى<b>86.90 ج.م</b></div><div>الإنفاق<b>110.88K ج.م</b></div></div>
+        <p>حملة بميزانية كبيرة، والعميل بنفسه قال إن الأرقام بتزيد.</p>
+      </article>
+      <article class="rec-card">
+        <span class="rec-tag">عقارات · السعودية</span>
+        <h3>Elm Tree — مرحلة جديدة</h3>
+        <div class="rec-big">100<small>عميل محتمل</small></div>
+        <div class="rec-meta"><div>تكلفة العميل المحتمل<b>129.97 ج.م</b></div><div>الإنفاق<b>12,997 ج.م</b></div></div>
+        <p>توليد عملاء محتملين لكمبوند في السوق السعودي.</p>
+      </article>
+      <article class="rec-card">
+        <span class="rec-tag">مناسبات · عرايس</span>
+        <h3>باكدج العروسة</h3>
+        <div class="rec-big">521<small>محادثة بدأت</small></div>
+        <div class="rec-meta"><div>تكلفة المحادثة<b>3.73 ج.م</b></div><div>الإنفاق<b>1,943 ج.م</b></div></div>
+        <p>ميزانية صغيرة محافظة على كفاءتها في موسم قصير.</p>
       </article>
     </div>
   </section>

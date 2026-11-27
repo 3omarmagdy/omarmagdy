@@ -207,6 +207,74 @@ footer a:hover {
 }
 </style>
 <link rel="stylesheet" href="css/design-system.css">
+<style>
+/* ===== Premium layer ===== */
+:root{
+  --p-gold:#C9A227;
+  --p-gold-2:#E8CE86;
+  --p-ivory:#F7F3EA;
+  --p-mute:#A7A39B;
+  --p-line:rgba(201,162,39,.20);
+  --p-line-2:rgba(247,243,234,.075);
+  --p-panel:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  --p-radius:18px;
+  --p-shadow:0 26px 60px -32px rgba(0,0,0,.95);
+}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;letter-spacing:.16em;font-size:.72rem;font-weight:700;text-transform:uppercase;color:var(--p-gold-2);}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--p-gold),transparent);}
+.section-sub{max-width:64ch;}
+
+/* stat band */
+.band{border-block:1px solid var(--p-line-2);background:radial-gradient(120% 180% at 50% -60%,rgba(201,162,39,.12),transparent 62%);}
+.band .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding-block:clamp(2rem,4.5vw,3.25rem);}
+.band-stat{padding-inline:clamp(1rem,2.2vw,2rem);border-inline-start:1px solid var(--p-line-2);}
+.band-stat:first-child{border-inline-start:0;padding-inline-start:0;}
+.band-num{font-family:var(--font-latin,"Manrope",sans-serif);font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;background:linear-gradient(118deg,#F6E7BC,#C9A227 58%,#8F7016);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.band-label{color:var(--p-ivory);font-size:.95rem;font-weight:600;margin-top:.45rem;}
+.band-note{color:var(--p-mute);font-size:.8rem;margin-top:.2rem;line-height:1.5;}
+.band-foot{grid-column:1/-1;margin-top:clamp(1.5rem,3vw,2.25rem);padding-top:1.1rem;border-top:1px solid var(--p-line-2);color:var(--p-mute);font-size:.85rem;}
+.band-foot a{color:var(--p-gold-2);border-bottom:1px solid transparent;transition:border-color .2s ease;}
+.band-foot a:hover{border-color:var(--p-gold-2);}
+@media(max-width:860px){.band .wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.9rem}.band-stat:nth-child(3){border-inline-start:0;padding-inline-start:0}}
+
+/* record cards */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.rec-card{position:relative;padding:1.6rem 1.6rem 1.4rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.rec-card::before{content:"";position:absolute;inset-inline:1.6rem;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.55),transparent);}
+.rec-card:hover{transform:translateY(-4px);border-color:var(--p-line);box-shadow:var(--p-shadow);}
+.rec-tag{display:inline-block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--p-gold-2);border:1px solid var(--p-line);border-radius:999px;padding:.28rem .68rem;margin-bottom:.95rem;}
+.rec-card h3{font-size:1.12rem;line-height:1.4;color:var(--p-ivory);margin-bottom:.55rem;}
+.rec-big{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.95rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);line-height:1.15;}
+.rec-big small{font-size:.8rem;font-weight:500;color:var(--p-mute);margin-inline-start:.4rem;letter-spacing:0;}
+.rec-meta{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--p-line-2);}
+.rec-meta div{font-size:.78rem;color:var(--p-mute);}
+.rec-meta b{display:block;color:var(--p-ivory);font-size:.95rem;font-weight:700;margin-top:.15rem;}
+.rec-card p{color:var(--p-mute);font-size:.88rem;line-height:1.7;margin-top:.85rem;}
+
+/* quote cards */
+.pq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.15rem;margin-top:2.5rem;}
+.pq-card{position:relative;padding:1.9rem 1.6rem 1.5rem;border:1px solid var(--p-line-2);border-radius:var(--p-radius);background:var(--p-panel);}
+.pq-mark{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:.55;color:rgba(201,162,39,.5);margin-bottom:1.1rem;}
+.pq-card p{color:#EDE9DF;font-size:.99rem;line-height:1.9;}
+.pq-foot{display:flex;align-items:center;gap:.75rem;margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--p-line-2);}
+.pq-avatar{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,rgba(201,162,39,.28),rgba(201,162,39,.06));border:1px solid var(--p-line);color:var(--p-gold-2);font-weight:700;font-size:.9rem;}
+.pq-foot strong{display:block;color:var(--p-ivory);font-size:.94rem;line-height:1.35;}
+.pq-foot span{color:var(--p-mute);font-size:.79rem;}
+
+/* screenshot gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;margin-top:2.25rem;}
+.gal figure{margin:0;border:1px solid var(--p-line-2);border-radius:14px;overflow:hidden;background:#0c0c0c;}
+.gal img{width:100%;display:block;}
+.gal figcaption{padding:.7rem .9rem;font-size:.79rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);}
+.frame-shot{max-width:620px;margin-inline:auto;border:1px solid var(--p-line);border-radius:16px;overflow:hidden;background:#0c0c0c;}
+.frame-shot img{width:100%;display:block;}
+.frame-shot figcaption{padding:.85rem 1rem;font-size:.82rem;color:var(--p-mute);border-top:1px solid var(--p-line-2);text-align:center;}
+
+/* direction + normalisation fixes */
+.eyebrow{border:0;background:transparent;padding:0;border-radius:0;}
+.lead,.section-sub,.rec-card p,.pq-card p,.band-foot,.case-copy p,.catalog-state,.section-head p{unicode-bidi:plaintext;}
+
+</style>
 </head>
 
 <body>
@@ -217,85 +285,28 @@ footer a:hover {
 <!-- HERO -->
 <section>
   <div class="wrap">
+    <span class="eyebrow">CLIENT FEEDBACK</span>
     <h1>آراء العملاء</h1>
-    <p class="section-sub">شهادات حقيقية من عملاء حقيقيين — رسائل WhatsApp مباشرة من العملاء</p>
+    <p class="section-sub">رسائل WhatsApp وصلت من العملاء نفسهم — من غير تعديل في الكلام. الاسم أو الصفة زي ما العميل كتبها.</p>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section>
   <div class="wrap">
-    <div class="testimonials-grid">
-      
-      <!-- د. رضا صبحي -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الحمد لله 3 حجوزات من أمبارح للنهاره شكراً يا بشمهندس على الاهتمام</div>
-        <div class="testimonial-author">د. رضا صبحي</div>
-        <div class="testimonial-role">استشاري نساء وتوليد</div>
-      </div>
-
-      <!-- Mory من الإمارات -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</div>
-        <div class="testimonial-author">Mory</div>
-        <div class="testimonial-role">صاحبة براند أونلاين</div>
-      </div>
-
-      <!-- د. رضا - حالات ولادة -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</div>
-        <div class="testimonial-author">د. رضا صبحي</div>
-        <div class="testimonial-role">استشاري توليد — مصر الجديدة</div>
-      </div>
-
-      <!-- عميلة Clinic -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">الحمد لله الاستشيشنت بلفتني ب 3 سيشن بس اونلاين — تمام يا دكتور</div>
-        <div class="testimonial-author">عميلة Clinic</div>
-        <div class="testimonial-role">خدمات طبية</div>
-      </div>
-
-      <!-- النتيجة الكبيرة -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">Thank you, Mr. Omar, for your hard work and dedication. Your professionalism and expertise have played a significant role in delivering promising campaign results.</div>
-        <div class="testimonial-author">عميل إنجليزي</div>
-        <div class="testimonial-role">شركة عالمية</div>
-      </div>
-
-      <!-- صورة الواتساب الأولى -->
-      <div class="testimonial-image-card">
-        <img src="images/testimonial-elite-residence.jpg" alt="صورة شهادة عميل Elite Residence" loading="lazy">
-      </div>
-
-      <!-- الرسالة الطويلة من د. رضا -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">صباح الخير يا هندسه شكراً جداً لحضرتك الحجات اللي حضرتك قولتي عليها فعلاً فرقت جداً في الإعلان لك جزيل الشكر عارفه والله انني تعبيك معايا الفترة اللي فاتت وبصراحة كنت قلقان لأن فعلاً حصلت معايا عمليات نصب كتير قبل ما أوصل لحضرتك فعلاً حصل معايا عمليات نصب كتير ما أوصل لحضرتك</div>
-        <div class="testimonial-author">د. رضا صبحي</div>
-        <div class="testimonial-role">استشاري توليد</div>
-      </div>
-
-      <!-- الرسالة من عميل ASC -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</div>
-        <div class="testimonial-author">صاحب متجر ASC</div>
-        <div class="testimonial-role">تجارة إلكترونية</div>
-      </div>
-
-      <!-- حالات جديدة -->
-      <div class="testimonial-card">
-        <div class="testimonial-quote">"</div>
-        <div class="testimonial-text">في حالة جديدة و2 برده من طوارئ نبض الجنين وحش وداخله في تسمم حمل من أول تمويل انت عملته</div>
-        <div class="testimonial-author">د. رضا صبحي</div>
-        <div class="testimonial-role">استشاري توليد</div>
-      </div>
-
+    <figure class="frame-shot">
+      <img src="images/testimonial-elite-residence.jpg" alt="لقطة من محادثة عميل — Elite Residence" loading="lazy">
+      <figcaption>لقطة من محادثة عميل — Elite Residence</figcaption>
+    </figure>
+    <div class="pq-grid">
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله 3 حجوزات من أمبارح للنهاره شكراً يا بشمهندس على الاهتمام</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري نساء وتوليد</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</p><div class="pq-foot"><span class="pq-avatar">M</span><div><strong>Mory</strong><span>صاحبة براند أونلاين — الإمارات</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري توليد — مصر الجديدة</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله الاستشيشنت بلفتني ب 3 سيشن بس اونلاين — تمام يا دكتور</p><div class="pq-foot"><span class="pq-avatar">ع</span><div><strong>عميلة Clinic</strong><span>خدمات طبية</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="ltr" style="text-align:left">Thank you, Mr. Omar, for your hard work and dedication. Your professionalism and expertise have played a significant role in delivering promising campaign results.</p><div class="pq-foot"><span class="pq-avatar">C</span><div><strong>عميل إنجليزي</strong><span>شركة عالمية</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">صباح الخير يا هندسه شكراً جداً لحضرتك الحجات اللي حضرتك قولتي عليها فعلاً فرقت جداً في الإعلان لك جزيل الشكر عارفه والله انني تعبيك معايا الفترة اللي فاتت وبصراحة كنت قلقان لأن فعلاً حصلت معايا عمليات نصب كتير قبل ما أوصل لحضرتك فعلاً حصل معايا عمليات نصب كتير ما أوصل لحضرتك</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري توليد</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</p><div class="pq-foot"><span class="pq-avatar">A</span><div><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></div></div></article>
+      <article class="pq-card"><span class="pq-mark">&#8220;</span><p dir="rtl">في حالة جديدة و2 برده من طوارئ نبض الجنين وحش وداخله في تسمم حمل من أول تمويل انت عملته</p><div class="pq-foot"><span class="pq-avatar">ر</span><div><strong>د. رضا صبحي</strong><span>استشاري توليد</span></div></div></article>
     </div>
   </div>
 </section>
