@@ -398,6 +398,26 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
 .res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
 .res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
 @media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
+
+/* results gallery: screenshots only, grouped by sector, click to enlarge */
+.res-groups{display:grid;gap:clamp(2rem,3.6vw,3rem);margin-top:2.6rem;}
+.res-group{display:grid;gap:1rem;}
+.res-group-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .9rem;padding-bottom:.7rem;border-bottom:1px solid var(--p-line-2);}
+.res-group-head h3{margin:0;font-size:1.12rem;line-height:1.4;color:var(--p-ivory);letter-spacing:.01em;}
+.res-idx{font-family:var(--font-latin,"Manrope",sans-serif);font-size:.72rem;font-weight:800;letter-spacing:.16em;color:var(--p-gold);}
+.res-count{color:var(--p-mute);font-size:.78rem;letter-spacing:.04em;unicode-bidi:plaintext;}
+.res-gallery{column-count:4;column-gap:.85rem;}
+.res-item{display:block;break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;overflow:hidden;background:#08080a;line-height:0;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.res-item:hover{transform:translateY(-3px);border-color:rgba(201,162,39,.55);box-shadow:0 24px 50px -28px rgba(0,0,0,.95);}
+.res-item img{display:block;width:100%;height:auto;}
+@media(max-width:1100px){.res-gallery{column-count:3}}
+@media(max-width:760px){.res-gallery{column-count:2;column-gap:.6rem}.res-item{margin-bottom:.6rem;border-radius:9px}}
+@media(max-width:460px){.res-gallery{column-count:1}}
+.res-lb{display:none;position:fixed;inset:0;z-index:9000;background:rgba(6,6,8,.95);padding:clamp(1rem,4vw,3rem);align-items:center;justify-content:center;}
+.res-lb:target{display:flex;}
+.res-lb img{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:10px;box-shadow:0 30px 80px -30px #000;}
+.res-lb-x{position:absolute;top:.6rem;inset-inline-end:1.2rem;font-size:2.2rem;line-height:1;color:var(--p-ivory);text-decoration:none;opacity:.8;}
+.res-lb-x:hover{opacity:1;}
 </style>
 </head>
 <body>
@@ -450,146 +470,93 @@ src="https://www.facebook.com/tr?id=909844348052988&ev=PageView&noscript=1"
     <div class="section-head">
       <span class="eyebrow">أقوى النتائج</span>
       <h2 id="top-results-heading">Top results at a glance</h2>
-      <p class="section-sub">عشر حملات من أربع قطاعات، مقصوصة من مدير الإعلانات نفسه. أسماء العملاء والبراندات مخفية، والأرقام زي ما هي.</p>
+      <p class="section-sub">29 كارت نتيجة، مقصوصة من مدير الإعلانات نفسه ومجمّعة حسب القطاع. مفيش أرقام معاد كتابتها. أسماء العملاء والبراندات مخفية، والأرقام زي ما هي. اضغط على أي كارت لتكبيره.</p>
     </div>
     <div class="res-groups">
     <div class="res-group">
-      <div class="res-group-head">
-        <span class="res-idx">01</span>
-        <h3>عقارات</h3>
-        <p class="res-stat">32,643 ج.م إنفاق على حملتين · 342 عميل محتمل بتكلفة 22.37 ج.م</p>
-      </div>
-      <div class="res-cards">
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-e97f657e.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-e97f657e.jpg" alt="سكرين شوت من مدير الإعلانات: 342 عميل محتمل، 22.37 ج.م للعميل، 7,643 ج.م إنفاق" loading="lazy" width="749" height="396">
-          </a>
-          <figcaption>
-            <span class="res-kicker">توليد عملاء محتملين</span>
-            <span class="res-metric"><b>342</b> عميل محتمل</span>
-            <span class="res-detail">22.37 ج.م للعميل · 7,643 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-eb84f3e1.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-eb84f3e1.jpg" alt="سكرين شوت من مدير الإعلانات: 91 محادثة، 287.36 ج.م للمحادثة، 25,000 ج.م إنفاق" loading="lazy" width="713" height="394">
-          </a>
-          <figcaption>
-            <span class="res-kicker">توليد عملاء محتملين</span>
-            <span class="res-metric"><b>91</b> محادثة</span>
-            <span class="res-detail">287.36 ج.م للمحادثة · 25,000 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
+      <div class="res-group-head"><span class="res-idx">01</span><h3>عقارات</h3><span class="res-count">2 حملة</span></div>
+      <div class="res-gallery">
+        <a class="res-item" href="#lb-e97f657e"><img src="images/result-e97f657e.jpg" alt="كارت نتيجة من مدير الإعلانات - عقارات" loading="lazy" width="749" height="396"></a>
+        <a class="res-item" href="#lb-eb84f3e1"><img src="images/result-eb84f3e1.jpg" alt="كارت نتيجة من مدير الإعلانات - عقارات" loading="lazy" width="713" height="394"></a>
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head">
-        <span class="res-idx">02</span>
-        <h3>عيادات وطب</h3>
-        <p class="res-stat">466 محادثة · 8,460 ج.م إنفاق على حملتين</p>
-      </div>
-      <div class="res-cards">
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-f5cc3ba2.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-f5cc3ba2.jpg" alt="سكرين شوت من مدير الإعلانات: 346 محادثة، 8.67 ج.م للمحادثة، 3,000 ج.م إنفاق" loading="lazy" width="675" height="396">
-          </a>
-          <figcaption>
-            <span class="res-kicker">رسائل · صحة المرأة</span>
-            <span class="res-metric"><b>346</b> محادثة</span>
-            <span class="res-detail">8.67 ج.م للمحادثة · 3,000 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-53de4058.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-53de4058.jpg" alt="سكرين شوت من مدير الإعلانات: 120 محادثة، 45.50 ج.م للمحادثة، 5,460 ج.م إنفاق" loading="lazy" width="752" height="402">
-          </a>
-          <figcaption>
-            <span class="res-kicker">رسائل · عيادة أسنان</span>
-            <span class="res-metric"><b>120</b> محادثة</span>
-            <span class="res-detail">45.50 ج.م للمحادثة · 5,460 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
+      <div class="res-group-head"><span class="res-idx">02</span><h3>عيادات وطب</h3><span class="res-count">10 حملة</span></div>
+      <div class="res-gallery">
+        <a class="res-item" href="#lb-f5cc3ba2"><img src="images/result-f5cc3ba2.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="675" height="396"></a>
+        <a class="res-item" href="#lb-35957da7"><img src="images/15-result-35957da7.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="675" height="403"></a>
+        <a class="res-item" href="#lb-af7cea85"><img src="images/16-result-af7cea85.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="735" height="383"></a>
+        <a class="res-item" href="#lb-ee0b8311"><img src="images/17-result-ee0b8311.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="719" height="425"></a>
+        <a class="res-item" href="#lb-e5b6bb54"><img src="images/18-result-e5b6bb54.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="691" height="387"></a>
+        <a class="res-item" href="#lb-7d0037df"><img src="images/19-result-7d0037df.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="675" height="378"></a>
+        <a class="res-item" href="#lb-ac3d7109"><img src="images/20-result-ac3d7109.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="675" height="344"></a>
+        <a class="res-item" href="#lb-ecb2328c"><img src="images/21-result-ecb2328c.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="675" height="370"></a>
+        <a class="res-item" href="#lb-593d971e"><img src="images/22-result-593d971e.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="737" height="414"></a>
+        <a class="res-item" href="#lb-53de4058"><img src="images/result-53de4058.jpg" alt="كارت نتيجة من مدير الإعلانات - عيادات وطب" loading="lazy" width="752" height="402"></a>
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head">
-        <span class="res-idx">03</span>
-        <h3>كوزمتكس وتجارة إلكترونية</h3>
-        <p class="res-stat">0.31 ج.م للنقرة · 0.70 ج.م للمحادثة على 4.3K محادثة</p>
-      </div>
-      <div class="res-cards">
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-60d80199.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-60d80199.jpg" alt="سكرين شوت من مدير الإعلانات: 4.3K محادثة، 0.70 ج.م للمحادثة، 3.02K ج.م إنفاق" loading="lazy" width="733" height="555">
-          </a>
-          <figcaption>
-            <span class="res-kicker">مبيعات</span>
-            <span class="res-metric"><b>4.3K</b> محادثة</span>
-            <span class="res-detail">0.70 ج.م للمحادثة · 3.02K ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-2fadbcf4.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-2fadbcf4.jpg" alt="سكرين شوت من مدير الإعلانات: 522 محادثة، 3.73 ج.م للمحادثة، 1,945.81 ج.م إنفاق" loading="lazy" width="760" height="417">
-          </a>
-          <figcaption>
-            <span class="res-kicker">تفاعل · باكدج عروسة</span>
-            <span class="res-metric"><b>522</b> محادثة</span>
-            <span class="res-detail">3.73 ج.م للمحادثة · 1,945.81 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-477e2cdf.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-477e2cdf.jpg" alt="سكرين شوت من مدير الإعلانات: 635 محادثة، 6.30 ج.م للمحادثة، 4,000 ج.م إنفاق" loading="lazy" width="679" height="371">
-          </a>
-          <figcaption>
-            <span class="res-kicker">رسائل · عرض موسمي</span>
-            <span class="res-metric"><b>635</b> محادثة</span>
-            <span class="res-detail">6.30 ج.م للمحادثة · 4,000 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-60225853.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-60225853.jpg" alt="سكرين شوت من مدير الإعلانات: 8,985 نقرة، 0.31 ج.م للنقرة، 2,755.60 ج.م إنفاق" loading="lazy" width="683" height="371">
-          </a>
-          <figcaption>
-            <span class="res-kicker">زيارات للموقع</span>
-            <span class="res-metric"><b>8,985</b> نقرة</span>
-            <span class="res-detail">0.31 ج.م للنقرة · 2,755.60 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
+      <div class="res-group-head"><span class="res-idx">03</span><h3>كوزمتكس وتجارة إلكترونية</h3><span class="res-count">8 حملة</span></div>
+      <div class="res-gallery">
+        <a class="res-item" href="#lb-2f7007df"><img src="images/23-result-2f7007df.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="749" height="423"></a>
+        <a class="res-item" href="#lb-60d80199"><img src="images/result-60d80199.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="733" height="555"></a>
+        <a class="res-item" href="#lb-2fadbcf4"><img src="images/result-2fadbcf4.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="760" height="417"></a>
+        <a class="res-item" href="#lb-14ad5e6a"><img src="images/24-result-14ad5e6a.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="705" height="411"></a>
+        <a class="res-item" href="#lb-6bd24038"><img src="images/25-result-6bd24038.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="683" height="392"></a>
+        <a class="res-item" href="#lb-477e2cdf"><img src="images/result-477e2cdf.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="679" height="371"></a>
+        <a class="res-item" href="#lb-1b5eeabc"><img src="images/26-result-1b5eeabc.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="703" height="377"></a>
+        <a class="res-item" href="#lb-60225853"><img src="images/result-60225853.jpg" alt="كارت نتيجة من مدير الإعلانات - كوزمتكس وتجارة إلكترونية" loading="lazy" width="683" height="371"></a>
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head">
-        <span class="res-idx">04</span>
-        <h3>تقسيط وإلكترونيات</h3>
-        <p class="res-stat">9,030 محادثة · 5,113 ج.م إنفاق على حملتين</p>
+      <div class="res-group-head"><span class="res-idx">04</span><h3>تقسيط وإلكترونيات</h3><span class="res-count">3 حملة</span></div>
+      <div class="res-gallery">
+        <a class="res-item" href="#lb-f6e25c2c"><img src="images/result-f6e25c2c.jpg" alt="كارت نتيجة من مدير الإعلانات - تقسيط وإلكترونيات" loading="lazy" width="711" height="471"></a>
+        <a class="res-item" href="#lb-c0e3265f"><img src="images/result-c0e3265f.jpg" alt="كارت نتيجة من مدير الإعلانات - تقسيط وإلكترونيات" loading="lazy" width="714" height="500"></a>
+        <a class="res-item" href="#lb-56f96758"><img src="images/27-result-56f96758.jpg" alt="كارت نتيجة من مدير الإعلانات - تقسيط وإلكترونيات" loading="lazy" width="691" height="449"></a>
       </div>
-      <div class="res-cards">
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-f6e25c2c.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-f6e25c2c.jpg" alt="سكرين شوت من مدير الإعلانات: 7,639 محادثة، 0.43 ج.م للمحادثة، 3,317.17 ج.م إنفاق" loading="lazy" width="711" height="471">
-          </a>
-          <figcaption>
-            <span class="res-kicker">رسائل · تقسيط موبايلات</span>
-            <span class="res-metric"><b>7,639</b> محادثة</span>
-            <span class="res-detail">0.43 ج.م للمحادثة · 3,317.17 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
-        <figure class="res-card">
-          <a class="res-shot" href="images/result-c0e3265f.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/result-c0e3265f.jpg" alt="سكرين شوت من مدير الإعلانات: 1,391 محادثة، 1.29 ج.م للمحادثة، 1,795.40 ج.م إنفاق" loading="lazy" width="714" height="500">
-          </a>
-          <figcaption>
-            <span class="res-kicker">تفاعل · تقسيط موبايلات</span>
-            <span class="res-metric"><b>1,391</b> محادثة</span>
-            <span class="res-detail">1.29 ج.م للمحادثة · 1,795.40 ج.م إنفاق</span>
-          </figcaption>
-        </figure>
+    </div>
+    <div class="res-group">
+      <div class="res-group-head"><span class="res-idx">05</span><h3>حملات أخرى</h3><span class="res-count">6 حملة</span></div>
+      <div class="res-gallery">
+        <a class="res-item" href="#lb-cbed757a"><img src="images/28-result-cbed757a.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="699" height="459"></a>
+        <a class="res-item" href="#lb-60091a4d"><img src="images/29-result-60091a4d.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="689" height="366"></a>
+        <a class="res-item" href="#lb-cddffb5e"><img src="images/30-result-cddffb5e.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="675" height="439"></a>
+        <a class="res-item" href="#lb-d34b68e9"><img src="images/31-result-d34b68e9.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="677" height="388"></a>
+        <a class="res-item" href="#lb-9bdfbd86"><img src="images/32-result-9bdfbd86.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="683" height="415"></a>
+        <a class="res-item" href="#lb-324ec8fb"><img src="images/33-result-324ec8fb.jpg" alt="كارت نتيجة من مدير الإعلانات - حملات أخرى" loading="lazy" width="675" height="417"></a>
       </div>
     </div>
     </div>
+  <div class="res-lb" id="lb-e97f657e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-e97f657e.jpg" alt=""></div>
+  <div class="res-lb" id="lb-eb84f3e1"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-eb84f3e1.jpg" alt=""></div>
+  <div class="res-lb" id="lb-f5cc3ba2"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-f5cc3ba2.jpg" alt=""></div>
+  <div class="res-lb" id="lb-35957da7"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/15-result-35957da7.jpg" alt=""></div>
+  <div class="res-lb" id="lb-af7cea85"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/16-result-af7cea85.jpg" alt=""></div>
+  <div class="res-lb" id="lb-ee0b8311"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/17-result-ee0b8311.jpg" alt=""></div>
+  <div class="res-lb" id="lb-e5b6bb54"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/18-result-e5b6bb54.jpg" alt=""></div>
+  <div class="res-lb" id="lb-7d0037df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/19-result-7d0037df.jpg" alt=""></div>
+  <div class="res-lb" id="lb-ac3d7109"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/20-result-ac3d7109.jpg" alt=""></div>
+  <div class="res-lb" id="lb-ecb2328c"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/21-result-ecb2328c.jpg" alt=""></div>
+  <div class="res-lb" id="lb-593d971e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/22-result-593d971e.jpg" alt=""></div>
+  <div class="res-lb" id="lb-53de4058"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-53de4058.jpg" alt=""></div>
+  <div class="res-lb" id="lb-2f7007df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/23-result-2f7007df.jpg" alt=""></div>
+  <div class="res-lb" id="lb-60d80199"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60d80199.jpg" alt=""></div>
+  <div class="res-lb" id="lb-2fadbcf4"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-2fadbcf4.jpg" alt=""></div>
+  <div class="res-lb" id="lb-14ad5e6a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/24-result-14ad5e6a.jpg" alt=""></div>
+  <div class="res-lb" id="lb-6bd24038"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/25-result-6bd24038.jpg" alt=""></div>
+  <div class="res-lb" id="lb-477e2cdf"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-477e2cdf.jpg" alt=""></div>
+  <div class="res-lb" id="lb-1b5eeabc"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/26-result-1b5eeabc.jpg" alt=""></div>
+  <div class="res-lb" id="lb-60225853"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60225853.jpg" alt=""></div>
+  <div class="res-lb" id="lb-f6e25c2c"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-f6e25c2c.jpg" alt=""></div>
+  <div class="res-lb" id="lb-c0e3265f"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-c0e3265f.jpg" alt=""></div>
+  <div class="res-lb" id="lb-56f96758"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/27-result-56f96758.jpg" alt=""></div>
+  <div class="res-lb" id="lb-cbed757a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/28-result-cbed757a.jpg" alt=""></div>
+  <div class="res-lb" id="lb-60091a4d"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/29-result-60091a4d.jpg" alt=""></div>
+  <div class="res-lb" id="lb-cddffb5e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/30-result-cddffb5e.jpg" alt=""></div>
+  <div class="res-lb" id="lb-d34b68e9"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/31-result-d34b68e9.jpg" alt=""></div>
+  <div class="res-lb" id="lb-9bdfbd86"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/32-result-9bdfbd86.jpg" alt=""></div>
+  <div class="res-lb" id="lb-324ec8fb"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/33-result-324ec8fb.jpg" alt=""></div>
   </section>
 
   <section id="results">
