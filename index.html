@@ -581,6 +581,31 @@ footer a:hover {
 .res-lb-x{position:absolute;top:.6rem;inset-inline-end:1.2rem;font-size:2.2rem;line-height:1;color:var(--p-ivory);text-decoration:none;opacity:.85;z-index:2;}
 .res-lb-x:hover{opacity:1;}
 </style>
+<style id="design-tune">
+/* --- design tune: card framing, label hierarchy, Arabic type, mobile --- */
+.pf-tile{background:linear-gradient(180deg,#131317,#0a0a0c);border-color:rgba(255,255,255,.09);box-shadow:0 20px 44px -30px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.05);}
+.pf-tile:hover{border-color:rgba(201,162,39,.5);box-shadow:0 28px 60px -32px #000,inset 0 1px 0 rgba(255,255,255,.07);}
+.pf-frame{padding:.72rem}
+.pf-frame img{outline:1px solid rgba(255,255,255,.08);background:#0d0d10}
+.pf-chip{font-size:.62rem;letter-spacing:.12em;color:var(--p-gold-2);background:rgba(6,6,8,.9);border-color:rgba(201,162,39,.42);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);}
+.pf-lead{margin:3rem 0 1.1rem;display:flex;align-items:center;gap:1rem;font-size:.72rem;color:var(--p-gold-2);}
+.pf-lead::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--p-line),transparent);}
+.pf-grid+.pf-lead{margin-top:3.4rem}
+html[lang="ar"] .eyebrow,html[lang="ar"] .pf-lead,html[lang="ar"] .pf-chip,html[lang="ar"] .band-num{letter-spacing:0;text-transform:none;}
+html[lang="ar"] .eyebrow{font-size:.8rem;font-weight:600}
+html[lang="ar"] .pf-lead{font-size:.8rem;font-weight:700}
+html[lang="ar"] .pf-lead::after{background:linear-gradient(270deg,var(--p-line),transparent);}
+html[lang="ar"] .pf-chip{font-size:.68rem}
+html[lang="ar"] .band-num{font-family:var(--font-arabic,inherit)}
+@media(max-width:640px){
+  .hero .eyebrow,.hero-premium .eyebrow{font-size:.6rem;letter-spacing:.1em;line-height:1.6}
+  .hero-process{flex-wrap:wrap;gap:.45rem;justify-content:center}
+  .hero-process i{display:none}
+  .hero-process span{border:1px solid rgba(201,162,39,.28);border-radius:999px;padding:.3rem .62rem;font-size:.72rem;color:var(--p-ivory)}
+  .pf-frame{padding:.55rem}
+  .pf-lead{margin:2.4rem 0 .9rem}
+}
+</style>
 </head>
 
 <body>
@@ -727,6 +752,7 @@ footer a:hover {
       <a class="pf-tile" href="#lbr-5"><div class="pf-frame r1610"><img src="images/50-review-639c2d18.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="900" height="421"></div></a>
       <a class="pf-tile" href="#lbr-6"><div class="pf-frame r1610"><img src="images/52-review-753b64ce.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="804" height="560"></div></a>
       <a class="pf-tile" href="#lbr-7"><div class="pf-frame r1610"><img src="images/46-review-655ac27c.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="804" height="750"></div></a>
+      <a class="pf-tile" href="#lbr-8"><div class="pf-frame r1610"><img src="images/53-review-8305abda.jpg" alt="WhatsApp screenshot from a client, name and photo hidden" loading="lazy" width="1080" height="1348"></div></a>
 </div>
   <div class="res-lb" id="lbr-1"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/47-review-5091bb9d.jpg" alt=""></div>
   <div class="res-lb" id="lbr-2"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/49-review-ae8458e3.jpg" alt=""></div>
@@ -735,6 +761,7 @@ footer a:hover {
   <div class="res-lb" id="lbr-5"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/50-review-639c2d18.jpg" alt=""></div>
   <div class="res-lb" id="lbr-6"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/52-review-753b64ce.jpg" alt=""></div>
   <div class="res-lb" id="lbr-7"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/46-review-655ac27c.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-8"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/53-review-8305abda.jpg" alt=""></div>
 </div></section>
 
 <section class="faq" id="faq">
