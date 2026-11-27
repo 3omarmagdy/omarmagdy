@@ -531,6 +531,27 @@ footer a:hover {
 .res-metric b{font-family:var(--font-latin,"Manrope",sans-serif);font-size:1.3rem;font-weight:800;letter-spacing:-.01em;color:var(--p-ivory);}
 .res-detail{color:var(--p-mute);font-size:.78rem;unicode-bidi:plaintext;}
 @media(max-width:640px){.res-cards{grid-template-columns:1fr;}}
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:3;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:1100px){.rev-gallery{column-count:2}}
+@media(max-width:460px){.rev-gallery{column-count:1}}
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
 
 /* results gallery: screenshots only, grouped by sector, click to enlarge */
 .res-groups{display:grid;gap:clamp(2rem,3.6vw,3rem);margin-top:2.6rem;}
@@ -551,6 +572,13 @@ footer a:hover {
 .res-lb img{width:min(940px,94vw);max-height:92vh;height:auto;border-radius:10px;box-shadow:0 30px 80px -30px #000;}
 .res-lb-x{position:absolute;top:.6rem;inset-inline-end:1.2rem;font-size:2.2rem;line-height:1;color:var(--p-ivory);text-decoration:none;opacity:.8;}
 .res-lb-x:hover{opacity:1;}
+/* reviews: real screenshots first, then quotes set in the same chat style (no timestamps, ticks, avatars or names) */
+.rev-gallery{column-count:2;column-gap:1rem;margin-top:2.4rem;}
+.rev-card{break-inside:avoid;margin:0 0 .85rem;border:1px solid var(--p-line-2);border-radius:12px;background:#0b141a;padding:clamp(.85rem,1.8vw,1.1rem);display:grid;gap:.7rem;}
+.rev-bubble{margin:0;background:#1f2c34;color:#e9edef;border-radius:4px 12px 12px 12px;padding:.85rem 1rem;font-size:.92rem;line-height:1.9;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+.rev-who{margin:0;color:var(--p-mute);font-size:.76rem;letter-spacing:.02em;direction:rtl;unicode-bidi:plaintext;text-align:right;}
+@media(max-width:760px){.rev-gallery{column-count:1}}
+
 </style>
 </head>
 
@@ -607,17 +635,16 @@ footer a:hover {
   <div class="wrap">
     <span class="eyebrow">Results</span>
     <h2>Read straight from the ad accounts.</h2>
-    <p class="section-sub">Twenty-nine result cards, cropped straight out of the ad accounts and grouped by sector. Nothing retyped, nothing restyled. Client and brand names are hidden; the figures are untouched. Tap any card to enlarge it.</p>
+    <p class="section-sub">The strongest twenty campaigns, cropped straight out of the ad accounts and grouped by sector. Nothing retyped, nothing restyled. Client and brand names are hidden; the figures are untouched. Tap any card to enlarge it.</p>
     <div class="res-groups">
     <div class="res-group">
-      <div class="res-group-head"><span class="res-idx">01</span><h3>Real estate</h3><span class="res-count">2 campaigns</span></div>
+      <div class="res-group-head"><span class="res-idx">01</span><h3>Real estate</h3><span class="res-count">1 campaigns</span></div>
       <div class="res-gallery">
         <a class="res-item" href="#lb-e97f657e"><img src="images/result-e97f657e.jpg" alt="Ad account result card, Real estate campaign" loading="lazy" width="749" height="396"></a>
-        <a class="res-item" href="#lb-eb84f3e1"><img src="images/result-eb84f3e1.jpg" alt="Ad account result card, Real estate campaign" loading="lazy" width="713" height="394"></a>
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head"><span class="res-idx">02</span><h3>Medical & clinics</h3><span class="res-count">10 campaigns</span></div>
+      <div class="res-group-head"><span class="res-idx">02</span><h3>Medical & clinics</h3><span class="res-count">8 campaigns</span></div>
       <div class="res-gallery">
         <a class="res-item" href="#lb-f5cc3ba2"><img src="images/result-f5cc3ba2.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="675" height="396"></a>
         <a class="res-item" href="#lb-35957da7"><img src="images/15-result-35957da7.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="675" height="403"></a>
@@ -626,19 +653,16 @@ footer a:hover {
         <a class="res-item" href="#lb-e5b6bb54"><img src="images/18-result-e5b6bb54.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="691" height="387"></a>
         <a class="res-item" href="#lb-7d0037df"><img src="images/19-result-7d0037df.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="675" height="378"></a>
         <a class="res-item" href="#lb-ac3d7109"><img src="images/20-result-ac3d7109.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="675" height="344"></a>
-        <a class="res-item" href="#lb-ecb2328c"><img src="images/21-result-ecb2328c.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="675" height="370"></a>
         <a class="res-item" href="#lb-593d971e"><img src="images/22-result-593d971e.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="737" height="414"></a>
-        <a class="res-item" href="#lb-53de4058"><img src="images/result-53de4058.jpg" alt="Ad account result card, Medical & clinics campaign" loading="lazy" width="752" height="402"></a>
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head"><span class="res-idx">03</span><h3>Cosmetics & e-commerce</h3><span class="res-count">8 campaigns</span></div>
+      <div class="res-group-head"><span class="res-idx">03</span><h3>Cosmetics & e-commerce</h3><span class="res-count">7 campaigns</span></div>
       <div class="res-gallery">
         <a class="res-item" href="#lb-2f7007df"><img src="images/23-result-2f7007df.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="749" height="423"></a>
         <a class="res-item" href="#lb-60d80199"><img src="images/result-60d80199.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="733" height="555"></a>
         <a class="res-item" href="#lb-2fadbcf4"><img src="images/result-2fadbcf4.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="760" height="417"></a>
         <a class="res-item" href="#lb-14ad5e6a"><img src="images/24-result-14ad5e6a.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="705" height="411"></a>
-        <a class="res-item" href="#lb-6bd24038"><img src="images/25-result-6bd24038.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="683" height="392"></a>
         <a class="res-item" href="#lb-477e2cdf"><img src="images/result-477e2cdf.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="679" height="371"></a>
         <a class="res-item" href="#lb-1b5eeabc"><img src="images/26-result-1b5eeabc.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="703" height="377"></a>
         <a class="res-item" href="#lb-60225853"><img src="images/result-60225853.jpg" alt="Ad account result card, Cosmetics & e-commerce campaign" loading="lazy" width="683" height="371"></a>
@@ -653,21 +677,15 @@ footer a:hover {
       </div>
     </div>
     <div class="res-group">
-      <div class="res-group-head"><span class="res-idx">05</span><h3>More campaigns</h3><span class="res-count">6 campaigns</span></div>
+      <div class="res-group-head"><span class="res-idx">05</span><h3>More campaigns</h3><span class="res-count">1 campaigns</span></div>
       <div class="res-gallery">
         <a class="res-item" href="#lb-cbed757a"><img src="images/28-result-cbed757a.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="699" height="459"></a>
-        <a class="res-item" href="#lb-60091a4d"><img src="images/29-result-60091a4d.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="689" height="366"></a>
-        <a class="res-item" href="#lb-cddffb5e"><img src="images/30-result-cddffb5e.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="675" height="439"></a>
-        <a class="res-item" href="#lb-d34b68e9"><img src="images/31-result-d34b68e9.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="677" height="388"></a>
-        <a class="res-item" href="#lb-9bdfbd86"><img src="images/32-result-9bdfbd86.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="683" height="415"></a>
-        <a class="res-item" href="#lb-324ec8fb"><img src="images/33-result-324ec8fb.jpg" alt="Ad account result card, More campaigns campaign" loading="lazy" width="675" height="417"></a>
       </div>
     </div>
     </div>
     <p class="band-foot" style="border:0;padding:0;margin-top:2rem"><a href="portfolio.html">See all campaign records →</a></p>
   </div>
   <div class="res-lb" id="lb-e97f657e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-e97f657e.jpg" alt=""></div>
-  <div class="res-lb" id="lb-eb84f3e1"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-eb84f3e1.jpg" alt=""></div>
   <div class="res-lb" id="lb-f5cc3ba2"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-f5cc3ba2.jpg" alt=""></div>
   <div class="res-lb" id="lb-35957da7"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/15-result-35957da7.jpg" alt=""></div>
   <div class="res-lb" id="lb-af7cea85"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/16-result-af7cea85.jpg" alt=""></div>
@@ -675,14 +693,11 @@ footer a:hover {
   <div class="res-lb" id="lb-e5b6bb54"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/18-result-e5b6bb54.jpg" alt=""></div>
   <div class="res-lb" id="lb-7d0037df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/19-result-7d0037df.jpg" alt=""></div>
   <div class="res-lb" id="lb-ac3d7109"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/20-result-ac3d7109.jpg" alt=""></div>
-  <div class="res-lb" id="lb-ecb2328c"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/21-result-ecb2328c.jpg" alt=""></div>
   <div class="res-lb" id="lb-593d971e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/22-result-593d971e.jpg" alt=""></div>
-  <div class="res-lb" id="lb-53de4058"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-53de4058.jpg" alt=""></div>
   <div class="res-lb" id="lb-2f7007df"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/23-result-2f7007df.jpg" alt=""></div>
   <div class="res-lb" id="lb-60d80199"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60d80199.jpg" alt=""></div>
   <div class="res-lb" id="lb-2fadbcf4"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-2fadbcf4.jpg" alt=""></div>
   <div class="res-lb" id="lb-14ad5e6a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/24-result-14ad5e6a.jpg" alt=""></div>
-  <div class="res-lb" id="lb-6bd24038"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/25-result-6bd24038.jpg" alt=""></div>
   <div class="res-lb" id="lb-477e2cdf"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-477e2cdf.jpg" alt=""></div>
   <div class="res-lb" id="lb-1b5eeabc"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/26-result-1b5eeabc.jpg" alt=""></div>
   <div class="res-lb" id="lb-60225853"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-60225853.jpg" alt=""></div>
@@ -690,11 +705,6 @@ footer a:hover {
   <div class="res-lb" id="lb-c0e3265f"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/result-c0e3265f.jpg" alt=""></div>
   <div class="res-lb" id="lb-56f96758"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/27-result-56f96758.jpg" alt=""></div>
   <div class="res-lb" id="lb-cbed757a"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/28-result-cbed757a.jpg" alt=""></div>
-  <div class="res-lb" id="lb-60091a4d"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/29-result-60091a4d.jpg" alt=""></div>
-  <div class="res-lb" id="lb-cddffb5e"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/30-result-cddffb5e.jpg" alt=""></div>
-  <div class="res-lb" id="lb-d34b68e9"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/31-result-d34b68e9.jpg" alt=""></div>
-  <div class="res-lb" id="lb-9bdfbd86"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/32-result-9bdfbd86.jpg" alt=""></div>
-  <div class="res-lb" id="lb-324ec8fb"><a class="res-lb-x" href="#results" aria-label="Close">&times;</a><img src="images/33-result-324ec8fb.jpg" alt=""></div>
 </section>
 
 <section class="work-intro selected-work" id="selected-work"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Selected campaign work</span><h2>Here’s the work—and what the record can tell you.</h2></div><p class="section-sub">I show the available context and evidence for each campaign, and make it clear when a record is only a showcase.</p></div><div id="featured-campaign" class="campaign-feature" aria-live="polite" aria-busy="true"><p>Loading selected work…</p></div><div class="section-action"><a href="portfolio.html" class="btn btn-secondary">Browse campaigns and strategy case studies</a></div></div></section>
@@ -723,11 +733,24 @@ footer a:hover {
  </div>
 </section>
 
-<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div><div class="pq-grid">
-<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</p><div class="pq-foot"><span class="pq-avatar">ا</span><div><strong>استشاري</strong><span>استشاري توليد — مصر الجديدة</span></div></div></article>
-<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</p><div class="pq-foot"><span class="pq-avatar">A</span><div><strong>صاحب متجر ASC</strong><span>تجارة إلكترونية</span></div></div></article>
-<article class="pq-card" dir="rtl"><span class="pq-mark">&#8220;</span><p dir="rtl">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</p><div class="pq-foot"><span class="pq-avatar">M</span><div><strong>Mory</strong><span>صاحبة براند أونلاين — الإمارات</span></div></div></article>
-</div></div></section>
+<section class="testimonials-preview" id="testimonials"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Client feedback</span><h2>What clients have shared.</h2></div><a href="testimonials.html" class="text-link">Read all testimonials →</a></div>
+<p class="section-sub">Real WhatsApp screenshots from clients, names and photos hidden. Underneath them, quotes from earlier work set in the same chat style. Tap any image to enlarge it.</p>
+    <div class="rev-gallery">
+      <a class="res-item" href="#lbr-1"><img src="images/45-review-50888f9b.jpg" alt="Client message screenshot, names and photos hidden" loading="lazy" width="900" height="311"></a>
+      <a class="res-item" href="#lbr-2"><img src="images/46-review-655ac27c.jpg" alt="Client message screenshot, names and photos hidden" loading="lazy" width="804" height="750"></a>
+      <a class="res-item" href="#lbr-3"><img src="images/47-review-5091bb9d.jpg" alt="Client message screenshot, names and photos hidden" loading="lazy" width="900" height="1786"></a>
+      <a class="res-item" href="#lbr-4"><img src="images/50-review-639c2d18.jpg" alt="Client message screenshot, names and photos hidden" loading="lazy" width="900" height="421"></a>
+      <a class="res-item" href="#lbr-5"><img src="images/49-review-ae8458e3.jpg" alt="Client message screenshot, names and photos hidden" loading="lazy" width="900" height="1894"></a>
+      <div class="rev-card"><p class="rev-bubble">الحمد لله 6 حالات ولادة و2 كشف جديد من التمويل الأول — شاطر جداً</p><p class="rev-who">استشاري — مصر الجديدة</p></div>
+      <div class="rev-card"><p class="rev-bubble">ارقامك بتزيد — ASC - UGC2 حملة كويسة جداً 1.3K مشتريات من الموقع والتكلفة منخفضة</p><p class="rev-who">صاحب متجر إلكتروني</p></div>
+      <div class="rev-card"><p class="rev-bubble">صباح الخير يا عمرو — الحمد لله 3 زيارات من الإمارات واللي بتشتري بقيه الليز</p><p class="rev-who">صاحبة براند أونلاين — الإمارات</p></div>
+    </div>
+  <div class="res-lb" id="lbr-1"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/45-review-50888f9b.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-2"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/46-review-655ac27c.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-3"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/47-review-5091bb9d.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-4"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/50-review-639c2d18.jpg" alt=""></div>
+  <div class="res-lb" id="lbr-5"><a class="res-lb-x" href="#testimonials" aria-label="Close">&times;</a><img src="images/49-review-ae8458e3.jpg" alt=""></div>
+</div></section>
 
 <section class="faq" id="faq">
  <div class="wrap"><span class="eyebrow">Before you hire a media buyer</span><h2>Know what the work involves.</h2><p class="section-sub">Straight answers about preparation, testing and how decisions are made.</p>
